@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 5.5vw;
-  font-family: HKGrotesk;
+  font-size: 7.5vw;
+  font-family: 'Questrial', sans-serif;
+  letter-spacing: 0.2vw;
   align-items: center;
   height: 100vh;
+  background-color: #F2F2F2;
 }
 
 #ds {
@@ -18,13 +20,17 @@
 
 #gray {
   color: gray !important;
-  padding-right: 2vw;
+  padding-right: 4vw;
 }
 
-#sg{
+#sg {
   display: flex;
   align-self: flex-start;
   justify-content: center;
   font-weight: bold;
   color: #40BFB4;
+}
+
+#social {
+  padding-right: 4vw;
 }
