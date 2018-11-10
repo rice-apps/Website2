@@ -63,7 +63,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        {<div id="menubar">
+        <div id="menubar">
           <div id="menuWrapper" class={menu_div_class}>
             <button onClick={() => this.handleClick()}
               id="hamburger" class={button_classes} type="button">
@@ -72,18 +72,15 @@ class App extends Component {
               </span>
             </button>
 
-            <div id="sidebar" class={sidebar_menu_classes}>
-              <div>
-                Home
-              </div>
-              <div>Landing</div>
-              <div>Projects</div>
-              <div>Projects</div>
-              <div>Projects</div>
-
-            </div>
+            {/*<div id="sidebar" class={sidebar_menu_classes}>*/}
+            <div class={sidebar_menu_classes}>Home</div >
+            <div class={sidebar_menu_classes}>Mission</div>
+            <div class={sidebar_menu_classes}>Projects</div>
+            <div class={sidebar_menu_classes}>Contact Us</div>
+            <div class={sidebar_menu_classes}>Join Us</div>
+            {/*</div>*/}
           </div>
-        </div>}
+        </div>
 
         <div onClick={() => this.closeSidebar()}>
           <div id="home">

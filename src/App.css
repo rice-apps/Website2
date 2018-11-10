@@ -7,23 +7,22 @@
   display: block;
   display: flex;
   flex-direction: row;
-  color:#002FA4;
-  /*justify-content: space-between;*/
+  color:#787878;
 }
 #menuWrapper{
   position: fixed;
-  align-self: flex-start;
-  justify-content: flex-start;
   width: 100vw;
   height: 20vh;
-  
+  align-self: flex-start;
   flex-direction: row;
-  display: flex;
-  justify-content: space-between;
+  
 }
 .sidebar{
   font-size:4vh;
-  margin-left: 0vh;
+  margin-left: 0vh; 
+}
+
+#sidebar{
 }
 
 button{
