@@ -1,29 +1,31 @@
 
 /* Start of menu CSS */
-#menuWrapper{
-  position: fixed;
-  align-self: flex-start;
-  justify-content: flex-start;
-  width: 20vw;
-  height: 100vh;
-}
-.sidebar{
-  font-size:4vh;
-  margin-left: 4vh;
-}
 .sidebarHidden{
   display: none;
 }
 .sidebarUnhidden{
   display: block;
-}
-.sidebar-text{
+  display: flex;
+  flex-direction: row;
   color:#002FA4;
-  margin-top: 4vh
+  /*justify-content: space-between;*/
 }
-.blueMenu{
+#menuWrapper{
+  position: fixed;
+  align-self: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 20vh;
   background: white;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
 }
+.sidebar{
+  font-size:4vh;
+  margin-left: 0vh;
+}
+
 button{
   outline:none;
 }
@@ -31,8 +33,5 @@ button{
 #menubar{
   position: absolute;
   z-index: 100;
-}
-#contents{
-  z-index: 20;
 }
 /* End of menu CSS */

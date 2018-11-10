@@ -48,7 +48,7 @@ class App extends Component {
     if (this.state.clicked == true) {
       button_classes = "hamburger hamburger--collapse is-active"
       sidebar_menu_classes = "sidebar sidebarUnhidden"
-      menu_div_class = "blueMenu"
+      menu_div_class = ""
     }
     else {
       button_classes = "hamburger hamburger--collapse "
@@ -76,6 +76,11 @@ class App extends Component {
               <div>
                 Home
               </div>
+              <div>Landing</div>
+              <div>Projects</div>
+              <div>Projects</div>
+              <div>Projects</div>
+
             </div>
           </div>
         </div>}
