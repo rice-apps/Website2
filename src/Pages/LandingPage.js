@@ -5,8 +5,13 @@ export default class LandingPage extends Component {
     return(
     <div>
       <div id = "title">
-        <p>DIGITAL SOLUTIONS</p>
-        <p>FOR SOCIAL GOOD</p>
+        <div id = "ds">
+        DIGITAL SOLUTIONS
+        </div>
+
+        <div id = "sg">
+        <span id="gray">FOR </span> SOCIAL GOOD
+        </div>
       </div>
     </div>
   )
