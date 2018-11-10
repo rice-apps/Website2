@@ -1,4 +1,30 @@
-.background{
+#title {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  font-size: 5.5vw;
+  font-family: HKGrotesk;
+  align-items: center;
+  height: 100vh;
+}
+
+#ds {
+  display: flex;
+  color: #40BFB4;
+  width: 100vw;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+#gray {
+  color: gray !important;
+  padding-right: 2vw;
+}
+
+#sg{
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  font-weight: bold;
+  color: #40BFB4;
 }
