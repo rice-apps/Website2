@@ -1,4 +1,36 @@
-.background{
+#title {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  font-size: 7.5vw;
+  font-family: 'Questrial', sans-serif;
+  letter-spacing: 0.2vw;
+  align-items: center;
+  height: 100vh;
+  background-color: #F2F2F2;
+}
+
+#ds {
+  display: flex;
+  color: #40BFB4;
+  width: 100vw;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+#gray {
+  color: gray !important;
+  padding-right: 4vw;
+}
+
+#sg {
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  font-weight: bold;
+  color: #40BFB4;
+}
+
+#social {
+  padding-right: 4vw;
 }

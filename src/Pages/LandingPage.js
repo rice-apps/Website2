@@ -8,8 +8,14 @@ export default class LandingPage extends Component {
     return(
     <div>
       <div id = "title">
-        <p>DIGITAL SOLUTIONS</p>
-        <p>FOR SOCIAL GOOD</p>
+        <div id = "ds">
+        <style>@import url('https://fonts.googleapis.com/css?family=Questrial');</style>
+        DIGITAL SOLUTIONS
+        </div>
+
+        <div id = "sg">
+        <span id="gray">FOR</span> <span id = "social">SOCIAL</span> GOOD
+        </div>
       </div>
     </div>
   )
