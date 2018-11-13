@@ -1,3 +1,17 @@
+#riceApps{
+  position: absolute;
+  animation-name: appear;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 #title {
   display: flex;
   justify-content: center;
@@ -10,7 +24,20 @@
   background-color: #F2F2F2;
 }
 
-#ds {
+.initialText {
+  animation-name: fade;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+#ds{
   display: flex;
   color: #40BFB4;
   width: 100vw;
