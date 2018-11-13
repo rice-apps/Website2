@@ -44,16 +44,21 @@ class App extends Component {
     var button_classes
     var sidebar_menu_classes
     var menu_div_class
+    var menu_parent_id
 
     if (this.state.clicked == true) {
+      //if sidebar is open
       button_classes = "hamburger hamburger--collapse is-active"
       sidebar_menu_classes = "sidebar sidebarUnhidden"
       menu_div_class = ""
+      menu_parent_id = "menuParentOpen"
     }
     else {
+      //if sidebar is closed
       button_classes = "hamburger hamburger--collapse "
       sidebar_menu_classes = "sidebar sidebarHidden"
       menu_div_class = ""
+      menu_parent_id = "menuParentClose"
     }
     const menuLinkStyle = {
       color: '#002FA4',
@@ -62,9 +67,9 @@ class App extends Component {
     //end of sidebar-menu
 
     return (
-      <div className="App">
-        <div id="menubar">
-          <div id="menuWrapper" class={menu_div_class}>
+      <div >
+        <div id={menu_parent_id}>
+          <div id="menuWrapper" style={{flex: 1}}>
             <button onClick={() => this.handleClick()}
               id="hamburger" class={button_classes} type="button">
               <span class="hamburger-box">
@@ -73,6 +78,7 @@ class App extends Component {
             </button>
 
             {/*<div id="sidebar" class={sidebar_menu_classes}>*/}
+            
             <div class={sidebar_menu_classes}>Home</div >
             <div class={sidebar_menu_classes}>Mission</div>
             <div class={sidebar_menu_classes}>Projects</div>
@@ -81,7 +87,6 @@ class App extends Component {
             {/*</div>*/}
           </div>
         </div>
-
         <div onClick={() => this.closeSidebar()}>
           <div id="home">
             <LandingPage />
