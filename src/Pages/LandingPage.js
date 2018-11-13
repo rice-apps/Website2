@@ -6,14 +6,6 @@ export default class LandingPage extends Component {
 
   render() {
 
-    var title = document.querySelector('.title');
-
-    var intro = anime({
-      targets: title,
-      opacity: 0.5,
-      easing: 'easeInOutQuad',
-      translateX: 250
-    });
 
     return(
     <div>
