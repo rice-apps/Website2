@@ -9,10 +9,10 @@ export default class LandingPage extends Component {
     <div>
     <style>@import url('https://fonts.googleapis.com/css?family=Questrial');</style>
     <div id = "content">
-    <div id = "JoinUsTitle">
+    <div id = "ContactUsTitle">
     Give us a shot.
     </div>
-    <div id = "JoinUsText">
+    <div id = "ContactUsText">
     WE PROMISE WE'LL EXCEED YOUR EXPECTATIONS.
     </div>
     </div>
