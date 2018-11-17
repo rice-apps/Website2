@@ -12,11 +12,11 @@
 #AboutUsParagraph {
   width: 65vw;
   height: 50vh;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'HKGrotesk-Bold-Legacy';
   font-weight: bold;
   font-size: calc(5px + 2.3vw + 0.8vh);
-  line-height: 1.5;
-  letter-spacing: 0.15vw;
+  line-height: 6.3vh;
+  letter-spacing: 0.08vw;
   color: #787878;
 }
 #AboutUsParagraph em {

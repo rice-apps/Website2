@@ -6,6 +6,10 @@ import JoinUs from './Pages/JoinUs.js';
 import Projects from './Pages/Projects.js';
 import AboutUs from './Pages/AboutUs.js';
 import './App.css';
+import './hamburgers.css';
+import './styles.css'
+import ScrollIntoView from 'react-scroll-into-view';
+
 
 class App extends Component {
   render() {

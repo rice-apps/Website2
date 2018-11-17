@@ -8,7 +8,7 @@ export default class LandingPage extends Component {
     <div>
       <div id = "title">
         <div id = "ds" class = "initialText">
-        <style>@import url('https://fonts.googleapis.com/css?family=Questrial');</style>
+        {/* <style>@import url('https://fonts.googleapis.com/css?family=Questrial');</style> */}
         DIGITAL SOLUTIONS
         </div>
 

@@ -18,17 +18,19 @@
   color: #40BFB4;
   font-weight: 1000;
   letter-spacing: 0.3vw;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'HKGrotesk-Bold';
 }
 
 #ContactUsText{
   padding-top: 2vh;
   margin-left: 7vw;
+  margin-top: -2.5vh;
   display: flex;
   align-self: flex-start;
   font-weight: bold;
   letter-spacing: 0.12vw;
   color: gray;
   font-size: calc(5px + 1.3vw + 0.5vh);
-  font-family: 'Questrial', sans-serif;
+  font-family: 'HKGrotesk-Bold';
+  margin-bottom: -50vh;
 }
