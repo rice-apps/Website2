@@ -7,6 +7,7 @@ import Projects from './Pages/Projects.js';
 import AboutUs from './Pages/AboutUs.js';
 import './App.css';
 import './hamburgers.css';
+import './styles.css'
 //import ScrollIntoView from 'react-scroll-into-view';
 
 class App extends Component {
@@ -79,7 +80,7 @@ class App extends Component {
 
             {/*<div id="sidebar" class={sidebar_menu_classes}>*/}
             
-            <div class={sidebar_menu_classes}>Home</div >
+            <div class={sidebar_menu_classes}>HOME</div >
             <div class={sidebar_menu_classes}>Mission</div>
             <div class={sidebar_menu_classes}>Projects</div>
             <div class={sidebar_menu_classes}>Contact Us</div>

@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row;
   color:#787878;
+  font-family: 'HKGrotesk-Bold';
 }
 
 #menuParentOpen{
