@@ -21,8 +21,8 @@
 .circle {
   background: grey;
   border-radius: 50%;
-  height: 35vh;
-  width: 35vh;
+  height: 40vh;
+  width: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,9 +31,33 @@
 }
 
 #beakspeak {
-  margin-top: 10vh;
-  margin-left: 7vw;
+  margin-top: 15vh;
+  margin-left: 10vw;
+  height: 40vh;
+  width: 40vh;
+  position: absolute;
+}
+
+#riceelections {
+  margin-top: 7vh;
+  margin-left: 55vw;
   height: 35vh;
   width: 35vh;
-  border-style: dotted;
+  position: absolute;
+}
+
+#coffeehouse {
+  margin-top: 50vh;
+  margin-left: 30vw;
+  height: 35vh;
+  width: 35vh;
+  position: absolute;
+}
+
+#ricebikes {
+  margin-top: 45vh;
+  margin-left: 75vw;
+  height: 35vh;
+  width: 35vh;
+  position: absolute;
 }
