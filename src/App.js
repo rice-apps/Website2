@@ -7,7 +7,9 @@ import Projects from './Pages/Projects.js';
 import AboutUs from './Pages/AboutUs.js';
 import './App.css';
 import './hamburgers.css';
+import './styles.css'
 import ScrollIntoView from 'react-scroll-into-view';
+
 
 class App extends Component {
   constructor(props) {
@@ -27,8 +29,7 @@ class App extends Component {
   onSetSidebarOpen(open) {
     this.setState({ sidebarOpen: open });
   }
-
-  closeSidebar() {
+   closeSidebar() {
     //Call this function whenever user clicks outside of the sidebar menu
     if (this.state.clicked) {
       //But only sets clicked to False when clicked is True
@@ -36,17 +37,14 @@ class App extends Component {
     }
   }
   //end of sidebar-menu
-
   render() {
-
     //start sidebar-menu
     //if statemenets to display and hide sidebar-menu
     var button_classes
     var sidebar_menu_classes
     var menu_div_class
     var menu_parent_id
-
-    if (this.state.clicked == true) {
+     if (this.state.clicked == true) {
       //if sidebar is open
       button_classes = "hamburger hamburger--collapse is-active"
       sidebar_menu_classes = "sidebar sidebarUnhidden"
@@ -65,7 +63,6 @@ class App extends Component {
       marginTop: '4vh'
     }
     //end of sidebar-menu
-
     return (
       <div >
         <div id={menu_parent_id}>
@@ -76,16 +73,12 @@ class App extends Component {
                 <span class="hamburger-inner"></span>
               </span>
             </button>
-
-            {/*<div id="sidebar" class={sidebar_menu_classes}>*/}
+             {/*<div id="sidebar" class={sidebar_menu_classes}>*/}
             <ScrollIntoView selector="#home">
               <div class={sidebar_menu_classes}>HOME</div >
             </ScrollIntoView>
             <ScrollIntoView selector="#aboutUs">
               <div class={sidebar_menu_classes}>MISSION</div>
-            </ScrollIntoView>
-            <ScrollIntoView selector="#testimonials">
-              <div class={sidebar_menu_classes}>TESTIMONIALS</div>
             </ScrollIntoView>
             <ScrollIntoView selector="#projects">
               <div class={sidebar_menu_classes}>PROJECTS</div>
@@ -93,6 +86,11 @@ class App extends Component {
             <ScrollIntoView selector="#contactUs">
               <div class={sidebar_menu_classes}>CONTACT US</div>
             </ScrollIntoView>
+            <ScrollIntoView selector="#testimonials">
+              <div class={sidebar_menu_classes}>TESTIMONIALS</div>
+            </ScrollIntoView>
+            
+            
             {/*<ScrollIntoView selector="#joinUs">
               <div class={sidebar_menu_classes}>JOIN US</div>
     </ScrollIntoView>*/}
@@ -105,9 +103,9 @@ class App extends Component {
           </div>
           <div id="aboutUs"><AboutUs/></div>  
           <div id="projects"><Projects/></div>  
-          <div id="testimonials"><Testimonials/></div>
           <div id="contactUs"><JoinUs/></div>  
           <div id="joinUs"><WorkForUs/></div> 
+          <div id="testimonials"><Testimonials/></div>
           {/*<div id="testimonials"><Testimonials/></div>  */}
         </div>
       </div>

@@ -8,7 +8,7 @@ export default class LandingPage extends Component {
     return(
       <div className= "TestmonialsWrapper">
         <div className = "TestimonialParagraph">
-          "Riceapps was instrumental to my development not only as a developer, but as a <em> leader </em> -- I was able to communicate with clients clearly and thoughtfully, while working <em> efficiently </em> with my team. I emerged with a better understanding of the principles used software and product management."
+          "Riceapps was instrumental to my development not only as a developer, but as a <em> leader </em> — I was able to communicate with clients clearly and thoughtfully, while working <em> efficiently </em> with my team. I emerged with a better understanding of the principles used software and product management."
         </div>
         <div id = "shryans">
          — Shryans Goyal

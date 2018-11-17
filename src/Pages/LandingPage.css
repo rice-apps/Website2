@@ -5,6 +5,9 @@
   animation-duration: 2s;
   animation-fill-mode: forwards;
   opacity: 0;
+  font-size: 7.5vw;
+  font-family: 'HKGrotesk-Bold';
+  letter-spacing: 0.2vw;
 }
 
 @keyframes appear {
@@ -16,9 +19,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 7.5vw;
-  font-family: 'Questrial', sans-serif;
-  letter-spacing: 0.2vw;
   align-items: center;
   height: 100vh;
   background-color: white;
@@ -43,6 +43,10 @@
   width: 100vw;
   align-self: flex-end;
   justify-content: center;
+  font-size: 7.5vw;
+  font-family: 'HKGrotesk-Regular';
+  letter-spacing: 0.2vw;
+  font-weight: 50;
 }
 
 #gray {
@@ -54,6 +58,9 @@
   display: flex;
   align-self: flex-start;
   justify-content: center;
+  font-size: 7.5vw;
+  font-family: 'HKGrotesk-Bold';
+  letter-spacing: 0.2vw;
   font-weight: bold;
   color: #40BFB4;
 }
