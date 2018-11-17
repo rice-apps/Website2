@@ -1,10 +1,11 @@
 .TestmonialsWrapper {
   height:100vh;
-  
+  flex-direction: column;
+  align-items: center;
   
 }
 .grayCircle{
-  height: 100vh;
+  height: 45vh;
   background: white;
   align-items: center;
   justify-content: center;
@@ -12,4 +13,7 @@
   background:
   radial-gradient(circle at center 20vw, #A9A9A9,
     #A9A9A9 8vw, transparent 8vw);
+}
+.quote{
+  width: 50vw;
 }
