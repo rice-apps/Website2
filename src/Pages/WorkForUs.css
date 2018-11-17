@@ -11,9 +11,9 @@
   display: flex;
   align-self: flex-start;
   width: 100vw;
-  font-size: 5vw;
+  font-size: 7vw;
   color: #FFB9CD;
-  font-weight: bold;
+  font-weight: 1000;
   letter-spacing: 0.3vw;
   font-family: 'Questrial', sans-serif;
 }
