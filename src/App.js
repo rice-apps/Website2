@@ -13,9 +13,9 @@ class App extends Component {
       <div>
         <LandingPage/>
         <AboutUs/>
+        <Projects/>
         <JoinUs/>
         <WorkForUs/>
-        <Projects/>
         <Testimonials/>
       </div>
     );
