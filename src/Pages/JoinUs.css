@@ -4,7 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   background:
-  radial-gradient(circle at 75vw calc(100vh - 15vw), #FFB9CD,
+  radial-gradient(circle at 77vw calc(100vh - 10vw), #FFB9CD,
     #FFB9CD 30vw, transparent 30vw);
 }
 
@@ -13,7 +13,7 @@
   display: flex;
   align-self: flex-end;
   width: 100vw;
-  font-size: calc(10px + 4vw + 1.3vh);
+  font-size: calc(10px + 6vw + 1.3vh);
   color: #40BFB4;
   font-weight: 1000;
   letter-spacing: 0.3vw;
