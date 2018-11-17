@@ -1,5 +1,11 @@
 
 /* Start of menu CSS */
+.selectedMenu{
+  color:#6E6E6E;
+}
+.unselectedMenu{
+  color:#787878;
+}
 .sidebarHidden{
   display: none;
 }
@@ -25,7 +31,7 @@
 }
 
 #menuWrapper{
-  width: 80vw;
+  width: 90vw;
   /* height: 20vh; */
   align-self: flex-start;
   align-items: center;

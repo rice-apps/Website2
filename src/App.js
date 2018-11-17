@@ -84,15 +84,18 @@ class App extends Component {
             <ScrollIntoView selector="#aboutUs">
               <div class={sidebar_menu_classes}>MISSION</div>
             </ScrollIntoView>
+            <ScrollIntoView selector="#testimonials">
+              <div class={sidebar_menu_classes}>TESTIMONIALS</div>
+            </ScrollIntoView>
             <ScrollIntoView selector="#projects">
               <div class={sidebar_menu_classes}>PROJECTS</div>
             </ScrollIntoView>
             <ScrollIntoView selector="#contactUs">
               <div class={sidebar_menu_classes}>CONTACT US</div>
             </ScrollIntoView>
-            <ScrollIntoView selector="#joinUs">
+            {/*<ScrollIntoView selector="#joinUs">
               <div class={sidebar_menu_classes}>JOIN US</div>
-            </ScrollIntoView>
+    </ScrollIntoView>*/}
             {/*</div>*/}
           </div>
         </div>
@@ -102,6 +105,7 @@ class App extends Component {
           </div>
           <div id="aboutUs"><AboutUs/></div>  
           <div id="projects"><Projects/></div>  
+          <div id="testimonials"><Testimonials/></div>
           <div id="contactUs"><JoinUs/></div>  
           <div id="joinUs"><WorkForUs/></div> 
           {/*<div id="testimonials"><Testimonials/></div>  */}
