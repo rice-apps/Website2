@@ -11,7 +11,8 @@ export default class LandingPage extends Component {
         <div id = "beakspeak">
           <div className = "projectTitle">Beakspeak</div>
           <div className = "circle">
-            <div className = "projectText">Anonymous social media platform exclusively for the Rice community</div>
+            <div className = "projectText">
+            Anonymous social media platform exclusively for the Rice community</div>
           </div>
         </div>
         <div id = "riceelections">
