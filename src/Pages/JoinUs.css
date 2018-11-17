@@ -24,6 +24,7 @@
 #ContactUsText{
   padding-top: 2vh;
   margin-left: 7vw;
+  margin-top: -2.5vh;
   display: flex;
   align-self: flex-start;
   font-weight: bold;
@@ -31,4 +32,5 @@
   color: gray;
   font-size: calc(5px + 1.3vw + 0.5vh);
   font-family: 'HKGrotesk-Bold';
+  margin-bottom: -50vh;
 }
