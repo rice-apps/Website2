@@ -1,6 +1,8 @@
 .projectsPageWrapper {
   height: 100vh;
-  background: white;
+  background:
+  radial-gradient(circle at 5vw 0, #FFB9CD,
+    #FFB9CD 40vw, transparent 40vw);
 }
 
 .projectTitle {
