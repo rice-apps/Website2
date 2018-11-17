@@ -2,18 +2,14 @@
   height:100vh;
   flex-direction: column;
   align-items: center;
-  
-}
-.grayCircle{
-  height: 50vh;
-  background: white;
-  align-items: center;
+    align-items: center;
   justify-content: center;
   display: flex;
   background:
   radial-gradient(circle at center 15vw, #A9A9A9,
     #A9A9A9 6vw, transparent 6vw);
 }
+
 .quote{
   width: 50vw;
   color: #969696;
