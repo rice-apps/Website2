@@ -15,13 +15,13 @@
   width: 100vw;
   height: 15vh;
   position: fixed;
-  padding-top: 5vh;
+  padding-top: 2.75vh;
 }
 #menuParentClose{
   width: 100vw;
   height: 15vh;
   position: fixed;
-  padding-top: 5vh;
+  padding-top: 2.75vh;
 }
 
 #menuWrapper{
@@ -33,6 +33,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 2.25vw;
+  padding-left: 2vw;
 }
 
 button{
