@@ -1,0 +1,34 @@
+#content-WorkForUs{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background:
+  radial-gradient(circle at 20vw 90vh, #40BFB4, #40BFB4 35vw, transparent 35vw),
+  radial-gradient(circle at 77vw -10vw, #FFB9CD,
+    #FFB9CD 30vw, transparent 30vw);
+}
+
+#JoinUsTitle{
+  margin-left: 7vw;
+  display: flex;
+  align-self: flex-start;
+  width: 100vw;
+  font-size: 7vw;
+  color: #FFB9CD;
+  font-weight: 1000;
+  letter-spacing: 0.3vw;
+  font-family: 'Questrial', sans-serif;
+}
+
+#JoinUsText{
+  padding-top: 2vh;
+  margin-left: 7vw;
+  display: flex;
+  align-self: flex-end;
+  font-weight: bold;
+  letter-spacing: 0.12vw;
+  color: white;
+  font-size: 1.7vw;
+  font-family: 'Questrial', sans-serif;
+}

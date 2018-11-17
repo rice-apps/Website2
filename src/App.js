@@ -8,7 +8,8 @@ import AboutUs from './Pages/AboutUs.js';
 import './App.css';
 import './hamburgers.css';
 import './styles.css'
-//import ScrollIntoView from 'react-scroll-into-view';
+import ScrollIntoView from 'react-scroll-into-view';
+
 
 class App extends Component {
   constructor(props) {
@@ -79,24 +80,37 @@ class App extends Component {
             </button>
 
             {/*<div id="sidebar" class={sidebar_menu_classes}>*/}
-            
-            <div class={sidebar_menu_classes}>HOME</div >
-            <div class={sidebar_menu_classes}>Mission</div>
-            <div class={sidebar_menu_classes}>Projects</div>
-            <div class={sidebar_menu_classes}>Contact Us</div>
-            <div class={sidebar_menu_classes}>Join Us</div>
+            <ScrollIntoView selector="#home">
+              <div class={sidebar_menu_classes}>HOME</div >
+            </ScrollIntoView>
+            <ScrollIntoView selector="#aboutUs">
+              <div class={sidebar_menu_classes}>MISSION</div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#testimonials">
+              <div class={sidebar_menu_classes}>TESTIMONIALS</div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#projects">
+              <div class={sidebar_menu_classes}>PROJECTS</div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#contactUs">
+              <div class={sidebar_menu_classes}>CONTACT US</div>
+            </ScrollIntoView>
+            {/*<ScrollIntoView selector="#joinUs">
+              <div class={sidebar_menu_classes}>JOIN US</div>
+    </ScrollIntoView>*/}
             {/*</div>*/}
           </div>
         </div>
         <div onClick={() => this.closeSidebar()}>
           <div id="home">
             <LandingPage />
-            <AboutUs/>
-            <JoinUs/>
-            <Projects/>
-            <Testimonials/>
-            <WorkForUs/>
           </div>
+          <div id="aboutUs"><AboutUs/></div>  
+          <div id="projects"><Projects/></div>  
+          <div id="testimonials"><Testimonials/></div>
+          <div id="contactUs"><JoinUs/></div>  
+          <div id="joinUs"><WorkForUs/></div> 
+          {/*<div id="testimonials"><Testimonials/></div>  */}
         </div>
       </div>
     );

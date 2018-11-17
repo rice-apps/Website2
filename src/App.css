@@ -1,5 +1,6 @@
 
 /* Start of menu CSS */
+
 .sidebarHidden{
   display: none;
 }
@@ -7,12 +8,12 @@
   /* display: block; */
   display: flex;
   flex-direction: row;
-  color:#787878;
+  color:#D2D2D2;
   font-family: 'HKGrotesk-Bold';
 }
 
 #menuParentOpen{
-  background:#F2F2F2;
+  background:white;
   width: 100vw;
   height: 15vh;
   position: fixed;
@@ -26,7 +27,7 @@
 }
 
 #menuWrapper{
-  width: 80vw;
+  width: 90vw;
   /* height: 20vh; */
   align-self: flex-start;
   align-items: center;
