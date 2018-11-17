@@ -1,0 +1,39 @@
+.projectsPageWrapper {
+  height: 100vh;
+  background: white;
+}
+
+.projectTitle {
+  color: #008F82;
+  font-size: 5vh;
+  font-weight: bold;
+  position: absolute;
+  z-index: 2;
+}
+
+.projectText {
+  color: white;
+  font-size: 3vh;
+  width: 15vw;
+  text-align: center;
+}
+
+.circle {
+  background: grey;
+  border-radius: 50%;
+  height: 35vh;
+  width: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+}
+
+#beakspeak {
+  margin-top: 10vh;
+  margin-left: 7vw;
+  height: 35vh;
+  width: 35vh;
+  border-style: dotted;
+}
