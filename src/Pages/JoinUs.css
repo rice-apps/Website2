@@ -1,9 +1,11 @@
-#content{
+#content-JoinUs{
   height: 100vh;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #F2F2F2;
+  background:
+  radial-gradient(circle at 75vw calc(100vh - 15vw), #FFB9CD,
+    #FFB9CD 30vw, transparent 30vw);
 }
 
 #ContactUsTitle{
@@ -11,9 +13,9 @@
   display: flex;
   align-self: flex-end;
   width: 100vw;
-  font-size: 5vw;
+  font-size: 7vw;
   color: #40BFB4;
-  font-weight: bold;
+  font-weight: 1000;
   letter-spacing: 0.3vw;
   font-family: 'Questrial', sans-serif;
 }

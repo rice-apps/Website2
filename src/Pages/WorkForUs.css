@@ -3,7 +3,10 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background: radial-gradient(circle at 20vw 90vh, #40BFB4, #40BFB4 37%, white 37% ,white);
+  background:
+  radial-gradient(circle at 20vw 90vh, #40BFB4, #40BFB4 37vw, transparent 37vw),
+  radial-gradient(circle at 75vw -15vw, #FFB9CD,
+    #FFB9CD 30vw, transparent 30vw);
 }
 
 #JoinUsTitle{
