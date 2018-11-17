@@ -18,7 +18,7 @@
   color: #40BFB4;
   font-weight: 1000;
   letter-spacing: 0.3vw;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'HKGrotesk-Bold';
 }
 
 #ContactUsText{
@@ -30,5 +30,5 @@
   letter-spacing: 0.12vw;
   color: gray;
   font-size: calc(5px + 1.3vw + 0.5vh);
-  font-family: 'Questrial', sans-serif;
+  font-family: 'HKGrotesk-Bold';
 }
