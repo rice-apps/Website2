@@ -9,26 +9,26 @@ export default class LandingPage extends Component {
     <div>
     <div className = "projectsPageWrapper">
         <div id = "beakspeak">
-          <div className = "projectTitle">Beakspeak</div>
+          <div id = "BsTitle"><h1>Beakspeak</h1></div>
           <div className = "circle">
             <div className = "projectText">
             Anonymous social media platform exclusively for the Rice community</div>
           </div>
         </div>
         <div id = "riceelections">
-          <div className = "projectTitle">Rice Elections</div>
+          <div id = "RETitle"><h1>Rice Elections</h1></div>
           <div className = "circle">
             <div className = "projectText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
           </div>
         </div>
         <div id = "coffeehouse">
-          <div className = "projectTitle">Coffeehouse Scheduler</div>
+          <div id = "ChSTitle"><h1>Coffeehouse Scheduler</h1></div>
           <div className = "circle">
             <div className = "projectText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
           </div>
         </div>
         <div id = "ricebikes">
-          <div className = "projectTitle">Rice Bikes</div>
+          <div id = "RBTitle"><h1>Rice Bikes</h1></div>
           <div className = "circle">
             <div className = "projectText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
           </div>

@@ -3,12 +3,10 @@
   background: white;
 }
 
-.projectTitle {
+.projectsPageWrapper h1 {
   color: #008F82;
   font-size: 5vh;
   font-weight: bold;
-  position: absolute;
-  z-index: 2;
 }
 
 .projectText {
@@ -49,12 +47,27 @@
   position: absolute;
 }
 
+#BsTitle {
+  margin-top: 25vh;
+  margin-left: 10vw;
+  position: absolute;
+  z-index: 2;
+}
+
 #riceelections {
   margin-top: 7vh;
   margin-left: 55vw;
   height: 35vh;
-  width: 35vh;
+  width: 40vh;
   position: absolute;
+}
+
+#RETitle {
+  margin-top: 0vh;
+  margin-left: 5vw;
+  width: 20vw;
+  position: absolute;
+  z-index: 2;
 }
 
 #coffeehouse {
@@ -62,7 +75,16 @@
   margin-left: 30vw;
   height: 35vh;
   width: 35vh;
+  text-align: right;
   position: absolute;
+}
+
+#ChSTitle {
+  margin-top: 25vh;
+  margin-left: -5vw;
+  width: 15vw;
+  position: absolute;
+  z-index: 2;
 }
 
 #ricebikes {
@@ -71,4 +93,11 @@
   height: 35vh;
   width: 35vh;
   position: absolute;
+}
+
+#RBTitle {
+  margin-top: 0vh;
+  margin-left: 0vw;
+  position: absolute;
+  z-index: 2;
 }
