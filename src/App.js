@@ -12,106 +12,15 @@ import ScrollIntoView from 'react-scroll-into-view';
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      clicked: false,
-      sidebarOpen: true
-    };
-    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
-  }
-  handleClick() {
-    //call this function when the hamburger menu is clicked
-    //if the menu is open, close it
-    //if it's closed, open it
-    this.setState({ clicked: !this.state.clicked })
-  }
-  onSetSidebarOpen(open) {
-    this.setState({ sidebarOpen: open });
-  }
-
-  closeSidebar() {
-    //Call this function whenever user clicks outside of the sidebar menu
-    if (this.state.clicked) {
-      //But only sets clicked to False when clicked is True
-      this.setState({ clicked: false })
-    }
-  }
-  //end of sidebar-menu
-
   render() {
-
-    //start sidebar-menu
-    //if statemenets to display and hide sidebar-menu
-    var button_classes
-    var sidebar_menu_classes
-    var menu_div_class
-    var menu_parent_id
-
-    if (this.state.clicked == true) {
-      //if sidebar is open
-      button_classes = "hamburger hamburger--collapse is-active"
-      sidebar_menu_classes = "sidebar sidebarUnhidden"
-      menu_div_class = ""
-      menu_parent_id = "menuParentOpen"
-    }
-    else {
-      //if sidebar is closed
-      button_classes = "hamburger hamburger--collapse "
-      sidebar_menu_classes = "sidebar sidebarHidden"
-      menu_div_class = ""
-      menu_parent_id = "menuParentClose"
-    }
-    const menuLinkStyle = {
-      color: '#002FA4',
-      marginTop: '4vh'
-    }
-    //end of sidebar-menu
-
     return (
-      <div >
-        <div id={menu_parent_id}>
-          <div id="menuWrapper" style={{flex: 1}}>
-            <button onClick={() => this.handleClick()}
-              id="hamburger" class={button_classes} type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-
-            {/*<div id="sidebar" class={sidebar_menu_classes}>*/}
-            <ScrollIntoView selector="#home">
-              <div class={sidebar_menu_classes}>HOME</div >
-            </ScrollIntoView>
-            <ScrollIntoView selector="#aboutUs">
-              <div class={sidebar_menu_classes}>MISSION</div>
-            </ScrollIntoView>
-            <ScrollIntoView selector="#testimonials">
-              <div class={sidebar_menu_classes}>TESTIMONIALS</div>
-            </ScrollIntoView>
-            <ScrollIntoView selector="#projects">
-              <div class={sidebar_menu_classes}>PROJECTS</div>
-            </ScrollIntoView>
-            <ScrollIntoView selector="#contactUs">
-              <div class={sidebar_menu_classes}>CONTACT US</div>
-            </ScrollIntoView>
-            {/*<ScrollIntoView selector="#joinUs">
-              <div class={sidebar_menu_classes}>JOIN US</div>
-    </ScrollIntoView>*/}
-            {/*</div>*/}
-          </div>
-        </div>
-        <div onClick={() => this.closeSidebar()}>
-          <div id="home">
-            <LandingPage />
-          </div>
-          <div id="aboutUs"><AboutUs/></div>  
-          <div id="projects"><Projects/></div>  
-          <div id="testimonials"><Testimonials/></div>
-          <div id="contactUs"><JoinUs/></div>  
-          <div id="joinUs"><WorkForUs/></div> 
-          {/*<div id="testimonials"><Testimonials/></div>  */}
-        </div>
+      <div>
+        <LandingPage/>
+        <AboutUs/>
+        <Projects/>
+        <JoinUs/>
+        <WorkForUs/>
+        <Testimonials/>
       </div>
     );
   }

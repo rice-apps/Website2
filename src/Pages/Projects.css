@@ -1,0 +1,76 @@
+.projectsPageWrapper {
+  height: 100vh;
+  background:
+  radial-gradient(circle at 5vw 0, #FFB9CD,
+    #FFB9CD 40vw, transparent 40vw);
+}
+
+.projectTitle {
+  color: #008F82;
+  font-size: 5vh;
+  font-weight: bold;
+  position: absolute;
+  z-index: 2;
+}
+
+.projectText {
+  color: white;
+  font-size: 3vh;
+  width: 15vw;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.circle {
+  background: #F1F1F1;
+  border-radius: 50%;
+  height: 40vh;
+  width: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  transition: background 0.5s ease-in-out;
+}
+
+.circle:hover {
+  background: rgba(64, 191, 180, 0.8);
+}
+
+.circle:hover .projectText{
+  opacity: 1;
+}
+
+#beakspeak {
+  margin-top: 15vh;
+  margin-left: 10vw;
+  height: 40vh;
+  width: 40vh;
+  position: absolute;
+}
+
+#riceelections {
+  margin-top: 7vh;
+  margin-left: 55vw;
+  height: 35vh;
+  width: 35vh;
+  position: absolute;
+}
+
+#coffeehouse {
+  margin-top: 50vh;
+  margin-left: 30vw;
+  height: 35vh;
+  width: 35vh;
+  position: absolute;
+}
+
+#ricebikes {
+  margin-top: 45vh;
+  margin-left: 75vw;
+  height: 35vh;
+  width: 35vh;
+  position: absolute;
+}

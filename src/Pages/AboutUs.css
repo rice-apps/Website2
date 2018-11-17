@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: center;
   background:
-  radial-gradient(circle at 20vw 90vh, #FFB9CD,
-    #FFB9CD 25vw, transparent 25vw);
+  radial-gradient(circle at 5vw 100vh, #FFB9CD,
+    #FFB9CD 40vw, transparent 40vw);
 }
 
 #AboutUsParagraph {
