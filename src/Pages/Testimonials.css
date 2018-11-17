@@ -11,6 +11,17 @@
 }
 
 .quote{
-  width: 50vw;
+  width: 75vw;
   color: #969696;
+  font-size: 2vw;
+}
+#shryans{
+  color: #40BFB4;
+  font-weight: bold;
+  font-size: 3vw;
+}
+#teamLead{
+  color: #969696;
+  font-style: italic;
+  font-size: 1.5vw;
 }
