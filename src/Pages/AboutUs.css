@@ -1,9 +1,12 @@
 .AboutUsWrapper {
   height:100vh;
-  background: #F2F2F2;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  background:
+  radial-gradient(circle at 20vw 90vh, #FFB9CD,
+    #FFB9CD 25vw, transparent 25vw);
 }
 
 #AboutUsParagraph {

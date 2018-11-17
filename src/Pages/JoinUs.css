@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  background-color: white;
   background:
   radial-gradient(circle at 77vw calc(100vh - 10vw), #FFB9CD,
     #FFB9CD 30vw, transparent 30vw);

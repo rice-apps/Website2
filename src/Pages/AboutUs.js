@@ -5,7 +5,6 @@ export default class AboutUs extends Component {
     render() {
         return(
           <div className="AboutUsWrapper">
-
               <div id="AboutUsParagraph">
                   <style>
                       @import url('https://fonts.googleapis.com/css?family=Questrial');
