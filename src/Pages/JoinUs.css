@@ -6,7 +6,7 @@
   background-color: #F2F2F2;
 }
 
-#JoinUsTitle{
+#ContactUsTitle{
   margin-left: 7vw;
   display: flex;
   align-self: flex-end;
@@ -18,7 +18,7 @@
   font-family: 'Questrial', sans-serif;
 }
 
-#JoinUsText{
+#ContactUsText{
   padding-top: 2vh;
   margin-left: 7vw;
   display: flex;
