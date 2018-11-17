@@ -1,11 +1,6 @@
 
 /* Start of menu CSS */
-.selectedMenu{
-  color:#6E6E6E;
-}
-.unselectedMenu{
-  color:#787878;
-}
+
 .sidebarHidden{
   display: none;
 }
@@ -13,7 +8,7 @@
   /* display: block; */
   display: flex;
   flex-direction: row;
-  color:#787878;
+  color:#D2D2D2;
 }
 
 #menuParentOpen{
