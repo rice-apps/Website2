@@ -4,8 +4,8 @@
   align-items: center;
   flex-wrap: wrap;
   background:
-  radial-gradient(circle at 20vw 90vh, #40BFB4, #40BFB4 37vw, transparent 37vw),
-  radial-gradient(circle at 75vw -15vw, #FFB9CD,
+  radial-gradient(circle at 20vw 90vh, #40BFB4, #40BFB4 35vw, transparent 35vw),
+  radial-gradient(circle at 77vw -10vw, #FFB9CD,
     #FFB9CD 30vw, transparent 30vw);
 }
 
