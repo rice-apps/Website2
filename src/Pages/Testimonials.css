@@ -6,9 +6,6 @@
     align-items: center;
   justify-content: center;
   display: flex;
-  background:
-  /* radial-gradient(circle at center 15vh, #A9A9A9,
-    #A9A9A9 calc(6vh + 2vw), transparent calc(6vh + 2vw)); */
 }
 
 .TestimonialParagraph {
