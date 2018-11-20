@@ -35,6 +35,7 @@
 button{
   outline:none;
   position: fixed;
+  z-index: 100;
 }
 #hamburger {
   z-index: 100;
