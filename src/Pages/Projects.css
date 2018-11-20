@@ -7,13 +7,13 @@
 
 .projectsPageWrapper h1 {
   color: #008F82;
-  font-size: 5vh;
+  font-size: calc(5px + 1.2vh + 1.6vw);
   font-weight: bold;
 }
 
 .projectText {
   color: white;
-  font-size: 3vh;
+  font-size: calc(1px + 0.6vh + 1.3vw);
   width: 15vw;
   text-align: center;
   opacity: 0;
@@ -23,8 +23,8 @@
 .circle {
   background: #F1F1F1;
   border-radius: 50%;
-  height: 40vh;
-  width: 40vh;
+  height: calc(16px + 7vh + 14vw);
+  width: calc(16px + 7vh + 14vw);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,8 +50,8 @@
 }
 
 #BsTitle {
-  margin-top: 25vh;
-  margin-left: 10vw;
+  margin-top: calc(9px + 4vh + 7.5vw);
+  margin-left: calc(9px + 2.5vh + 4vw);
   position: absolute;
   z-index: 2;
 }
@@ -66,8 +66,8 @@
 
 #RETitle {
   margin-top: 0vh;
-  margin-left: 5vw;
-  width: 20vw;
+  margin-left: calc(7px + 1vh + 2vw);
+  width: calc(6px + 8vh + 14vw);
   position: absolute;
   z-index: 2;
 }
@@ -82,7 +82,7 @@
 }
 
 #ChSTitle {
-  margin-top: 25vh;
+  margin-top: calc(4px + 4vh + 7.5vw);
   margin-left: -5vw;
   width: 15vw;
   position: absolute;
