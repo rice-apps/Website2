@@ -18,6 +18,7 @@
   height: 15vh;
   position: fixed;
   padding-top: 3.8vh;
+  z-index: 100;
 }
 #menuParentClose{
   width: 100vw;
@@ -42,8 +43,4 @@ button{
   outline:none;
 }
 
-#menubar{
-  position: absolute;
-  z-index: 100;
-}
 /* End of menu CSS */
