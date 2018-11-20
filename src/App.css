@@ -26,6 +26,7 @@
   transform: translateY(-10vh);
   position: fixed;
   z-index: 99;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 #menu.open {
