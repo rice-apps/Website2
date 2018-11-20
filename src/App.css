@@ -15,10 +15,22 @@
 #menuParentOpen{
   background:white;
   width: 100vw;
-  height: 8vh;
+  height: 9vh;
+  /* height: 8vh; */
   position: fixed;
-  padding-top: 3vh;
+  padding-top: 1vh;
   z-index: 100;
+}
+#menuParentOpen:after{
+  /* This is the shadow for the menu! just comment it out if you don't like it */
+  content:"";
+  position:absolute;
+  width:100%;
+  bottom:1px;
+  z-index:-1;
+  /* transform:scale(.95); */
+  box-shadow: 0px 0px 0px 0.5px #e6e6e6; 
+  /* box-shadow: 0px 0px 2px 5px #000000; */
 }
 #menuParentClose{
   width: 100vw;
@@ -38,6 +50,7 @@
   font-size: 2vw;
   padding-left: 2vw;
 }
+
 
 button{
   outline:none;
