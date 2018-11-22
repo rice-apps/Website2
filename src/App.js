@@ -34,12 +34,9 @@ class App extends Component {
   //end of sidebar-menu
   render() {
     //start sidebar-menu
-    //if statemenets to display and hide sidebar-menu
-
     let menuStatus = this.state.clicked ? "open" : "";
     let button_classes = this.state.clicked
     ? "hamburger hamburger--collapse is-active" : "hamburger hamburger--collapse ";
-
     //end of sidebar-menu
     return (
       <div>

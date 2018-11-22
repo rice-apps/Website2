@@ -11,7 +11,13 @@
   font-family: 'HKGrotesk-Bold';
 }
 
-
+/* HERE'S HOW THE MENU WORKS: */
+/* The div is always there, and there's no transformation when the menu is open. */
+#menu.open {
+  transform: none;
+}
+/* But when the menu is closed, the div is still /displayed/ */
+/* It's just that it's translated 10vh off of the screen (which is the height of the menu div) */
 #menu {
   width: 100vw;
   /* height: 20vh; */
@@ -21,16 +27,12 @@
   flex-direction: row;
   display: flex;
   justify-content: space-between;
-  font-size: 2vw;
-  transition: transform 0.5s ease-out;
-  transform: translateY(-10vh);
+  font-size: 1.8vw;
+  transition: transform 0.2s ease-out;
+  transform: translateY(-10vh); /*This is what hides the menu when it's closed*/
   position: fixed;
   z-index: 99;
   border-bottom: 1px solid #e6e6e6;
-}
-
-#menu.open {
-  transform: none;
 }
 
 button{
