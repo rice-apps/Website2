@@ -1,5 +1,5 @@
 #content-WorkForUs{
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -7,6 +7,23 @@
   radial-gradient(circle at 20vw 90vh, #40BFB4, #40BFB4 35vw, transparent 35vw),
   radial-gradient(circle at 77vw -10vw, #FFB9CD,
     #FFB9CD 30vw, transparent 30vw);
+}
+#addresses{
+  display: inline-block;
+  align-self: flex-end;
+  justify-content: flex-end;
+  width: 100vw;
+  color: #D2D2D2;
+  font-family: 'HKGrotesk-Bold';
+  padding-bottom: 2vw;
+  padding-left: 2vw;
+
+  
+  /* flex-wrap: nowrap; */
+  /* overflow: auto; */
+}
+.info{
+  /* width: 100vw; */
 }
 
 #JoinUsTitle{

@@ -61,7 +61,7 @@ class App extends Component {
           <ScrollIntoView selector="#testimonials">
             <div class="sidebarText">TESTIMONIALS</div>
           </ScrollIntoView>
-          <ScrollIntoView selector="#contactUs">
+          <ScrollIntoView selector="#joinUs">
             <div class="sidebarText">CONTACT US</div>
           </ScrollIntoView>
         </div>
