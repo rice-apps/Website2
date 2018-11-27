@@ -41,6 +41,17 @@
   opacity: 1;
 }
 
+.circle .airbnb {
+  position: absolute;
+  height: calc(14px + 7vh + 14vw);
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
+}
+
+.circle:hover .airbnb {
+  opacity: 0;
+}
+
 #beakspeak {
   margin-top: 15vh;
   margin-left: 10vw;
