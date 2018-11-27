@@ -12,3 +12,8 @@
     font-family: 'HKGrotesk-Regular';
     src: url('./fonts/HKGrotesk-Regular.otf');
 }
+
+@font-face {
+    font-family: 'HKGrotesk-Light';
+    src: url('./fonts/HKGrotesk-Light.otf')
+}

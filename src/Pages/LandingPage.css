@@ -6,8 +6,9 @@
   animation-fill-mode: forwards;
   opacity: 0;
   font-size: 7.5vw;
-  font-family: 'HKGrotesk-Bold';
+  font-family: 'HKGrotesk-Light';
   letter-spacing: 0.2vw;
+  color: gray;
 }
 
 @keyframes appear {

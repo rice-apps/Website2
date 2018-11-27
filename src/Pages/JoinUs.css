@@ -19,6 +19,11 @@
   font-weight: 1000;
   letter-spacing: 0.3vw;
   font-family: 'HKGrotesk-Bold';
+  cursor: pointer;
+}
+
+#ContactUsTitle:hover {
+  text-decoration: underline;
 }
 
 #ContactUsText{

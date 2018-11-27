@@ -50,7 +50,7 @@ class App extends Component {
 
         <div id="menu" class={menuStatus}>
           <ScrollIntoView selector="#home">
-            <div class="sidebarText">HOME</div>
+            <div class="sidebarTextHome">HOME</div>
           </ScrollIntoView>
           <ScrollIntoView selector="#aboutUs">
             <div class="sidebarText">MISSION</div>
@@ -62,7 +62,7 @@ class App extends Component {
             <div class="sidebarText">TESTIMONIALS</div>
           </ScrollIntoView>
           <ScrollIntoView selector="#contactUs">
-            <div class="sidebarText">CONTACT US</div>
+            <div class="sidebarTextContact">CONTACT US</div>
           </ScrollIntoView>
         </div>
         <div onClick={() => this.closeSidebar()}>
