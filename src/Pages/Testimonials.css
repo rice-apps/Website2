@@ -3,7 +3,6 @@
   height:100vh;
   flex-direction: column;
   align-items: center;
-    align-items: center;
   justify-content: center;
   display: flex;
 }
@@ -13,7 +12,7 @@
   width: 80vw;
   height: 16vw;
   font-family: 'Questrial', sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   font-size: calc(3px + 1.5vw + 0.8vh);
   flex-direction: column;
   align-items: center;
@@ -21,47 +20,46 @@
   letter-spacing: 0.15vw;
   color: #787878;
   margin-top: 4.5vh;
-  text-align: center;
+  text-align: left;
 }
 .TestimonialParagraph em {
   font-style: normal;
   color: #40BFB4;
 }
 
-.quote{
+/* .quote{
   width: 75vw;
   color: #969696;
   font-size: 2vw;
-}
+} */
 #shryans{
   position: relative;
   color: #40BFB4;
   font-weight: bold;
-  font-size: 3vw;
-  margin-top: 7vh;
+  font-size: 1.5vw;
+  margin-top: 1vh;
   font-family: 'HKGrotesk-Bold-Legacy'
 }
 #teamLead{
   position: relative;
   color: #969696;
-  font-style: italic;
-  font-size: 1.5vw;
-  margin-top: 4vh;
+  font-style: normal;
+  font-size: 1vw;
+  margin-top: 1.5vh;
 }
 
-#test-circle{
+/*#test-circle{
   position: relative;
   border-radius: 50%;
   background-color: #969696;
   width: 20vh;
   height: 20vh;
   margin-top: 5vh;
-}
+}*/
 
 .nameWrapper{
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8vh;
 }

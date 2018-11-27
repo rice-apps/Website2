@@ -3,12 +3,45 @@
 
 .sidebarText{
   /* display: block; */
-  padding-left: 7vw;
-  padding-right: 3vw;
+  padding-left: 6vw;
+  padding-right: 1vw;
   display: flex;
   flex-direction: row;
   color:#D2D2D2;
   font-family: 'HKGrotesk-Bold';
+  cursor: pointer;
+}
+
+.sidebarText:hover {
+  color: #6E6E6E;
+}
+
+.sidebarTextHome {
+  padding-left: 15vw;
+  padding-right: 2vw;
+  display: flex;
+  flex-direction: row;
+  color:#D2D2D2;
+  font-family: 'HKGrotesk-Bold';
+  cursor: pointer;
+}
+
+.sidebarTextHome:hover {
+  color: #6E6E6E;
+}
+
+.sidebarTextContact {
+  padding-left: 5vw;
+  padding-right: 1vw;
+  display: flex;
+  flex-direction: row;
+  color:#D2D2D2;
+  font-family: 'HKGrotesk-Bold';
+  cursor: pointer;
+}
+
+.sidebarTextContact:hover {
+  color: #6E6E6E;
 }
 
 /* HERE'S HOW THE MENU WORKS: */
@@ -26,7 +59,7 @@
   align-items: center;
   flex-direction: row;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   font-size: 1.8vw;
   transition: transform 0.2s ease-out;
   transform: translateY(-10vh); /*This is what hides the menu when it's closed*/
