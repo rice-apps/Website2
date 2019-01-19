@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './LandingPage.css';
 import ScrollIntoView from 'react-scroll-into-view';
 
+
 export default class LandingPage extends Component {
   constructor(props) {
     super(props);
@@ -9,10 +10,27 @@ export default class LandingPage extends Component {
       arrow: true,
     };
   }
+  let arrowHidden = false;
   hideArrow() {
-    this.setState({arrow: false})
+    console.log('hidden');
+    // if (this.state({arrow:true})){
+      this.setState({arrow: false})
+    // }
   }
+  componentDidMount(){
+    window.addEventListener("scroll", function(e){
+      if(window.scrollY > 105){
+        console.log("trigger");
+        this.hideArrow();
+      }
+      
+    });
+  }
+  
   render() {
+    if(window.scrollY>=45){
+      console.log("test");
+    }
     let arrow_classes = this.state.arrow
     ? "arrow-open" : "arrow-closed";
 
@@ -44,4 +62,11 @@ export default class LandingPage extends Component {
       </div>
     )
   }
+  // handleScroll(event) {
+  //   var heightBound = window.height * 0.8
+  //   if (heightBound > window.scrollY) {
+  //       // Probably you want to load new cards?
+  //       this.hideArrow;
+  //   } 
+  // }
 }
