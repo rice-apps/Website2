@@ -10,6 +10,14 @@
   letter-spacing: 0.2vw;
   color: gray;
 }
+.arrow-open{
+  display: flex;
+  justify-content: center;
+  /* display: inline-block; */
+  width: 50%;
+  margin: 0 auto;
+
+}
 .arrow-closed{
   visibility: hidden;
 }
