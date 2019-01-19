@@ -16,6 +16,12 @@
   /* display: inline-block; */
   width: 50%;
   margin: 0 auto;
+  
+  animation-name: appear;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 
 }
 .arrow-closed{
