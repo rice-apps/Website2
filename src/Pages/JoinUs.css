@@ -10,6 +10,7 @@
 }
 
 #ContactUsTitle{
+  margin-top: 20vh;
   margin-left: 7vw;
   display: flex;
   align-self: flex-end;

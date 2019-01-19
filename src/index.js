@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import './index.css';
 import App  from './App';
-import LandingPage from './Pages/LandingPage.js';
+import PartnerForm from './Pages/PartnerForm.js'
+import MemberForm from './Pages/MemberForm.js'
+
 
 import * as serviceWorker from './serviceWorker';
 
@@ -11,6 +13,8 @@ ReactDOM.render(
     <Router>
         <div>
             <Route exact path="/" component={App} />
+            <Route path="/workwithus" component={PartnerForm} />
+            <Route path="/joinus" component={MemberForm} />
         </div>
     </Router>
     , document.getElementById('root')
