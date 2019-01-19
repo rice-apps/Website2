@@ -6,8 +6,9 @@
     "animejs": "^2.2.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "2.1.1",
+    "react-scripts": "^2.1.3",
     "react-scroll-into-view": "^1.5.0",
+    "react-scroll-parallax": "^1.3.5",
     "surge": "^0.20.1"
   },
   "scripts": {

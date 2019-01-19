@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Parallax } from 'react-scroll-parallax';
 import './WhatWeDo.css';
 
 export default class WhatWeDo extends Component {
@@ -8,10 +9,13 @@ export default class WhatWeDo extends Component {
     return(
     <div>
     <div className = "whatWeDoPageWrapper">
-      <div class = "section parallax bg1">
-        <h1> What We Do and stuff </h1>
-      </div>
+    <Parallax offsetYMax={20} offsetYMin={-5}>
+      <div id = "treeBackground">
 
+          <h1> We build web apps that empower students and community partners. </h1>
+
+      </div>
+      </Parallax>
     </div>
     </div>
   )
