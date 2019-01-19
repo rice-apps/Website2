@@ -10,20 +10,17 @@ export default class LandingPage extends Component {
       arrow: true,
     };
   }
-  let arrowHidden = false;
+  // let arrowHidden = false;
   hideArrow() {
-    console.log('hidden');
-    // if (this.state({arrow:true})){
+    if(this.state.arrow){
       this.setState({arrow: false})
-    // }
+    }
   }
   componentDidMount(){
-    window.addEventListener("scroll", function(e){
-      if(window.scrollY > 105){
-        console.log("trigger");
+    window.addEventListener("scroll", (e)=>{
+      if(window.scrollY > 0.5*window.innerHeight){
         this.hideArrow();
       }
-      
     });
   }
   
@@ -52,7 +49,7 @@ export default class LandingPage extends Component {
           {/* onClick={()=> style="visibility: hidden"} */}
           <div id="arrow" class={arrow_classes} onClick={() => this.hideArrow()} >
             <ScrollIntoView selector="#aboutUs">
-              <p><i class="arrow down"></i></p>
+              <p><i class="arrow down" id = "arrow"></i></p>
               {/* <div class="sidebarText">MISSION</div> */}
             </ScrollIntoView>
           </div>

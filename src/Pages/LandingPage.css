@@ -23,9 +23,11 @@
   animation-fill-mode: forwards;
   opacity: 0;
 
+  height: 50px;
 }
 .arrow-closed{
   visibility: hidden;
+  height: 50px;
 }
 
 @keyframes appear {
