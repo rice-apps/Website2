@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@typeform/embed": "^0.6.1",
     "animejs": "^2.2.0",
     "react": "^16.6.0",
     "react-blink": "^1.0.3",
@@ -10,6 +11,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
     "react-scroll-into-view": "^1.5.0",
+    "react-typeform-embed": "^0.2.0",
     "react-scroll-parallax": "^1.3.5",
     "surge": "^0.20.1"
   },
