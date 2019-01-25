@@ -10,6 +10,29 @@
   letter-spacing: 0.2vw;
   color: gray;
 }
+.arrow-open{
+  display: flex;
+  justify-content: center;
+  /* display: inline-block; */
+  width: 50%;
+  margin: 0 auto;
+  
+  animation-name: appear;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  height: 50px;
+}
+.arrow-closed{
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  width: 50%;
+  margin: 0 auto;
+  height: 50px;
+}
 
 @keyframes appear {
     from {opacity: 0;}
@@ -68,4 +91,15 @@
 
 #social {
   padding-right: 4vw;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }

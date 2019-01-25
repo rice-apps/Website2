@@ -1,5 +1,6 @@
 #content-WorkForUs{
-  height: 100vh;
+
+  height: 120vh;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -41,7 +42,7 @@
 }
 
 #JoinUsText{
-  padding-top: 2vh;
+  padding-top: 28vh;
   margin-left: 7vw;
   display: flex;
   align-self: flex-end;
