@@ -15,6 +15,7 @@
     height: calc(16px + 7vh + 14vw);
     width: calc(16px + 7vh + 14vw);
     align-self: center;
+    margin-top: 2vh;
 }
 
 #project-name {
