@@ -1,0 +1,27 @@
+#logos {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-direction: column; */
+}
+#image {
+  height: 25vh;
+  width: 15%;
+  opacity: 0.7;
+}
+#text {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+  margin-top: 5%;
+  font-size: 2vw;
+  color: #787878;
+  font-family: 'Questrial', sans-serif;
+
+}
+#trash {
+  /* background-color: blue; */
+}
