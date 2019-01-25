@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Timeline from './Timeline.js';
 import './ProjectTemplate.css';
 import githubMark from '../images/GitHub-Mark-32px.png';
 
@@ -36,6 +37,7 @@ export default class ProjectTemplate extends Component {
             </ul>
           </div>
         </div>
+        <Timeline/>
       </div>
     )
   }
