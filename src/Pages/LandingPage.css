@@ -26,7 +26,11 @@
   height: 50px;
 }
 .arrow-closed{
+  display: flex;
+  justify-content: center;
   visibility: hidden;
+  width: 50%;
+  margin: 0 auto;
   height: 50px;
 }
 
