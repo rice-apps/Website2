@@ -6,6 +6,7 @@ import App  from './App';
 import PartnerForm from './Pages/PartnerForm.js'
 import MemberForm from './Pages/MemberForm.js'
 
+import ProjectTemplate from './Pages/ProjectTemplate.js';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -15,6 +16,7 @@ ReactDOM.render(
             <Route exact path="/" component={App} />
             <Route path="/workwithus" component={PartnerForm} />
             <Route path="/joinus" component={MemberForm} />
+            <Route path = "/project" component = {ProjectTemplate} />
         </div>
     </Router>
     , document.getElementById('root')
