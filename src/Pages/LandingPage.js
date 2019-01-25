@@ -48,7 +48,7 @@ export default class LandingPage extends Component {
           </div>
           {/* onClick={()=> style="visibility: hidden"} */}
           <div id="arrow" class={arrow_classes} onClick={() => this.hideArrow()} >
-            <ScrollIntoView selector="#aboutUs">
+            <ScrollIntoView selector="#whatWeDo">
               <p><i class="arrow down" id = "arrow"></i></p>
               {/* <div class="sidebarText">MISSION</div> */}
             </ScrollIntoView>
