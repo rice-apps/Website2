@@ -1,4 +1,4 @@
-.whatWeDoPageWrapper{
+/* .whatWeDoPageWrapper{
   height: 70vh;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -36,4 +36,33 @@
 
 .bg1::after{
   background-image: url('https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+} */
+
+.whatWeDoPageWrapper{
+  height: 70vh;
+  z-index: 1;
+  background: white;
+}
+
+.whatWeDoPageWrapper h1{
+  color: white;
+  font-weight: bold;
+  font-size: calc(5px + 1.3vh + 1.7vw);
+}
+
+#treeBackground {
+  height: 70vh;
+  background-image: url('https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: -99;
+
+  background-size: 100%;
 }
