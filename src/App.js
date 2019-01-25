@@ -37,7 +37,7 @@ class App extends Component {
   //end of sidebar-menu
   render() {
     //start sidebar-menu
-    let menuStatus = this.state.clicked ? "open" : "";
+    let menuStatus = this.state.clicked ? "open" : "closed";
     let button_classes = this.state.clicked
       ? "hamburger hamburger--collapse is-active" : "hamburger hamburger--collapse ";
     //end of sidebar-menu

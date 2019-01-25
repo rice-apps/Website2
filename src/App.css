@@ -49,6 +49,10 @@
 #menu.open {
   transform: none;
 }
+#menu.closed{
+  visibility: hidden;
+  
+}
 /* But when the menu is closed, the div is still /displayed/ */
 /* It's just that it's translated 10vh off of the screen (which is the height of the menu div) */
 #menu {
