@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import LandingPage from './Pages/LandingPage.js';
 import Testimonials from './Pages/Testimonials.js'
 import WorkForUs from './Pages/WorkForUs.js';
 import JoinUs from './Pages/JoinUs.js';
 import Projects from './Pages/Projects.js';
 import AboutUs from './Pages/AboutUs.js';
+import WhatWeDo from './Pages/WhatWeDo.js';
 import Partners from './Pages/Partners.js';
 import './App.css';
 import './hamburgers.css';
@@ -40,6 +42,7 @@ class App extends Component {
       ? "hamburger hamburger--collapse is-active" : "hamburger hamburger--collapse ";
     //end of sidebar-menu
     return (
+      <ParallaxProvider>
       <div>
         <button onClick={() => this.handleClick()}
           id="hamburger" class={button_classes} type="button">
@@ -70,6 +73,9 @@ class App extends Component {
           <div id="home">
             <LandingPage />
           </div>
+
+          <div id="whatWeDo"><WhatWeDo /></div>
+
           <div id="aboutUs"><AboutUs /></div>
           <div id="projects"><Projects /></div>
           <div id="partners"><Partners /></div>
@@ -79,6 +85,7 @@ class App extends Component {
           {/*<div id="testimonials"><Testimonials/></div>  */}
         </div>
       </div>
+      </ParallaxProvider>
     );
   }
 }
