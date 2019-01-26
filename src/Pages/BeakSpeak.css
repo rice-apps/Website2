@@ -1,0 +1,28 @@
+.AboutUsWrapper {
+    height:100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+    radial-gradient(circle at 5vw 100vh, #FFB9CD,
+      #FFB9CD 40vw, transparent 40vw);
+  
+    z-index: 1;
+  }
+  
+  #AboutUsParagraph {
+    width: 65vw;
+    height: 50vh;
+    font-family: 'HKGrotesk-Bold-Legacy';
+    font-weight: bold;
+    font-size: calc(5px + 2.3vw + 0.8vh);
+    line-height: 6.3vh;
+    letter-spacing: 0.08vw;
+    color: #787878;
+  }
+  #AboutUsParagraph em {
+    font-style: normal;
+    color: #40BFB4;
+  }
+  
