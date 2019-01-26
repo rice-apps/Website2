@@ -51,6 +51,7 @@ export default class ProjectTemplate extends Component {
               <h3>Name</h3>
               <a>GitHub Link</a>
             </td>
+
           </tr>
 
           <tr>
