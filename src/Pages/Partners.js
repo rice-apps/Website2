@@ -11,12 +11,18 @@ export default class Partners extends Component {
     return(
     <div id = "trash">
     <Fade duration = {3000}>
-    <div id="text"> Our Partners</div>
+
+    <div id="text"> We've worked with...</div>
+    <div id="logosWrapper">
     <div id="logos">
-    <img id= "image" src= {FOTW} />
-    <img id = "image" src = {BakerRipley} />
-    <img id ="image" src={CsClub} />
-    <img id ="image" src={Coffeehouse} />
+            <img id= "image" src= {FOTW} />
+            <img id = "image" src = {BakerRipley} />
+            <img id ="image" src={CsClub} />
+            <img id ="image" src={Coffeehouse} />
+            <img id ="image" src={Coffeehouse} />
+            <img id ="image" src={Coffeehouse} />
+
+    </div>
     </div>
     </Fade>
     </div>
