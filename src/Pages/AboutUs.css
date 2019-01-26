@@ -6,7 +6,7 @@
   justify-content: center;
   background:
   radial-gradient(circle at 5vw 100vh, #FFB9CD,
-    #FFB9CD 40vw, transparent 40vw);
+    #FFB9CD 35vw, transparent 35vw);
 
   z-index: 1;
 }

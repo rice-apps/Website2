@@ -9,7 +9,7 @@
 }
 #image {
   height: 25vh;
-  width: 15%;
+  width: 25vh;
   opacity: 0.7;
 }
 #text {
@@ -24,4 +24,5 @@
 }
 #trash {
   /* background-color: blue; */
+  height: 100vh;
 }
