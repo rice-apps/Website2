@@ -9,7 +9,7 @@ body{
     justify-content: center;
     background:
     radial-gradient(circle at 5vw 100vh, #FFB9CD,
-      #FFB9CD 40vw, transparent 40vw);
+      #FFB9CD 40vw);
   
     z-index: 1;
   }
@@ -28,4 +28,122 @@ body{
     font-style: normal;
     color: #40BFB4;
   }
+
+  .projectsPageWrapper {
+    height: 100vh;
+    background:
+    radial-gradient(circle at 5vw 0, #FFB9CD,
+      #FFB9CD 40vw, transparent 40vw);
+  }
+  
+  .projectsPageWrapper h1 {
+    color: #008F82;
+    font-size: calc(5px + 1.2vh + 1.6vw);
+    font-weight: bold;
+  }
+  
+  .projectText {
+    color: white;
+    font-size: calc(1px + 0.6vh + 1.3vw);
+    width: 15vw;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .circle {
+    background: #F1F1F1;
+    border-radius: 50%;
+    height: calc(16px + 7vh + 14vw);
+    width: calc(16px + 7vh + 14vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .circle:hover {
+    background: rgba(64, 191, 180, 0.8);
+  }
+  
+  .circle:hover .projectText{
+    opacity: 1;
+  }
+  
+  .circle .airbnb {
+    position: absolute;
+    height: calc(14px + 7vh + 14vw);
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .circle:hover .airbnb {
+    opacity: 0;
+  }
+  
+  #beakspeak {
+    margin-top: 15vh;
+    margin-left: 10vw;
+    height: 40vh;
+    width: 40vh;
+    position: absolute;
+  }
+  
+  #BsTitle {
+    margin-top: calc(9px + 4vh + 7.5vw);
+    margin-left: calc(9px + 2.5vh + 4vw);
+    position: absolute;
+    z-index: 2;
+  }
+  
+  #riceelections {
+    margin-top: 7vh;
+    margin-left: 50vw;
+    height: 35vh;
+    width: 40vh;
+    position: absolute;
+  }
+  
+  #RETitle {
+    margin-top: 0vh;
+    margin-left: calc(7px + 1vh + 2vw);
+    width: calc(6px + 8vh + 14vw);
+    position: absolute;
+    z-index: 2;
+  }
+  
+  #coffeehouse {
+    margin-top: 50vh;
+    margin-left: 30vw;
+    height: 35vh;
+    width: 35vh;
+    text-align: right;
+    position: absolute;
+  }
+  
+  #ChSTitle {
+    margin-top: calc(4px + 4vh + 7.5vw);
+    margin-left: -5vw;
+    width: 15vw;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  #ricebikes {
+    margin-top: 45vh;
+    margin-left: 70vw;
+    height: 35vh;
+    width: 35vh;
+    position: absolute;
+  }
+  
+  #RBTitle {
+    margin-top: 0vh;
+    margin-left: 0vw;
+    position: absolute;
+    z-index: 2;
+  }
+  
   
