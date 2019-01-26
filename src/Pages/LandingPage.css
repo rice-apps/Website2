@@ -33,6 +33,9 @@
   margin: 0 auto;
   height: 50px;
 }
+#arrow{
+  cursor: pointer;
+}
 
 @keyframes appear {
     from {opacity: 0;}
