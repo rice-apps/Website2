@@ -7,17 +7,25 @@ export default class LandingPage extends Component {
     constructor(props) {
         super(props);
         this.el = null;
+        this.state = {
+            submitted: false
+        }
     }
     componentDidMount() {
         if (this.el) {
             typeformEmbed.makeWidget(this.el, "https://danny631.typeform.com/to/IP1ebv", {
                 hideFooter: true,
                 hideHeaders: true,
-                opacity: 0
+                opacity: 0,
+                onSubmit: () => {this.setState({submitted: true})}
             });
         }
     }
   render() {
+        let typeformDiv = <div ref={(el) => this.el = el} style={{width: '100%', height: '300px'}} />
+      if (this.state.submitted === true) {
+          typeformDiv = <div> </div>
+      }
     return(
     <div>
 
@@ -29,9 +37,9 @@ export default class LandingPage extends Component {
     <div id = "JoinUsTitle">
     Help us impact more.
     </div>
-        <div ref={(el) => this.el = el} style={{width: '100%', height: '300px'}} />
-    </div>
+        {typeformDiv}
 
+    </div>
     </div>
   )
 
