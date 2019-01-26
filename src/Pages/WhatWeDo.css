@@ -52,11 +52,13 @@
 
 #treeBackground {
   height: 70vh;
-  background-image: url('https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),/* the gradient on top, adjust color and opacity to your taste */
+url('../images/RiceApps2018 016.JPG');
+
 
   display: flex;
   align-items: center;
