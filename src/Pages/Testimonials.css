@@ -1,22 +1,33 @@
 .TestmonialsWrapper {
 
   height:100vh;
+  margin-left: 10vw;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   display: flex;
 }
 
+.paragraphWrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.carouselBox {
+  width: 80vw;
+  height: 23vh;
+}
+
 .TestimonialParagraph {
   position: relative;
-  width: 80vw;
-  height: 16vw;
+  width: 60vw;
+  /* height: 16vw; */
   font-family: 'Questrial', sans-serif;
   font-weight: 400;
   font-size: calc(3px + 1.5vw + 0.8vh);
   flex-direction: column;
   align-items: center;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 0.15vw;
   color: #787878;
   margin-top: 4.5vh;
@@ -27,25 +38,17 @@
   color: #40BFB4;
 }
 
-/* .quote{
-  width: 75vw;
-  color: #969696;
-  font-size: 2vw;
-} */
-#shryans{
-  position: relative;
-  color: #40BFB4;
+#shryans {
   font-weight: bold;
-  font-size: 1.5vw;
-  margin-top: 1vh;
-  font-family: 'HKGrotesk-Bold-Legacy'
 }
+
 #teamLead{
-  position: relative;
+  /* position: relative;
   color: #969696;
   font-style: normal;
-  font-size: 1vw;
-  margin-top: 1.5vh;
+  font-size: 1vw; */
+  margin-left: 1.8vw;
+  margin-top: 0.8vh;
 }
 
 /*#test-circle{
@@ -61,5 +64,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  color: #01796F;
+  font-size: 1.5vw;
+  margin-top: 3vh;
+  font-family: sans-serif;
+  /* align-items: flex-start;
+  justify-content: flex-start; */
 }

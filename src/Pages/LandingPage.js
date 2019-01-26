@@ -23,7 +23,7 @@ export default class LandingPage extends Component {
       }
     });
   }
-  
+
   render() {
     if(window.scrollY>=45){
       console.log("test");
@@ -34,14 +34,16 @@ export default class LandingPage extends Component {
     return (
       <div>
         <div id="title">
-          <div id="ds" class="initialText">
+          <div class = "initialText">
+          <div id="ds" >
             {/* <style>@import url('https://fonts.googleapis.com/css?family=Questrial');</style> */}
             DIGITAL SOLUTIONS
           </div>
 
-          <div id="sg" class="initialText">
+          <div id="sg">
             <span id="gray">FOR</span> <span id="social">SOCIAL</span> GOOD
-         </div>
+          </div>
+          </div>
 
           <div id="riceApps">
             riceApps
@@ -64,6 +66,6 @@ export default class LandingPage extends Component {
   //   if (heightBound > window.scrollY) {
   //       // Probably you want to load new cards?
   //       this.hideArrow;
-  //   } 
+  //   }
   // }
 }

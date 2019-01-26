@@ -23,9 +23,6 @@
   cursor: pointer;
 }
 
-#ContactUsTitle:hover {
-  text-decoration: underline;
-}
 
 #ContactUsText{
   padding-top: 2vh;
