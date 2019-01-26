@@ -33,19 +33,9 @@
   color: #40BFB4;
 }
 
-/* .quote{
-  width: 75vw;
-  color: #969696;
-  font-size: 2vw;
-} */
-/* .shryans{
-  position: relative;
-  color: #40BFB4;
+#shryans {
   font-weight: bold;
-  font-size: 1.5vw;
-  margin-top: 1vh;
-  font-family: 'HKGrotesk-Bold-Legacy'
-} */
+}
 
 #teamLead{
   /* position: relative;
@@ -69,12 +59,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
-  color: #40BFB4;
-  font-weight: bold;
+  color: #01796F;
   font-size: 1.5vw;
-  margin-top: 2.5vh;
-  font-family: 'HKGrotesk-Bold-Legacy'
+  margin-top: 3vh;
+  font-family: sans-serif;
   /* align-items: flex-start;
   justify-content: flex-start; */
 }

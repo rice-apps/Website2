@@ -19,7 +19,7 @@ export default class LandingPage extends Component {
 
       <Fade bottom duration = {3000} delay = {700}>
         <div className="nameWrapper">
-          <span>— Shryans Goyal</span>
+          <span id = "shryans">— Shryans Goyal</span>
           <span id="teamLead">Team Lead, Rice U. '21</span>
         </div>
       </Fade>
