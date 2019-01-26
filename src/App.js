@@ -37,7 +37,7 @@ class App extends Component {
   //end of sidebar-menu
   render() {
     //start sidebar-menu
-    let menuStatus = this.state.clicked ? "open" : "";
+    let menuStatus = this.state.clicked ? "open" : "closed";
     let button_classes = this.state.clicked
       ? "hamburger hamburger--collapse is-active" : "hamburger hamburger--collapse ";
     //end of sidebar-menu
@@ -56,7 +56,7 @@ class App extends Component {
           <ScrollIntoView selector="#home">
             <div class="sidebarTextHome">HOME</div>
           </ScrollIntoView>
-          <ScrollIntoView selector="#aboutUs">
+          <ScrollIntoView selector="#whatWeDo">
             <div class="sidebarText">MISSION</div>
           </ScrollIntoView>
           <ScrollIntoView selector="#projects">
@@ -70,12 +70,8 @@ class App extends Component {
           </ScrollIntoView>
         </div>
         <div onClick={() => this.closeSidebar()}>
-          <div id="home">
-            <LandingPage />
-          </div>
-
+          <div id="home"><LandingPage /></div>
           <div id="whatWeDo"><WhatWeDo /></div>
-
           <div id="aboutUs"><AboutUs /></div>
           <div id="projects"><Projects /></div>
           <div id="partners"><Partners /></div>
