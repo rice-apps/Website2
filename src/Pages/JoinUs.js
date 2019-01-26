@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './JoinUs.css';
 import { ReactTypeformEmbed } from 'react-typeform-embed';
-import * as typeformEmbed from '@typeform/embed'
+import * as typeformEmbed from '@typeform/embed';
+import Fade from 'react-reveal/Fade';
 
 export default class LandingPage extends Component {
 
@@ -40,6 +41,7 @@ export default class LandingPage extends Component {
                     </div>
                     {typeformDiv}
                 </div>
+
 
             </div>
         )

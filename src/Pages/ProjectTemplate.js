@@ -36,6 +36,39 @@ export default class ProjectTemplate extends Component {
             </ul>
           </div>
         </div>
+
+        <table>
+          <tr>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+          </tr>
+        </table>
       </div>
     )
   }

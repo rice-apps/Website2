@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './WorkForUs.css';
 import * as typeformEmbed from "@typeform/embed";
+import Fade from 'react-reveal/Fade';
 
 export default class LandingPage extends Component {
 
@@ -32,12 +33,17 @@ export default class LandingPage extends Component {
     <style>@import url('https://fonts.googleapis.com/css?family=Questrial');</style>
     <div id = "content-WorkForUs">
     <div id = "JoinUsText">
+    <Fade right duration = {2000}>
     WE LOVE NEW PEOPLE.
+    </Fade>
     </div>
     <div id = "JoinUsTitle">
+    <Fade left duration = {2000}>
     Help us impact more.
+    </Fade>
     </div>
         {typeformDiv}
+
 
     </div>
     </div>
