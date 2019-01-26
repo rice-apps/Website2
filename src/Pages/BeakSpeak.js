@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './AboutUs.css';
+import './BeakSpeak.css';
 
-export default class AboutUs extends Component {
+export default class BeakSpeak extends Component {
     render() {
         return(
-          <div className="AboutUsWrapper">
-              <div id="AboutUsParagraph">
+          <div className="BeakSpeakWrapper">
+              <div id="BeakSpeakParagraph">
                   {/* <style>
                       @import url('https://fonts.googleapis.com/css?family=Questrial');
                   </style> */}

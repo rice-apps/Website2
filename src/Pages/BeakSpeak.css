@@ -1,4 +1,7 @@
-.AboutUsWrapper {
+body{
+    height: 100%;
+}
+.BeakSpeakWrapper {
     height:100vh;
     background: white;
     display: flex;
@@ -11,7 +14,7 @@
     z-index: 1;
   }
   
-  #AboutUsParagraph {
+  #BeakSpeakParagraph {
     width: 65vw;
     height: 50vh;
     font-family: 'HKGrotesk-Bold-Legacy';
@@ -21,7 +24,7 @@
     letter-spacing: 0.08vw;
     color: #787878;
   }
-  #AboutUsParagraph em {
+  #BeakSpeakParagraph em {
     font-style: normal;
     color: #40BFB4;
   }

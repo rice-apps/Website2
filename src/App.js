@@ -6,7 +6,6 @@ import WorkForUs from './Pages/WorkForUs.js';
 import JoinUs from './Pages/JoinUs.js';
 import Projects from './Pages/Projects.js';
 import AboutUs from './Pages/AboutUs.js';
-import BeakSpeak from './Pages/Beakspeak.js';
 import WhatWeDo from './Pages/WhatWeDo.js';
 import Partners from './Pages/Partners.js';
 import './App.css';
@@ -75,7 +74,6 @@ class App extends Component {
           <div id="whatWeDo"><WhatWeDo /></div>
           <div id="aboutUs"><AboutUs /></div>
           <div id="projects"><Projects /></div>
-          <div id="beakspeak"><Beakspeak /></div>
           <div id="partners"><Partners /></div>
           <div id="testimonials"><Testimonials /></div>
           <div id="contactUs"><JoinUs /></div>
