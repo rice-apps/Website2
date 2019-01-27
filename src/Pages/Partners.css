@@ -1,16 +1,29 @@
 #logos {
+
   height: 60vh;
-  width: 100%;
+  width: 70%;
   display: flex;
   align-self: center;
+  flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   /* flex-direction: column; */
 }
+
+#logosWrapper {
+  display: flex;
+  width:100%;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
 #image {
-  height: 25vh;
-  width: 15%;
+  height: 10vw;
+  width: 10vw;
   opacity: 0.7;
+  padding-right: 9vh;
+  padding-left: 9vh
 }
 #text {
   display: flex;
@@ -24,4 +37,5 @@
 }
 #trash {
   /* background-color: blue; */
+
 }

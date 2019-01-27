@@ -16,7 +16,7 @@
   /* display: inline-block; */
   width: 50%;
   margin: 0 auto;
-  
+
   animation-name: appear;
   animation-delay: 2s;
   animation-duration: 1s;
@@ -49,6 +49,7 @@
 }
 
 .initialText {
+  position: absolute;
   animation-name: fade;
   animation-delay: 2s;
   animation-duration: 2s;
@@ -102,4 +103,9 @@ i {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+#arrow {
+  position: relative;
+  margin-top: 10vw;
 }

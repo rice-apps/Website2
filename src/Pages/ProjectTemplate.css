@@ -59,3 +59,27 @@
     margin-top: 4vh;
     margin-bottom: 4vh;
 }
+
+table {
+	/* border-collapse:separate; */
+  border-spacing: 5vw;
+	margin: auto;
+  margin-top: 2vh;
+}
+
+td {
+	height: 25vh;
+	width: 25vh;
+	border-radius: 50%;
+  background-color: black;
+  color: transparent;
+  text-align: center;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+
+
+
+td:hover {
+  color: white;
+}

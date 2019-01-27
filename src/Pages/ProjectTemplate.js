@@ -38,7 +38,39 @@ export default class ProjectTemplate extends Component {
           </div>
         </div>
         <Timeline/>
-        <div id = "people"></div>
+
+        <table>
+          <tr>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+            <td>
+              <h3>Name</h3>
+              <a>GitHub Link</a>
+            </td>
+          </tr>
+        </table>
       </div>
     )
   }
