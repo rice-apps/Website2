@@ -6,7 +6,7 @@ import './Timeline.css';
 const VALUES = [];
 
 export default class Timeline extends Component {
-  constructor(prop) {
+  constructor(props) {
     super(props);
     this.state = {
       value: 0,
@@ -31,7 +31,7 @@ export default class Timeline extends Component {
   }
 
   render() {
-    views = () => {
+    const views = () => {
       return(
         <div>
           <div>
@@ -64,7 +64,7 @@ export default class Timeline extends Component {
               index = {
                 this.state.value
               }
-              onChangeIndex = { (index) => {
+              onChangeIndex = { (value, previous) => {
                 this.setState({
                   value: value,
                   previous: previous

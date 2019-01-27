@@ -38,6 +38,7 @@ export default class ProjectTemplate extends Component {
           </div>
         </div>
         <Timeline/>
+        <div id = "people"></div>
       </div>
     )
   }

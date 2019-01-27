@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './JoinUs.css';
-import { ReactTypeformEmbed } from 'react-typeform-embed';
 import * as typeformEmbed from '@typeform/embed'
 
 export default class LandingPage extends Component {
