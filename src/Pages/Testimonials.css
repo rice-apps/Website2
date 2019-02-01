@@ -13,6 +13,11 @@
   /* align-items: center; */
 }
 
+.carouselBox {
+  width: 80vw;
+  height: 23vh;
+}
+
 .TestimonialParagraph {
   position: relative;
   width: 60vw;

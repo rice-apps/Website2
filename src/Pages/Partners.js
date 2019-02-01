@@ -25,6 +25,7 @@ export default class Partners extends Component {
             <img id ="image" src={EastWest} />
             <img id ="image" src={Hoot} />
 
+
     </div>
     </div>
     </Fade>
