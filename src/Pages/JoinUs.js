@@ -34,10 +34,14 @@ export default class LandingPage extends Component {
                 {/* <style>@import url('https://fonts.googleapis.com/css?family=Questrial');</style> */}
                 <div id = "content-JoinUs">
                     <div id = "ContactUsTitle">
+                    <Fade left duration = {2000}>
                         Give us a shot.
+                    </Fade>
                     </div>
                     <div id = "ContactUsText">
+                    <Fade right duration = {2000}>
                         WE PROMISE WE'LL EXCEED YOUR EXPECTATIONS.
+                    </Fade>
                     </div>
                     {typeformDiv}
                 </div>
