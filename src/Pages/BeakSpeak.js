@@ -24,10 +24,6 @@ export default class BeakSpeak extends Component {
 
                             </div>
                         </div>
-
-                        <div>
-                            <div class="caption">OUR PROCESS</div>
-                        </div>
                         <div>
                             <div class="caption">THE PROBLEM</div>
                             <div class="captionDescription">Insert description of project here. Lorem ipsum dolor sit amet, erat postea argumentum id mei, ius quaeque epicurei ut. Doming aperiri fabulas pri id, id dolor percipitur nec, sale error ei per. Dolores insolens mea ex, eam definitiones reprehendunt ei, sed eu commune omnesque sadipscing. Diam admodum offendit usu at, ei aperiam interesset quo.</div>
