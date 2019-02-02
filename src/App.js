@@ -8,10 +8,12 @@ import Projects from './Pages/Projects.js';
 import AboutUs from './Pages/AboutUs.js';
 import WhatWeDo from './Pages/WhatWeDo.js';
 import Partners from './Pages/Partners.js';
+import ProjectTemplate from "./Pages/ProjectTemplate.js";
 import './App.css';
 import './hamburgers.css';
 import './styles.css'
 import ScrollIntoView from 'react-scroll-into-view';
+
 
 
 class App extends Component {
@@ -73,6 +75,8 @@ class App extends Component {
           <div id="home"><LandingPage /></div>
           <div id="whatWeDo"><WhatWeDo /></div>
           <div id="aboutUs"><AboutUs /></div>
+
+
           <div id="projects"><Projects /></div>
           <div id="partners"><Partners /></div>
           <div id="testimonials"><Testimonials /></div>
