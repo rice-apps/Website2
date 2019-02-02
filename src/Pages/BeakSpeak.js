@@ -3,13 +3,7 @@ import './BeakSpeak.css';
 // import {BrowserRouter as Router, Route} from 'react-router-dom'
 // import React from "react";
 import App from "../App.js";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Redirect,
-  withRouter
-} from "react-router-dom";
+import {BrowserRouter as Router, Link} from "react-router-dom";
 
 
 export default class BeakSpeak extends Component {
@@ -17,8 +11,9 @@ export default class BeakSpeak extends Component {
         return (
             <Router>
                 <div>             
-                    <Link to="/" onClick= {() => window.location.reload()}>Go home</Link>
-                    {/* <Route exact path="/" component={App}></Route> */}
+                    <Link to="/" onClick= {() => window.location.reload()} >
+                        <img class = "homeIcon" src={require("../home-icon.png")}/>
+                    </Link>
                     <div className="pageWrapper">               
                         <div id="content">
                             <div id="projectName">

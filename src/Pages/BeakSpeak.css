@@ -1,10 +1,13 @@
-.homeButton{
-  background:url(../home-icon.png) no-repeat;
+.homeIcon{
+  width: 50px;
+  height: 50px;
+  padding-left: 1vw;
+  padding-top: 1.5vh;
 }
 .pageWrapper {
     height:160vh;
     background: white;
-    padding: 10vw;
+    padding: 2.5vw;
     
     flex-direction: column;
     align-items: center;
