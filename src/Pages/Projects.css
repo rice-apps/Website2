@@ -54,8 +54,8 @@
 
 
 #beakspeak {
-  margin-top: 15vh;
-  margin-left: 10vw;
+  margin-top: 12vh;
+  margin-left: 9vw;
   height: 40vh;
   width: 40vh;
   position: absolute;
@@ -69,8 +69,8 @@
 }
 
 #riceelections {
-  margin-top: 7vh;
-  margin-left: 50vw;
+  margin-top: 5vh;
+  margin-left: 70vw;
   height: 35vh;
   width: 40vh;
   position: absolute;
@@ -85,8 +85,17 @@
 }
 
 #coffeehouse {
-  margin-top: 50vh;
-  margin-left: 30vw;
+  margin-top: 55vh;
+  margin-left: 20vw;
+  height: 35vh;
+  width: 35vh;
+  text-align: right;
+  position: absolute;
+}
+
+#hedwig {
+  margin-top: 25vh;
+  margin-left: 45vw;
   height: 35vh;
   width: 35vh;
   text-align: right;
@@ -102,8 +111,8 @@
 }
 
 #ricebikes {
-  margin-top: 45vh;
-  margin-left: 70vw;
+  margin-top: 60vh;
+  margin-left: 65vw;
   height: 35vh;
   width: 35vh;
   position: absolute;
@@ -114,4 +123,13 @@
   margin-left: 0vw;
   position: absolute;
   z-index: 2;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: #008F82;
 }
