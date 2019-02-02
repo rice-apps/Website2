@@ -93,7 +93,7 @@
   position: absolute;
 }
 
-#newProject {
+#hedwig {
   margin-top: 25vh;
   margin-left: 45vw;
   height: 35vh;
@@ -123,4 +123,13 @@
   margin-left: 0vw;
   position: absolute;
   z-index: 2;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: #008F82;
 }
