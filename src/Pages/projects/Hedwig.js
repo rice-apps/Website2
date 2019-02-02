@@ -14,7 +14,7 @@ export default class Hedwig extends Component {
                     <div className="pageWrapper">               
                         <div id="content">
                             <div id="projectName">
-                                BeakSpeak.
+                                Hedwig.
                             </div>
                             <div class="paragraphs" id="projectDescription">
                                 Insert description of project here. Lorem ipsum dolor sit amet, erat postea argumentum id mei, ius quaeque epicurei ut. Doming aperiri fabulas pri id, id dolor percipitur nec, sale error ei per. Dolores
