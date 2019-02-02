@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './BeakSpeak.css';
 // import {BrowserRouter as Router, Route} from 'react-router-dom'
 // import React from "react";
-import App from "../App.js";
+import App from "../../App.js";
 import {BrowserRouter as Router, Link} from "react-router-dom";
 
 

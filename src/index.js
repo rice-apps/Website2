@@ -5,7 +5,7 @@ import './index.css';
 import App  from './App';
 import PartnerForm from './Pages/PartnerForm.js';
 import MemberForm from './Pages/MemberForm.js';
-import BeakSpeak from './Pages/BeakSpeak.js';
+import BeakSpeak from './Pages/Projects/BeakSpeak.js';
 import ProjectTemplate from './Pages/ProjectTemplate.js';
 
 import * as serviceWorker from './serviceWorker';
