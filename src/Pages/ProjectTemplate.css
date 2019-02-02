@@ -1,60 +1,68 @@
-.project-template-wrapper {
-    display: flex;
-    background-color: white;
+.homeIcon{
+  width: 50px;
+  height: 50px;
+  padding-left: 1vw;
+  padding-top: 1.5vh;
+}
+.pageWrapper {
+    height:160vh;
+    background: white;
+    padding: 2.5vw;
+    
     flex-direction: column;
     align-items: center;
-}
-
-.column {
-    flex: 50%;
-}
-
-#project-icon {
-    background-color: #6E6E6E;
-    border-radius: 50%;
-    height: calc(16px + 7vh + 14vw);
-    width: calc(16px + 7vh + 14vw);
-    align-self: center;
-}
-
-#project-name {
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    text-align: center;
-}
-
-#github-wrapper {
-    padding-top: 1vh;
-    padding-bottom: 1vh;
     display: flex;
-    justify-content: center;
-}
 
-#achievement {
-    padding-top: 1vh;
+    background:
+    /* circle at [horizontal center], [vertical center], Color,
+    Color RADIUS, transparent RADIUS */
+    radial-gradient(circle at 85vw 60vh, #FFB9CD,
+      #FFB9CD 25vw, transparent 25vw);
+  
+    z-index: 1;
+  }
+  #content{
+    position: relative;
+    width: 80vw;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+  }
+  #projectName{
+      color: #40BFB4;
+      font-size: 15vh;
+      font-family: 'HKGrotesk-Bold-Legacy'
+  }
+  .paragraphs{
+    color: #969696;
+    /* GET NEUE HAAS UNICA PRO */
+  }
+  #projectDescription{
+      width: 50%;
+      font-size: 4vh;
+  }
+
+  #teamAndProjectScope{
+      font-size: 2.5vh;
+      padding-top: 5vh;
+  }
+  .teamAndProjectScopeLabel{
+    color: #01796F;
     padding-bottom: 1vh;
-    text-align: center;
-}
-
-#heading-section {
-    align-self: center;
-}
-
-#bottom-section {
-    display: flex;
-}
-
-#prob-sol {
-    padding-left: 8vw;
-    padding-right: 8vw;
-}
-
-#tech-used {
-    padding-left: 8vw;
-    padding-right: 8vw;
-}
-
-#bottom-section {
+  }
+  #projectScope{
+      padding-top: 2vh;
+  }
+  .caption{
+    color: #01796F;
+    font-size: 5vh;
+    margin-top: 7vh;
+    font-family: "HKGrotesk-Bold-Legacy"
+  }
+  .captionDescription{
     margin-top: 4vh;
-    margin-bottom: 4vh;
-}
+    color: #969696;
+    /* NUE HAAS UNICA PRO */
+    font-size: 4vh;
+    width: 50vw;
+  }
