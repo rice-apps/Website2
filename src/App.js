@@ -8,7 +8,6 @@ import Projects from './Pages/Projects.js';
 import AboutUs from './Pages/AboutUs.js';
 import WhatWeDo from './Pages/WhatWeDo.js';
 import Partners from './Pages/Partners.js';
-import ProjectTemplate from "./Pages/ProjectTemplate.js";
 import './App.css';
 import './hamburgers.css';
 import './styles.css'
@@ -52,7 +51,6 @@ class App extends Component {
             <span class="hamburger-inner"></span>
           </span>
         </button>
-        {/*<div id="sidebar" class={sidebar_menu_classes}>*/}
 
         <div id="menu" class={menuStatus}>
           <ScrollIntoView selector="#home">
@@ -82,7 +80,6 @@ class App extends Component {
           <div id="testimonials"><Testimonials /></div>
           <div id="contactUs"><JoinUs /></div>
           <div id="joinUs"><WorkForUs /></div>
-          {/*<div id="testimonials"><Testimonials/></div>  */}
         </div>
       </div>
       </ParallaxProvider>
