@@ -1,4 +1,6 @@
-
+.homeButton{
+  background:url(../home-icon.png) no-repeat;
+}
 .pageWrapper {
     height:160vh;
     background: white;
