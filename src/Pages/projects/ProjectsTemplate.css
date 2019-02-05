@@ -1,8 +1,13 @@
-
+.homeIcon{
+  width: 50px;
+  height: 50px;
+  padding-left: 1vw;
+  padding-top: 1.5vh;
+}
 .pageWrapper {
     height:160vh;
     background: white;
-    padding: 10vw;
+    padding: 2.5vw;
     
     flex-direction: column;
     align-items: center;
@@ -59,5 +64,5 @@
     color: #969696;
     /* NUE HAAS UNICA PRO */
     font-size: 4vh;
-    width: 60vw;
+    width: 50vw;
   }

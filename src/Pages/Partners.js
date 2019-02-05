@@ -25,10 +25,11 @@ export default class Partners extends Component {
                             <img id="image" src={EastWest} alt="" />
                             <img id="image" src={Hoot} alt="" />
 
-                        </div>
-                    </div>
-                </Fade>
-            </div>
-        )
-    }
+
+    </div>
+    </div>
+    </Fade>
+    </div>
+  )
+  }
 }

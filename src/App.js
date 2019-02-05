@@ -14,6 +14,7 @@ import './styles.css'
 import ScrollIntoView from 'react-scroll-into-view';
 
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -50,7 +51,6 @@ class App extends Component {
             <span class="hamburger-inner"></span>
           </span>
         </button>
-        {/*<div id="sidebar" class={sidebar_menu_classes}>*/}
 
         <div id="menu" class={menuStatus}>
           <ScrollIntoView selector="#home">
@@ -73,12 +73,13 @@ class App extends Component {
           <div id="home"><LandingPage /></div>
           <div id="whatWeDo"><WhatWeDo /></div>
           <div id="aboutUs"><AboutUs /></div>
+
+
           <div id="projects"><Projects /></div>
           <div id="partners"><Partners /></div>
           <div id="testimonials"><Testimonials /></div>
           <div id="contactUs"><JoinUs /></div>
           <div id="joinUs"><WorkForUs /></div>
-          {/*<div id="testimonials"><Testimonials/></div>  */}
         </div>
       </div>
       </ParallaxProvider>
