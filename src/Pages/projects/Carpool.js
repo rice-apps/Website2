@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './ProjectsTemplate.css';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
-export default class Hedwig extends Component {
+export default class Carpool extends Component {
     render() {
         return (
             <Router>
@@ -13,20 +13,20 @@ export default class Hedwig extends Component {
                     <div className="pageWrapper">
                         <div id="content">
                             <div id="projectName">
-                                Hedwig.
+                                Carpool.
                             </div>
                             <div class="paragraphs" id="projectDescription">
-                                Hedwig is an application which streamlines the process of delivering food and drinks from Rice businesses such as the Hoot and East West Tea.
+                                Carpool is an application which assists Rice students in finding carpooling options to travel to airports during holiday seasons.
                             </div>
                             <div>
                                 <div id="teamAndProjectScope" class="paragraphs">
                                     <div class="teamAndProjectScopeLabel" >Team</div>
-                                    <div class="paragraphs">Jeffrey Wang, Will Mundy</div>
+                                    <div class="paragraphs">Diksha Gupta</div>
                                 </div>
                                 <div class="paragraphs">
                                     <div class="teamAndProjectScopeLabel" id="projectScope">Project Scope</div>
                                     <div class="paragraphs">
-                                        React Native
+                                        AngularJS, ExpressJS
                                     </div>
 
                                 </div>
@@ -34,13 +34,13 @@ export default class Hedwig extends Component {
                             <div>
                                 <div class="caption">THE PROBLEM</div>
                                 <div class="captionDescription">
-                                    Currently, there is no effective way for Rice students to buy food from businesses at the Rice Memorial Center like East West Tea and the Hoot other than to travel there in person. Often, this prevents students that would have otherwise bought food from frequenting these establishments.
+                                    Currently, students use a Google Sheets document listing past and future carpool rides that contain the destination, date/time, student’s name, phone number, and other information. Students enter the time they plan to leave Rice or the airport, and if someone else matches with their time, they can contact each other and coordinate a ride. However, this does not have a smooth interface, does not have a way to show time flexibility, lacks security, and does not notify drivers of riders which have joined/left their carpool.
                                 </div>
                             </div>
                             <div>
                                 <div class="caption">OUR SOLUTION</div>
                                 <div class="captionDescription">
-                                    Hedwig is a React Native application for iOS and Android which allows Rice students to order food and drink from East West Tea and the Hoot. It provides an interface for students to view available items, pay for said items, and view estimated time of delivery.
+                                Carpool is an AngularJS web application aimed to help Rice students by facilitating the process of finding and organizing carpools with other Rice student. The app provides an interface for students to input certain parameters of the ride they wish to carpool on, such as departing and arrival times and locations, to either search and join existing rides or create their own rides on.
                                 </div>
                             </div>
 
