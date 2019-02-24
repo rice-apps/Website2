@@ -5,10 +5,9 @@ import Fade from 'react-reveal/Fade';
 import './Testimonials.css';
 
 
-const width = '80vw', height='30vw';
+const width = '80vw', height='calc(350px + (180-350) * ((100vw - 320px) / (1600 - 320)))';
 
 const Container = styled.div`\
-  overflow: hidden;
   width: ${width};
 `;
 const Children = styled.div`
@@ -18,7 +17,7 @@ const Children = styled.div`
 `;
 
 const Dot = styled.span`
-  font-size: 1.5em;
+  font-size: calc(17px + (20-17) * ((100vw - 320px) / (1600 - 320)));
   cursor: pointer;
   color: #40BFB4;
   text-shadow: 1px 1px 1px #fff;

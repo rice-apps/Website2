@@ -16,7 +16,7 @@
   height: 50vh;
   font-family: 'HKGrotesk-Bold-Legacy';
   font-weight: bold;
-  font-size: calc(5px + 2.3vw + 0.8vh);
+  font-size: calc(16px + (31-16) * ((100vw - 320px) / (1600 - 320)));
   line-height: 6.3vh;
   letter-spacing: 0.08vw;
   color: #787878;
