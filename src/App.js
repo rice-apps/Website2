@@ -8,7 +8,6 @@ import Projects from './Pages/Projects.js';
 import AboutUs from './Pages/AboutUs.js';
 import WhatWeDo from './Pages/WhatWeDo.js';
 import Partners from './Pages/Partners.js';
-import ProjectTemplate from "./Pages/ProjectTemplate.js";
 import './App.css';
 import './hamburgers.css';
 import './styles.css'

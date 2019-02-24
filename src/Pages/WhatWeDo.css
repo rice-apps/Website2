@@ -1,46 +1,6 @@
-/* .whatWeDoPageWrapper{
-  height: 70vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  perspective: 2px;
-
-}
-
-.section{
-  position: relative;
-  height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.parallax::after{
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  transform: translateZ(-1px) scale(1.5);
-  background-size: 100%;
-  background-attachment: fixed;
-  z-index: -1;
-
-}
-.whatWeDoPageWrapper h1 {
-  font-size: calc(5px + 1.2vh + 1.6vw);
-}
-
-.bg1::after{
-  background-image: url('https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-} */
-
 .whatWeDoPageWrapper{
   height: 70vh;
-  z-index: 1;
+  /* z-index: 1; */
   background: white;
 }
 
@@ -67,4 +27,19 @@ url('../images/RiceApps2018 016.JPG');
   z-index: -99;
 
   background-size: 100%;
+}
+
+
+@media only screen and (max-width:1680px) {
+  #treeBackground {
+    background-attachment: inherit;
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width:749px) {
+  #treeBackground {
+    background-attachment: inherit;
+    height: 27vh;
+  }
 }
