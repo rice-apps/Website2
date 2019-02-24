@@ -5,9 +5,10 @@
 }
 
 .whatWeDoPageWrapper h1{
+  width: 80vw;
   color: white;
   font-weight: bold;
-  font-size: calc(5px + 1.3vh + 1.7vw);
+  font-size: calc(16px + (25-16) * ((100vw - 320px) / (1600 - 320)));
 }
 
 #treeBackground {

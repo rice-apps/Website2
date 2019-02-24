@@ -7,13 +7,13 @@
 
 .projectsPageWrapper h1 {
   color: #008F82;
-  font-size: calc(5px + 1.8vw + 0.5vh);
+  font-size: calc(20px + (25-20) * ((100vw - 320px) / (1600 - 320)));
   font-weight: bold;
 }
 
 .projectText {
   color: white;
-  font-size: calc(1px + 0.6vh + 1.3vw);
+  font-size: calc(12px + (18-12) * ((100vw - 320px) / (1600 - 320)));
   width: 15vw;
   text-align: center;
   opacity: 0;
@@ -23,8 +23,8 @@
 .circle {
   background: #F1F1F1;
   border-radius: 50%;
-  height: calc(16px + 7vh + 14vw);
-  width: calc(16px + 7vh + 14vw);
+  height: calc(130px + (180-130) * ((100vw - 320px) / (1600 - 320)));
+  width: calc(130px + (180-130) * ((100vw - 320px) / (1600 - 320)));
   display: flex;
   align-items: center;
   justify-content: center;
