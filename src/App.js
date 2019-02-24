@@ -51,7 +51,6 @@ class App extends Component {
             <span class="hamburger-inner"></span>
           </span>
         </button>
-        {/*<div id="sidebar" class={sidebar_menu_classes}>*/}
 
         <div id="menu" class={menuStatus}>
           <ScrollIntoView selector="#home">
@@ -81,7 +80,6 @@ class App extends Component {
           <div id="testimonials"><Testimonials /></div>
           <div id="contactUs"><JoinUs /></div>
           <div id="joinUs"><WorkForUs /></div>
-          {/*<div id="testimonials"><Testimonials/></div>  */}
         </div>
       </div>
       </ParallaxProvider>
