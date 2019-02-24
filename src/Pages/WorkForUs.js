@@ -42,8 +42,9 @@ export default class LandingPage extends Component {
     Help us impact more.
     </Fade>
     </div>
-        {typeformDiv}
-
+        <div id ="display">
+            {typeformDiv}
+        </div>
 
     </div>
     </div>
