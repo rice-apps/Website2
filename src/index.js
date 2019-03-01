@@ -6,10 +6,10 @@ import App  from './App';
 import PartnerForm from './Pages/PartnerForm.js';
 import MemberForm from './Pages/MemberForm.js';
 import BeakSpeak from './Pages/projects/BeakSpeak.js';
-import CoffeeHouse from './Pages/projects/CoffeeHouse.js';
-import RiceBikes from './Pages/projects/RiceBikes.js';
-import RiceElections from './Pages/projects/RiceElections.js';
 import Hedwig from './Pages/projects/Hedwig.js';
+import Carpool from './Pages/projects/Carpool.js';
+import Reservations from './Pages/projects/Reservations.js';
+import Website from './Pages/projects/Website.js';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -20,11 +20,10 @@ ReactDOM.render(
             <Route path="/workwithus" component={PartnerForm} />
             <Route path="/joinus" component={MemberForm} />
             <Route path = "/beakspeak" component = {BeakSpeak} />
-            <Route path = "/coffeehouse" component = {CoffeeHouse} />
-            <Route path = "/ricebikes" component = {RiceBikes} />
-            <Route path = "/riceelections" component = {RiceElections} />
             <Route path = "/hedwig" component = {Hedwig} />
-
+            <Route path = "/carpool" component = {Carpool} />
+            <Route path = "/reservations" component = {Reservations} />
+            <Route path = "/website" component = {Website} />
         </div>
     </Router>
     , document.getElementById('root')

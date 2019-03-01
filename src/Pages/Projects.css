@@ -68,7 +68,7 @@
   z-index: 2;
 }
 
-#riceelections {
+#carpool {
   margin-top: 5vh;
   margin-left: 70vw;
   height: 35vh;
@@ -76,7 +76,7 @@
   position: absolute;
 }
 
-#RETitle {
+#CPTitle {
   margin-top: 0vh;
   margin-left: calc(7px + 1vh + 2vw);
   width: calc(6px + 8vh + 14vw);
@@ -84,7 +84,7 @@
   z-index: 2;
 }
 
-#coffeehouse {
+#reservations {
   margin-top: 55vh;
   margin-left: 20vw;
   height: 35vh;
@@ -102,7 +102,7 @@
   position: absolute;
 }
 
-#ChSTitle {
+#RVTitle {
   margin-top: calc(4px + 4vh + 7.5vw);
   margin-left: -5vw;
   width: 15vw;
@@ -110,7 +110,7 @@
   z-index: 2;
 }
 
-#ricebikes {
+#website-team {
   margin-top: 60vh;
   margin-left: 65vw;
   height: 35vh;
@@ -118,7 +118,7 @@
   position: absolute;
 }
 
-#RBTitle {
+#WSTitle {
   margin-top: 0vh;
   margin-left: 0vw;
   position: absolute;

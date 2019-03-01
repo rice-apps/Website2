@@ -30,11 +30,11 @@ export default class LandingPage extends Component {
       </Fade>
 
       <Fade right duration = {1500}>
-        <div id = "riceelections">
+        <div id = "carpool">
         <Router>
-          <div id = "RETitle">
-            <Link to = "/riceelections" onClick = {() => window.location.reload()} class = "link">
-              <h1>Rice Elections</h1>
+          <div id = "CPTitle">
+            <Link to = "/carpool" onClick = {() => window.location.reload()} class = "link">
+              <h1>Carpool</h1>
             </Link>
           </div>
         </Router>
@@ -60,11 +60,11 @@ export default class LandingPage extends Component {
       </div>
 
       <Fade left duration = {1500}>
-        <div id = "coffeehouse">
+        <div id = "reservations">
         <Router>
-          <div id = "ChSTitle">
-            <Link to = "/coffeehouse" onClick = {() => window.location.reload()} class = "link">
-              <h1>Coffeehouse Scheduler</h1>
+          <div id = "RVTitle">
+            <Link to = "/reservations" onClick = {() => window.location.reload()} class = "link">
+              <h1>Reservation</h1>
             </Link>
           </div>
         </Router>
@@ -76,11 +76,11 @@ export default class LandingPage extends Component {
       </Fade>
 
       <Fade right duration = {1500}>
-        <div id = "ricebikes">
+        <div id = "website-team">
         <Router>
-          <div id = "RBTitle">
-            <Link to = "/ricebikes" onClick = {() => window.location.reload()} class = "link">
-              <h1>Rice Bikes</h1>
+          <div id = "WSTitle">
+            <Link to = "/website" onClick = {() => window.location.reload()} class = "link">
+              <h1>Website</h1>
             </Link>
           </div>
         </Router>
