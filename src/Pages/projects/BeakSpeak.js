@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import './ProjectsTemplate.css';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, NavLink, Link } from "react-router-dom";
 
 
 export default class BeakSpeak extends Component {
     render() {
         return (
-            <Router>
+
                 <div>
-                    <Link to="/" onClick={() => window.location.reload()} >
+                    <NavLink to="/" >
                         <img class="homeIcon" src={require("../../home-icon.png")} />
-                    </Link>
+                    </NavLink>
                     <div className="pageWrapper">
                         <div id="content">
                             <div id="projectName">
@@ -48,7 +48,6 @@ export default class BeakSpeak extends Component {
                         </div>
                     </div>
                 </div>
-            </Router>
         )
 
     }
