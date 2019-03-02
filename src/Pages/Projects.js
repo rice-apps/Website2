@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import './Projects.css';
-import {BrowserRouter as Router, Link} from "react-router-dom";
+import {BrowserRouter as Router, Link, NavLink, Redirect} from "react-router-dom";
 
-export default class LandingPage extends Component {
+export default class Projects extends Component {
+
   render() {
     return(
 
@@ -13,13 +14,13 @@ export default class LandingPage extends Component {
      <Fade left duration = {1500}>
         <div id = "beakspeak">
           <div id = "BsTitle">
-          <Router>
             <div>
-              <Link to = "/beakspeak" onClick = {() => window.location.reload()} class = "link">
+
+
+                <NavLink to = "/beakspeak"  class = "link">
                 <h1>Beakspeak</h1>
-              </Link>
+              </NavLink>
             </div>
-          </Router>
           </div>
           <div className = "circle">
             <img className = "airbnb" src = "http://logok.org/wp-content/uploads/2014/07/airbnb-logo-belo-880x628.png" alt=""></img>
@@ -31,13 +32,11 @@ export default class LandingPage extends Component {
 
       <Fade right duration = {1500}>
         <div id = "riceelections">
-        <Router>
           <div id = "RETitle">
-            <Link to = "/riceelections" onClick = {() => window.location.reload()} class = "link">
+            <NavLink to = "/riceelections"  class = "link">
               <h1>Rice Elections</h1>
-            </Link>
+            </NavLink>
           </div>
-        </Router>
           <div className = "circle">
             <img className = "airbnb" src = "http://logok.org/wp-content/uploads/2014/07/airbnb-logo-belo-880x628.png" alt=""></img>
             <div className = "projectText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
@@ -46,13 +45,11 @@ export default class LandingPage extends Component {
       </Fade>
 
       <div id = "hedwig">
-      <Router>
         <div id = "ChSTitle">
-          <Link to = "/hedwig" onClick = {() => window.location.reload()} class = "link">
+          <NavLink to = "/hedwig" class = "link">
             <h1>Hedwig</h1>
-          </Link>
+          </NavLink>
         </div>
-      </Router>
         <div className = "circle">
           <img className = "airbnb" src = "http://logok.org/wp-content/uploads/2014/07/airbnb-logo-belo-880x628.png" alt=""></img>
           <div className = "projectText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
@@ -63,9 +60,9 @@ export default class LandingPage extends Component {
         <div id = "coffeehouse">
         <Router>
           <div id = "ChSTitle">
-            <Link to = "/coffeehouse" onClick = {() => window.location.reload()} class = "link">
+            <NavLink to = "/coffeehouse" class = "link">
               <h1>Coffeehouse Scheduler</h1>
-            </Link>
+            </NavLink>
           </div>
         </Router>
           <div className = "circle">
@@ -77,13 +74,11 @@ export default class LandingPage extends Component {
 
       <Fade right duration = {1500}>
         <div id = "ricebikes">
-        <Router>
           <div id = "RBTitle">
-            <Link to = "/ricebikes" onClick = {() => window.location.reload()} class = "link">
+            <NavLink to = "/ricebikes"  class = "link">
               <h1>Rice Bikes</h1>
-            </Link>
+            </NavLink>
           </div>
-        </Router>
           <div className = "circle">
             <img className = "airbnb" src = "http://logok.org/wp-content/uploads/2014/07/airbnb-logo-belo-880x628.png" alt=""></img>
             <div className = "projectText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './index.css';
 import App  from './App';
 import PartnerForm from './Pages/PartnerForm.js';
@@ -15,17 +15,17 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <Router>
-        <div>
-            <Route exact path="/" component={App} />
-            <Route path="/workwithus" component={PartnerForm} />
-            <Route path="/joinus" component={MemberForm} />
+        <Switch>
+            <Route path="/" component={App} exact />
+            {/*<Route path="/workwithus" component={PartnerForm} />*/}
+            {/*<Route path="/joinus" component={MemberForm} />*/}
             <Route path = "/beakspeak" component = {BeakSpeak} />
             <Route path = "/coffeehouse" component = {CoffeeHouse} />
             <Route path = "/ricebikes" component = {RiceBikes} />
             <Route path = "/riceelections" component = {RiceElections} />
             <Route path = "/hedwig" component = {Hedwig} />
 
-        </div>
+        </Switch>
     </Router>
     , document.getElementById('root')
 );
