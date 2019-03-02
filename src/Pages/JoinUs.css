@@ -15,7 +15,7 @@
   display: flex;
   align-self: flex-end;
   width: 100vw;
-  font-size: calc(75px + (75 - 30) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(40px + 5vh + 1.7vw);
   color: #40BFB4;
   font-weight: 1000;
   letter-spacing: 0.3vw;
@@ -33,7 +33,7 @@
   font-weight: bold;
   letter-spacing: 0.12vw;
   color: gray;
-  font-size: calc(20px + (20 - 5) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(5px + 1.6vh + 0.7vw);
   font-family: 'HKGrotesk-Bold';
   margin-bottom: -50vh;
 }
@@ -69,6 +69,20 @@
     letter-spacing: 0.3vw;
     font-family: 'HKGrotesk-Bold';
     cursor: pointer;
+  }
+
+  #ContactUsText{
+    padding-top: 2vh;
+    margin-left: 7vw;
+    margin-top: -2.5vh;
+    display: flex;
+    align-self: flex-start;
+    font-weight: bold;
+    letter-spacing: 0.12vw;
+    color: gray;
+    font-size: calc(2.2px + 0.8vh + 0.6vw);
+    font-family: 'HKGrotesk-Bold';
+    margin-bottom: -50vh;
   }
 
 
