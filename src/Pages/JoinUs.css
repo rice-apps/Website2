@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 1024px) {
   #content-JoinUs{
-    margin-top: -90vh;
+    margin-top: -75vh;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     background-color: white;
     background:
             radial-gradient(circle at 77vw calc(100vh - 10vw), #FFB9CD,
-            #FFB9CD 30vw, transparent 30vw);
+            #FFB9CD 40vw, transparent 40vw);
   }
 
   #ContactUsTitle{
@@ -63,7 +63,7 @@
     display: flex;
     align-self: flex-end;
     width: 100vw;
-    font-size: calc(10px + 6vw + 1.3vh);
+    font-size: calc(10px + 7vw + 1.3vh);
     color: #40BFB4;
     font-weight: 1000;
     letter-spacing: 0.3vw;
@@ -80,7 +80,7 @@
     font-weight: bold;
     letter-spacing: 0.12vw;
     color: gray;
-    font-size: calc(2.2px + 0.8vh + 0.6vw);
+    font-size: calc(5px + 1.5vh + 0.8vw);
     font-family: 'HKGrotesk-Bold';
     margin-bottom: -50vh;
   }
@@ -88,5 +88,35 @@
 
   #display{
     display: none;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  #ContactUsTitle{
+    margin-top: 70vh;
+    margin-left: 5vw;
+    display: flex;
+    align-self: flex-end;
+    width: 100vw;
+    font-size: calc(10px + 7vw + 1.3vh);
+    color: #40BFB4;
+    font-weight: 1000;
+    letter-spacing: 0.3vw;
+    font-family: 'HKGrotesk-Bold';
+    cursor: pointer;
+  }
+  #ContactUsText{
+
+    padding-top: 2vh;
+    margin-left: 5vw;
+    margin-top: -2.5vh;
+    display: flex;
+    align-self: flex-start;
+    font-weight: bold;
+    letter-spacing: 0.12vw;
+    color: gray;
+    font-size: calc(3px + 1.5vh + 0.6vw);
+    font-family: 'HKGrotesk-Bold';
+    margin-bottom: -50vh;
   }
 }

@@ -11,14 +11,6 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width:749px) {
-  .projectsPageWrapper h1 {
-    color: #008F82;
-    font-size: calc(15px + 0.8vw + 0.3vh);
-    font-weight: bold;
-  }
-}
-
 .projectText {
   color: white;
   font-size: calc(14px + 0.7vw + 0.2vh);
@@ -26,17 +18,6 @@
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-}
-
-@media only screen and (max-width:749px) {
-  .projectText {
-    color: white;
-    font-size: calc(10px + 0.7vw + 0.15vh);
-    width: calc(22px + 7vh + 3vw);
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
 }
 
 .circle {
@@ -51,23 +32,6 @@
   z-index: 1;
   transition: background 0.5s ease-in-out;
 }
-
-
-@media only screen and (max-width:749px) {
-  .circle {
-    background: #F1F1F1;
-    border-radius: 50%;
-    height: calc(40px + 12vh + 4vw);
-    width: calc(40px + 12vh + 4vw);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: 1;
-    transition: background 0.5s ease-in-out;
-  }
-}
-
 
 .circle:hover {
   background: rgba(64, 191, 180, 0.8);
@@ -129,6 +93,14 @@
   position: absolute;
 }
 
+#ChSTitle {
+  margin-top: calc(4px + 4vh + 7.5vw);
+  margin-left: -5vw;
+  width: 15vw;
+  position: absolute;
+  z-index: 2;
+}
+
 #hedwig {
   margin-top: 25vh;
   margin-left: 45vw;
@@ -138,8 +110,8 @@
   position: absolute;
 }
 
-#ChSTitle {
-  margin-top: calc(4px + 4vh + 7.5vw);
+#HwTitle {
+  margin-top: calc(4px + 6vh + 7.5vw);
   margin-left: -5vw;
   width: 15vw;
   position: absolute;
@@ -168,4 +140,162 @@
 .link:hover {
   text-decoration: underline;
   text-decoration-color: #008F82;
+}
+
+@media only screen and (max-width:1200px) {
+  .projectsPageWrapper h1 {
+    color: #008F82;
+    font-size: calc(13px + 2vw + 0.3vh);
+    font-weight: bold;
+  }
+
+  .projectText {
+    color: white;
+    font-size: calc(12px + 1.5vw + 0.15vh);
+    width: calc(15px + 17vw + 4vh);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .circle {
+    background: #F1F1F1;
+    border-radius: 50%;
+    height: calc(35px + 19vw + 4vh);
+    width: calc(35px + 19vw + 4vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
+  }
+
+  #beakspeak {
+    margin-top: 12vh;
+    margin-left: 5vw;
+    height: 40vh;
+    width: 40vh;
+    position: absolute;
+  }
+
+  #BsTitle {
+    margin-top: calc(15px + 6vh + 7.5vw);
+    margin-left: calc(9px + 2.5vh + 4vw);
+    position: absolute;
+    z-index: 2;
+  }
+
+  #riceelections {
+    margin-top: 5vh;
+    margin-left: 65vw;
+    height: 35vh;
+    width: 40vh;
+    position: absolute;
+  }
+
+  #RETitle {
+    margin-top: 0vh;
+    margin-left: calc(1vh + 1vw);
+    width: calc(20px + 19vw + 4vh);
+    position: absolute;
+    z-index: 2;
+  }
+
+  #hedwig {
+    margin-top: 25vh;
+    margin-left: 40vw;
+    height: 35vh;
+    width: 35vh;
+    text-align: right;
+    position: absolute;
+  }
+
+  #HwTitle {
+    margin-top: calc(10px + 6vh + 7.5vw);
+    margin-left: -5vw;
+    width: 15vw;
+    position: absolute;
+    z-index: 2;
+  }
+
+  #ricebikes {
+    margin-top: 60vh;
+    margin-left: 60vw;
+    height: 35vh;
+    width: 35vh;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width:749px) {
+  .projectsPageWrapper h1 {
+    color: #008F82;
+    font-size: calc(10px + 1.7vw + 0.3vh);
+    font-weight: bold;
+  }
+
+  .projectText {
+    color: white;
+    font-size: calc(10px + 0.7vw + 0.15vh);
+    width: calc(22px + 7vh + 3vw);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .circle {
+    background: #F1F1F1;
+    border-radius: 50%;
+    height: calc(35px + 19vw + 4vh);
+    width: calc(35px + 19vw + 4vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
+  }
+
+  #riceelections {
+    margin-top: 5vh;
+    margin-left: 55vw;
+    height: 35vh;
+    width: 40vh;
+    position: absolute;
+  }
+
+  #RETitle {
+    margin-top: -1vh;
+    margin-left: calc(0.5vh + 1vw);
+    width: calc(30px + 20vw + 4vh);
+    position: absolute;
+    z-index: 2;
+  }
+
+  #coffeehouse {
+    margin-top: 50vh;
+    margin-left: 15vw;
+    height: 35vh;
+    width: 35vh;
+    text-align: right;
+    position: absolute;
+  }
+
+  #hedwig {
+    margin-top: 30vh;
+    margin-left: 40vw;
+    height: 35vh;
+    width: 35vh;
+    text-align: right;
+    position: absolute;
+  }
+
+  #ricebikes {
+    margin-top: 65vh;
+    margin-left: 57vw;
+    height: 35vh;
+    width: 35vh;
+    position: absolute;
+  }
 }

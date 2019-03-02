@@ -1,6 +1,14 @@
 .TestmonialsWrapper {
-
   height:100vh;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.CarouselWrapper {
+
+  height:80vh;
   margin-left: 10vw;
   flex-direction: column;
   justify-content: center;
