@@ -7,24 +7,43 @@
 
 .projectsPageWrapper h1 {
   color: #008F82;
-  font-size: calc(20px + (25-20) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(20px + 1vw + 0.3vh);
   font-weight: bold;
+}
+
+@media only screen and (max-width:749px) {
+  .projectsPageWrapper h1 {
+    color: #008F82;
+    font-size: calc(15px + 0.8vw + 0.3vh);
+    font-weight: bold;
+  }
 }
 
 .projectText {
   color: white;
-  font-size: calc(12px + (18-12) * ((100vw - 320px) / (1600 - 320)));
-  width: 15vw;
+  font-size: calc(14px + 0.7vw + 0.2vh);
+  width: calc(30px + 13vh + 3vw);
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
+@media only screen and (max-width:749px) {
+  .projectText {
+    color: white;
+    font-size: calc(10px + 0.7vw + 0.15vh);
+    width: calc(22px + 7vh + 3vw);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+
 .circle {
   background: #F1F1F1;
   border-radius: 50%;
-  height: calc(130px + (180-130) * ((100vw - 320px) / (1600 - 320)));
-  width: calc(130px + (180-130) * ((100vw - 320px) / (1600 - 320)));
+  height: calc(40px + 15vh + 6.5vw);
+  width: calc(40px + 15vh + 6.5vw);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +51,23 @@
   z-index: 1;
   transition: background 0.5s ease-in-out;
 }
+
+
+@media only screen and (max-width:749px) {
+  .circle {
+    background: #F1F1F1;
+    border-radius: 50%;
+    height: calc(40px + 12vh + 4vw);
+    width: calc(40px + 12vh + 4vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
+  }
+}
+
 
 .circle:hover {
   background: rgba(64, 191, 180, 0.8);
