@@ -45,7 +45,7 @@ export default class Projects extends Component {
       </Fade>
 
       <div id = "hedwig">
-        <div id = "ChSTitle">
+        <div id = "HwTitle">
           <NavLink to = "/hedwig" class = "link">
             <h1>Hedwig</h1>
           </NavLink>

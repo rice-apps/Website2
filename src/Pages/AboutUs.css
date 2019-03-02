@@ -31,6 +31,19 @@ Reveal {
   animation-duration: 1s;
 }
 
+@media only screen and (max-width:1200px) {
+  #AboutUsParagraph {
+    width: 70vw;
+    height: 50vh;
+    font-family: 'HKGrotesk-Bold-Legacy';
+    font-weight: bold;
+    font-size: calc(6px + 2.8vw + 0.7vh);
+    line-height: 6.3vh;
+    letter-spacing: 0.08vw;
+    color: #787878;
+  }
+}
+
 @media only screen and (max-width:749px) {
   #AboutUsParagraph {
     width: 75vw;

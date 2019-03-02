@@ -50,6 +50,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <div className="TestmonialsWrapper">
+      <div className="CarouselWrapper">
 
       <Carousel defaultWait = {10000}>
         <Fade right>
@@ -78,6 +79,7 @@ export default class LandingPage extends Component {
       </Carousel>
 
 
+      </div>
       </div>
     )
 
