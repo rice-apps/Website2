@@ -72,6 +72,7 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
+
 button{
   outline:none;
   position: fixed;
@@ -79,7 +80,7 @@ button{
 }
 #hamburger {
   z-index: 100;
-  margin-left: 2vw;
+  margin-left: .8vw;
   margin-top: 1.5vh;
 }
 
