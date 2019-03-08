@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './LandingPage.css';
 import ScrollIntoView from 'react-scroll-into-view';
-
+import Logo from '../images/logo_color_light.png'
 
 export default class LandingPage extends Component {
   constructor(props) {
@@ -46,7 +46,7 @@ export default class LandingPage extends Component {
           </div>
 
           <div id="riceApps">
-            riceApps
+            <img src = {Logo}/>
           </div>
           <div class={arrow_classes} onClick={() => this.hideArrow()} >
             <ScrollIntoView selector="#whatWeDo">
