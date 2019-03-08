@@ -12,7 +12,7 @@
 }
 
 #treeBackground {
-  height: 70vh;
+  height: 80vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@ url('../images/RiceApps2018 016.JPG');
 @media only screen and (max-width:1680px) {
   #treeBackground {
     background-attachment: inherit;
-    height: 50vh;
+    height: 80vh;
   }
 }
 
@@ -47,7 +47,7 @@ url('../images/RiceApps2018 016.JPG');
 
   #treeBackground {
     background-attachment: inherit;
-    height: 40vh;
+    height: 80vh;
   }
 
   .whatWeDoPageWrapper h1{
