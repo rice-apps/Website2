@@ -8,7 +8,7 @@
     height:160vh;
     background: white;
     padding: 2.5vw;
-    
+
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -18,7 +18,7 @@
     Color RADIUS, transparent RADIUS */
     radial-gradient(circle at 85vw 60vh, #FFB9CD,
       #FFB9CD 25vw, transparent 25vw);
-  
+
     z-index: 1;
   }
 #content{
@@ -30,7 +30,7 @@ align-items: center;
 }
 #projectName{
   color: #40BFB4;
-  font-size: 15vh;
+  font-size: calc(30px + 3.9vw + 1.8vh);
   font-family: 'HKGrotesk-Bold-Legacy'
 }
 .paragraphs{
@@ -39,11 +39,11 @@ color: #969696;
 }
 #projectDescription{
   width: 50%;
-  font-size: 4vh;
+  font-size: calc(7px + 1.6vw + 0.5vh);
 }
 
 #teamAndProjectScope{
-  font-size: 2.5vh;
+  font-size: calc(5px + 1.2vw + 0.4vh);
   padding-top: 5vh;
 }
 .teamAndProjectScopeLabel{
@@ -55,7 +55,7 @@ padding-bottom: 1vh;
 }
 .caption{
 color: #01796F;
-font-size: 5vh;
+font-size: calc(7px + 1.7vw + 0.8vh);
 margin-top: 7vh;
 font-family: "HKGrotesk-Bold-Legacy"
 }
@@ -63,7 +63,7 @@ font-family: "HKGrotesk-Bold-Legacy"
 margin-top: 4vh;
 color: #969696;
 /* NUE HAAS UNICA PRO */
-font-size: 4vh;
+font-size: calc(7px + 1.5vw + 0.7vh);
 width: 50vw;
 }
 
@@ -101,7 +101,7 @@ width: 50vw;
     }
     #projectName{
         color: #40BFB4;
-        font-size: 7vh;
+        font-size: calc(20px + 4vw + 1.9vh);
         font-family: 'HKGrotesk-Bold-Legacy'
     }
     .paragraphs{
@@ -109,12 +109,12 @@ width: 50vw;
         /* GET NEUE HAAS UNICA PRO */
     }
     #projectDescription{
-        width: 50%;
-        font-size: 2vh;
+        width: 70%;
+        font-size: calc(7px + 1.8vw + 0.6vh);
     }
 
     #teamAndProjectScope{
-        font-size: 2.5vh;
+        font-size: calc(10px + 1.4vw + 0.5vh);
         padding-top: 5vh;
     }
     .teamAndProjectScopeLabel{
@@ -126,7 +126,7 @@ width: 50vw;
     }
     .caption{
         color: #01796F;
-        font-size: 3vh;
+        font-size: calc(7px + 1.9vw + 1vh);
         margin-top: 7vh;
         font-family: "HKGrotesk-Bold-Legacy"
     }
@@ -134,8 +134,57 @@ width: 50vw;
         margin-top: 4vh;
         color: #969696;
         /* NUE HAAS UNICA PRO */
-        font-size: 2vh;
-        width: 70vw;
+        font-size: calc(7px + 1.6vw + 0.8vh);
+        width: 75vw;
+        margin-bottom: 7vh;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    #content{
+        position: relative;
+        width: 87vw;
+        text-align: left;
+        flex-direction: column;
+        align-items: center;
+    }
+    #projectName{
+        color: #40BFB4;
+        font-size: calc(27px + 4vw + 1.9vh);
+        font-family: 'HKGrotesk-Bold-Legacy'
+    }
+    .paragraphs{
+        color: #969696;
+        /* GET NEUE HAAS UNICA PRO */
+    }
+    #projectDescription{
+        width: 80%;
+        font-size: calc(7px + 1.8vw + 0.6vh);
+    }
+
+    #teamAndProjectScope{
+        font-size: calc(10px + 1.4vw + 0.5vh);
+        padding-top: 5vh;
+    }
+    .teamAndProjectScopeLabel{
+        color: #01796F;
+        padding-bottom: 1vh;
+    }
+    #projectScope{
+        padding-top: 2vh;
+    }
+    .caption{
+        color: #01796F;
+        font-size: calc(7px + 2vw + 1.2vh);
+        margin-top: 7vh;
+        font-family: "HKGrotesk-Bold-Legacy"
+    }
+    .captionDescription{
+        margin-top: 4vh;
+        color: #969696;
+        /* NUE HAAS UNICA PRO */
+        font-size: calc(7px + 1.8vw + 0.8vh);
+        width: 78vw;
         margin-bottom: 7vh;
     }
 }
