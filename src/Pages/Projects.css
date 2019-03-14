@@ -68,7 +68,7 @@
   z-index: 2;
 }
 
-#riceelections {
+#carpool {
   margin-top: 5vh;
   margin-left: 70vw;
   height: 35vh;
@@ -76,7 +76,7 @@
   position: absolute;
 }
 
-#RETitle {
+#cTitle {
   margin-top: 0vh;
   margin-left: calc(7px + 1vh + 2vw);
   width: calc(6px + 8vh + 14vw);
@@ -84,7 +84,7 @@
   z-index: 2;
 }
 
-#coffeehouse {
+#website {
   margin-top: 55vh;
   margin-left: 20vw;
   height: 35vh;
@@ -93,7 +93,7 @@
   position: absolute;
 }
 
-#ChSTitle {
+#wTitle {
   margin-top: calc(4px + 4vh + 7.5vw);
   margin-left: -5vw;
   width: 15vw;
@@ -118,7 +118,7 @@
   z-index: 2;
 }
 
-#ricebikes {
+#reservations {
   margin-top: 60vh;
   margin-left: 65vw;
   height: 35vh;
@@ -126,7 +126,7 @@
   position: absolute;
 }
 
-#RBTitle {
+#RTitle {
   margin-top: 0vh;
   margin-left: 0vw;
   position: absolute;
@@ -186,7 +186,7 @@
     z-index: 2;
   }
 
-  #riceelections {
+  #carpool {
     margin-top: 5vh;
     margin-left: 65vw;
     height: 35vh;
@@ -194,7 +194,7 @@
     position: absolute;
   }
 
-  #RETitle {
+  #cTitle {
     margin-top: 0vh;
     margin-left: calc(1vh + 1vw);
     width: calc(20px + 19vw + 4vh);
@@ -219,7 +219,7 @@
     z-index: 2;
   }
 
-  #ricebikes {
+  #reservations {
     margin-top: 60vh;
     margin-left: 60vw;
     height: 35vh;
@@ -257,7 +257,7 @@
     transition: background 0.5s ease-in-out;
   }
 
-  #riceelections {
+  #carpool {
     margin-top: 5vh;
     margin-left: 55vw;
     height: 35vh;
@@ -265,7 +265,7 @@
     position: absolute;
   }
 
-  #RETitle {
+  #cTitle {
     margin-top: -1vh;
     margin-left: calc(0.5vh + 1vw);
     width: calc(30px + 20vw + 4vh);
@@ -273,7 +273,7 @@
     z-index: 2;
   }
 
-  #coffeehouse {
+  #website {
     margin-top: 50vh;
     margin-left: 15vw;
     height: 35vh;
@@ -291,7 +291,7 @@
     position: absolute;
   }
 
-  #ricebikes {
+  #reservations {
     margin-top: 65vh;
     margin-left: 57vw;
     height: 35vh;

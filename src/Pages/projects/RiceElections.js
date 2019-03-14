@@ -3,14 +3,14 @@ import './ProjectsTemplate.css';
 import {BrowserRouter as Router, NavLink} from "react-router-dom";
 
 
-export default class RiceElections extends Component {
+export default class Carpool extends Component {
     render() {
         return (
                 <div>
                     <NavLink to="/"  >
                         <img class = "homeIcon" src={require("../../home-icon.png")}/>
                     </NavLink>
-                    <div className="pageWrapper">               
+                    <div className="pageWrapper">
                         <div id="content">
                             <div id="projectName">
                                 RiceElections.
@@ -37,8 +37,8 @@ export default class RiceElections extends Component {
                                 <div class="caption">OUR SOLUTION</div>
                                 <div class="captionDescription">Insert description of project here. Lorem ipsum dolor sit amet, erat postea argumentum id mei, ius quaeque epicurei ut. Doming aperiri fabulas pri id, id dolor percipitur nec, sale error ei per. Dolores insolens mea ex, eam definitiones reprehendunt ei, sed eu commune omnesque sadipscing. Diam admodum offendit usu at, ei aperiam interesset quo.</div>
                             </div>
-                            
-                        </div>              
+
+                        </div>
                     </div>
                 </div>
         )
