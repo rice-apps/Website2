@@ -12,6 +12,7 @@ import './App.css';
 import './hamburgers.css';
 import './styles.css'
 import ScrollIntoView from 'react-scroll-into-view';
+import ReactGA from 'react-ga';
 
 
 
@@ -22,6 +23,12 @@ class App extends Component {
       clicked: false,
     };
   }
+
+  initializeReactGA() {
+    ReactGA.initialize('UA-137795173-1');
+    ReactGA.pageview('/homepage');
+  }
+
   handleClick() {
     //call this function when the hamburger menu is clicked
     //if the menu is open, close it
