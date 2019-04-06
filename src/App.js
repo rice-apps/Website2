@@ -25,8 +25,8 @@ class App extends Component {
   }
 
   initializeReactGA() {
-    ReactGA.initialize('UA-137795173-1');
-    ReactGA.pageview('/homepage');
+      ReactGA.initialize('UA-137795173-1');
+      ReactGA.pageview('/');
   }
 
   handleClick() {
@@ -41,6 +41,9 @@ class App extends Component {
       //But only sets clicked to False when clicked is True
       this.setState({ clicked: false })
     }
+  }
+  componentDidMount(){
+      this.initializeReactGA();
   }
   //end of sidebar-menu
   render() {
