@@ -3,6 +3,8 @@ import Fade from 'react-reveal/Fade';
 import './Projects.css';
 import {BrowserRouter as Router, Link, NavLink, Redirect} from "react-router-dom";
 
+import box from '../images/box.svg'
+
 export default class Projects extends Component {
 
   render() {
@@ -19,7 +21,7 @@ export default class Projects extends Component {
             </div>
           </div>
           <div className = "circle">
-            <img className = "airbnb" src = "http://logok.org/wp-content/uploads/2014/07/airbnb-logo-belo-880x628.png" alt=""></img>
+            <img className = "airbnb" src = {box} alt=""></img>
             <div className = "projectText">
             Rice's anonymous, exclusive social media platform</div>
           </div>
@@ -34,7 +36,7 @@ export default class Projects extends Component {
             </NavLink>
           </div>
           <div className = "circle">
-            <img className = "airbnb" src = "http://logok.org/wp-content/uploads/2014/07/airbnb-logo-belo-880x628.png" alt=""></img>
+            <img className = "airbnb" src = {box} alt=""></img>
             <div className = "projectText">Ride-sharing at Rice made easier</div>
           </div>
         </div>
@@ -47,7 +49,7 @@ export default class Projects extends Component {
           </NavLink>
         </div>
         <div className = "circle">
-          <img className = "airbnb" src = "http://logok.org/wp-content/uploads/2014/07/airbnb-logo-belo-880x628.png" alt=""></img>
+          <img className = "airbnb" src = {box} alt=""></img>
           <div className = "projectText">The Hoot's delivery app</div>
         </div>
       </div>
@@ -60,7 +62,7 @@ export default class Projects extends Component {
             </NavLink>
           </div>
           <div className = "circle">
-            <img className = "airbnb" src = "http://logok.org/wp-content/uploads/2014/07/airbnb-logo-belo-880x628.png" alt=""></img>
+            <img className = "airbnb" src = {box} alt=""></img>
             <div className = "projectText">Brand creation for organizations</div>
           </div>
         </div>
@@ -74,7 +76,7 @@ export default class Projects extends Component {
             </NavLink>
           </div>
           <div className = "circle">
-            <img className = "airbnb" src = "http://logok.org/wp-content/uploads/2014/07/airbnb-logo-belo-880x628.png" alt=""></img>
+            <img className = "airbnb" src = {box} alt=""></img>
             <div className = "projectText">Reserve rooms on the Rice campus</div>
           </div>
         </div>

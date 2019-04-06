@@ -67,7 +67,7 @@ export default class LandingPage extends Component {
         <Fade right>
           <div className="carouselBox">
             <div className="TestimonialParagraph">
-            "RiceApps is a great <em> learning experience</em>. I was a part of a <em> fast-moving </em> team with a real web-app to build, which is something different from what I get out of my classes. I was able to apply my skills and expand them more effectively."
+            "RiceApps is a great <em> learning experience</em>. I was part of a <em> fast-moving </em> team building a real application, which is something different from what I get out of my classes. I was able to apply my skills and expand them more effectively."
             </div>
             <div className="nameWrapper">
               <span id="shryans">— Danny Andreini</span>
