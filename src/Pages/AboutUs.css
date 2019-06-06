@@ -16,7 +16,7 @@
   height: 50vh;
   font-family: 'HKGrotesk-Bold-Legacy';
   font-weight: bold;
-  font-size: calc(16px + (31-16) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(3px + 2.2vw + 0.6vh);
   line-height: 6.3vh;
   letter-spacing: 0.08vw;
   color: #787878;
@@ -29,4 +29,30 @@
 Reveal {
   animation-name: fadeInUp;
   animation-duration: 1s;
+}
+
+@media only screen and (max-width:1200px) {
+  #AboutUsParagraph {
+    width: 70vw;
+    height: 50vh;
+    font-family: 'HKGrotesk-Bold-Legacy';
+    font-weight: bold;
+    font-size: calc(6px + 2.8vw + 0.7vh);
+    line-height: 6.3vh;
+    letter-spacing: 0.08vw;
+    color: #787878;
+  }
+}
+
+@media only screen and (max-width:749px) {
+  #AboutUsParagraph {
+    width: 75vw;
+    height: 50vh;
+    font-family: 'HKGrotesk-Bold-Legacy';
+    font-weight: bold;
+    font-size: calc(6px + 2.8vw + 0.7vh);
+    line-height: 6.3vh;
+    letter-spacing: 0.08vw;
+    color: #787878;
+  }
 }

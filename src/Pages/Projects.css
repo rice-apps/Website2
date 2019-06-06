@@ -7,14 +7,14 @@
 
 .projectsPageWrapper h1 {
   color: #008F82;
-  font-size: calc(20px + (25-20) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(20px + 1vw + 0.3vh);
   font-weight: bold;
 }
 
 .projectText {
   color: white;
-  font-size: calc(12px + (18-12) * ((100vw - 320px) / (1600 - 320)));
-  width: 15vw;
+  font-size: calc(14px + 0.7vw + 0.2vh);
+  width: calc(30px + 13vh + 3vw);
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -23,8 +23,8 @@
 .circle {
   background: #F1F1F1;
   border-radius: 50%;
-  height: calc(130px + (180-130) * ((100vw - 320px) / (1600 - 320)));
-  width: calc(130px + (180-130) * ((100vw - 320px) / (1600 - 320)));
+  height: calc(40px + 15vh + 6.5vw);
+  width: calc(40px + 15vh + 6.5vw);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,7 @@
   position: absolute;
 }
 
-#CPTitle {
+#cTitle {
   margin-top: 0vh;
   margin-left: calc(7px + 1vh + 2vw);
   width: calc(6px + 8vh + 14vw);
@@ -84,13 +84,21 @@
   z-index: 2;
 }
 
-#reservations {
+#website {
   margin-top: 55vh;
   margin-left: 20vw;
   height: 35vh;
   width: 35vh;
   text-align: right;
   position: absolute;
+}
+
+#wTitle {
+  margin-top: calc(4px + 4vh + 7.5vw);
+  margin-left: -5vw;
+  width: 15vw;
+  position: absolute;
+  z-index: 2;
 }
 
 #hedwig {
@@ -102,15 +110,15 @@
   position: absolute;
 }
 
-#RVTitle {
-  margin-top: calc(4px + 4vh + 7.5vw);
+#HwTitle {
+  margin-top: calc(4px + 6vh + 7.5vw);
   margin-left: -5vw;
   width: 15vw;
   position: absolute;
   z-index: 2;
 }
 
-#website-team {
+#reservations {
   margin-top: 60vh;
   margin-left: 65vw;
   height: 35vh;
@@ -118,7 +126,7 @@
   position: absolute;
 }
 
-#WSTitle {
+#RTitle {
   margin-top: 0vh;
   margin-left: 0vw;
   position: absolute;
@@ -132,4 +140,162 @@
 .link:hover {
   text-decoration: underline;
   text-decoration-color: #008F82;
+}
+
+@media only screen and (max-width:1200px) {
+  .projectsPageWrapper h1 {
+    color: #008F82;
+    font-size: calc(13px + 2vw + 0.3vh);
+    font-weight: bold;
+  }
+
+  .projectText {
+    color: white;
+    font-size: calc(12px + 1.5vw + 0.15vh);
+    width: calc(15px + 17vw + 4vh);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .circle {
+    background: #F1F1F1;
+    border-radius: 50%;
+    height: calc(35px + 19vw + 4vh);
+    width: calc(35px + 19vw + 4vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
+  }
+
+  #beakspeak {
+    margin-top: 12vh;
+    margin-left: 5vw;
+    height: 40vh;
+    width: 40vh;
+    position: absolute;
+  }
+
+  #BsTitle {
+    margin-top: calc(15px + 6vh + 7.5vw);
+    margin-left: calc(9px + 2.5vh + 4vw);
+    position: absolute;
+    z-index: 2;
+  }
+
+  #carpool {
+    margin-top: 5vh;
+    margin-left: 65vw;
+    height: 35vh;
+    width: 40vh;
+    position: absolute;
+  }
+
+  #cTitle {
+    margin-top: 0vh;
+    margin-left: calc(1vh + 1vw);
+    width: calc(20px + 19vw + 4vh);
+    position: absolute;
+    z-index: 2;
+  }
+
+  #hedwig {
+    margin-top: 25vh;
+    margin-left: 40vw;
+    height: 35vh;
+    width: 35vh;
+    text-align: right;
+    position: absolute;
+  }
+
+  #HwTitle {
+    margin-top: calc(10px + 6vh + 7.5vw);
+    margin-left: -5vw;
+    width: 15vw;
+    position: absolute;
+    z-index: 2;
+  }
+
+  #reservations {
+    margin-top: 60vh;
+    margin-left: 60vw;
+    height: 35vh;
+    width: 35vh;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width:749px) {
+  .projectsPageWrapper h1 {
+    color: #008F82;
+    font-size: calc(10px + 1.7vw + 0.3vh);
+    font-weight: bold;
+  }
+
+  .projectText {
+    color: white;
+    font-size: calc(10px + 0.7vw + 0.15vh);
+    width: calc(22px + 7vh + 3vw);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .circle {
+    background: #F1F1F1;
+    border-radius: 50%;
+    height: calc(35px + 19vw + 4vh);
+    width: calc(35px + 19vw + 4vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
+  }
+
+  #carpool {
+    margin-top: 5vh;
+    margin-left: 55vw;
+    height: 35vh;
+    width: 40vh;
+    position: absolute;
+  }
+
+  #cTitle {
+    margin-top: -1vh;
+    margin-left: calc(0.5vh + 1vw);
+    width: calc(30px + 20vw + 4vh);
+    position: absolute;
+    z-index: 2;
+  }
+
+  #website {
+    margin-top: 50vh;
+    margin-left: 15vw;
+    height: 35vh;
+    width: 35vh;
+    text-align: right;
+    position: absolute;
+  }
+
+  #hedwig {
+    margin-top: 30vh;
+    margin-left: 40vw;
+    height: 35vh;
+    width: 35vh;
+    text-align: right;
+    position: absolute;
+  }
+
+  #reservations {
+    margin-top: 65vh;
+    margin-left: 57vw;
+    height: 35vh;
+    width: 35vh;
+    position: absolute;
+  }
 }

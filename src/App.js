@@ -12,6 +12,7 @@ import './App.css';
 import './hamburgers.css';
 import './styles.css'
 import ScrollIntoView from 'react-scroll-into-view';
+import ReactGA from 'react-ga';
 
 
 
@@ -22,6 +23,12 @@ class App extends Component {
       clicked: false,
     };
   }
+
+  initializeReactGA() {
+      ReactGA.initialize('UA-137795173-1');
+      ReactGA.pageview('/');
+  }
+
   handleClick() {
     //call this function when the hamburger menu is clicked
     //if the menu is open, close it
@@ -34,6 +41,9 @@ class App extends Component {
       //But only sets clicked to False when clicked is True
       this.setState({ clicked: false })
     }
+  }
+  componentDidMount(){
+      this.initializeReactGA();
   }
   //end of sidebar-menu
   render() {
