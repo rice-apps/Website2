@@ -52,12 +52,28 @@
   opacity: 0;
 }
 
+.projectTitles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ppTitle {
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+.fpTitle {
+  margin-right: 50px;
+  margin-top: 0px;
+}
+
 
 #beakspeak {
-  margin-top: 12vh;
-  margin-left: 9vw;
-  height: 40vh;
-  width: 40vh;
+  margin-top: 25vh;
+  margin-left: 5vw;
+  height: 35vh;
+  width: 35vh;
   position: absolute;
 }
 
@@ -70,9 +86,9 @@
 
 #carpool {
   margin-top: 5vh;
-  margin-left: 70vw;
+  margin-left: 25vw;
   height: 35vh;
-  width: 40vh;
+  width: 35vh;
   position: absolute;
 }
 
@@ -85,8 +101,8 @@
 }
 
 #website {
-  margin-top: 55vh;
-  margin-left: 20vw;
+  margin-top: 50vh;
+  margin-left: 25vw;
   height: 35vh;
   width: 35vh;
   text-align: right;
@@ -101,9 +117,25 @@
   z-index: 2;
 }
 
+#pdi {
+  margin-top: 5vh;
+  margin-left: 60vw;
+  height: 35vh;
+  width: 35vh;
+  position: absolute;
+}
+
+#pdiTitle {
+  margin-top: 0vh;
+  margin-left: calc(7px + 1vh + 2vw);
+  width: calc(6px + 8vh + 14vw);
+  position: absolute;
+  z-index: 2;
+}
+
 #hedwig {
   margin-top: 25vh;
-  margin-left: 45vw;
+  margin-left: 80vw;
   height: 35vh;
   width: 35vh;
   text-align: right;
@@ -118,9 +150,9 @@
   z-index: 2;
 }
 
-#reservations {
-  margin-top: 60vh;
-  margin-left: 65vw;
+#ccd {
+  margin-top: 50vh;
+  margin-left: 60vw;
   height: 35vh;
   width: 35vh;
   position: absolute;
@@ -161,8 +193,8 @@
   .circle {
     background: #F1F1F1;
     border-radius: 50%;
-    height: calc(35px + 19vw + 4vh);
-    width: calc(35px + 19vw + 4vh);
+    height: calc(35px + 10vw + 4vh);
+    width: calc(35px + 10vw + 4vh);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,59 +204,99 @@
   }
 
   #beakspeak {
-    margin-top: 12vh;
+    margin-top: 10vh;
     margin-left: 5vw;
-    height: 40vh;
-    width: 40vh;
+    height: 10vw;
+    width: 10vw;
     position: absolute;
   }
-
+  
   #BsTitle {
-    margin-top: calc(15px + 6vh + 7.5vw);
+    margin-top: calc(9px + 4vh + 7.5vw);
     margin-left: calc(9px + 2.5vh + 4vw);
     position: absolute;
     z-index: 2;
   }
-
+  
   #carpool {
-    margin-top: 5vh;
-    margin-left: 65vw;
-    height: 35vh;
-    width: 40vh;
+    margin-top: 30vh;
+    margin-left: 25vw;
+    height: 10vw;
+    width: 10vw;
     position: absolute;
   }
-
+  
   #cTitle {
     margin-top: 0vh;
-    margin-left: calc(1vh + 1vw);
-    width: calc(20px + 19vw + 4vh);
+    margin-left: calc(7px + 1vh + 2vw);
+    width: calc(6px + 8vh + 14vw);
     position: absolute;
     z-index: 2;
   }
-
-  #hedwig {
-    margin-top: 25vh;
-    margin-left: 40vw;
-    height: 35vh;
-    width: 35vh;
+  
+  #website {
+    margin-top: 50vh;
+    margin-left: 5vw;
+    height: 10vw;
+    width: 10vw;
     text-align: right;
     position: absolute;
   }
-
-  #HwTitle {
-    margin-top: calc(10px + 6vh + 7.5vw);
+  
+  #wTitle {
+    margin-top: calc(4px + 4vh + 7.5vw);
     margin-left: -5vw;
     width: 15vw;
     position: absolute;
     z-index: 2;
   }
-
-  #reservations {
-    margin-top: 60vh;
-    margin-left: 60vw;
+  
+  #pdi {
+    margin-top: 30vh;
+    margin-left: 55vw;
+    height: 35vh;
+    width: 40vh;
+    position: absolute;
+  }
+  
+  #pdiTitle {
+    margin-top: 0vh;
+    margin-left: calc(7px + 1vh + 2vw);
+    width: calc(6px + 8vh + 14vw);
+    position: absolute;
+    z-index: 2;
+  }
+  
+  #hedwig {
+    margin-top: 10vh;
+    margin-left: 75vw;
+    height: 35vh;
+    width: 35vh;
+    text-align: right;
+    position: absolute;
+  }
+  
+  #HwTitle {
+    margin-top: calc(4px + 6vh + 7.5vw);
+    margin-left: -5vw;
+    width: 15vw;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  #ccd {
+    margin-top: 50vh;
+    margin-left: 75vw;
     height: 35vh;
     width: 35vh;
     position: absolute;
+  }
+  
+  #RTitle {
+    margin-top: 0vh;
+    margin-left: 0vw;
+    position: absolute;
+    z-index: 2;
   }
 }
 
@@ -247,8 +319,8 @@
   .circle {
     background: #F1F1F1;
     border-radius: 50%;
-    height: calc(35px + 19vw + 4vh);
-    width: calc(35px + 19vw + 4vh);
+    height: calc(35px + 10vw + 4vh);
+    width: calc(35px + 10vw + 4vh);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,15 +329,46 @@
     transition: background 0.5s ease-in-out;
   }
 
+  #beakspeak {
+    margin-top: 15vh;
+    margin-left: 5vw;
+    height: 15vh;
+    width: 15vh;
+    position: absolute;
+  }
+
   #carpool {
+    margin-top: 35vh;
+    margin-left: 5vw;
+    height: 15vh;
+    width: 15vh;
+    text-align: right;
+    position: absolute;
+  }
+
+  #website {
+    margin-top: 55vh;
+    margin-left: 5vw;
+    height: 15vh;
+    width: 15vh;
+    text-align: center;
+    position: absolute;
+  }
+
+  #wTitle {
+    margin-top: -5px;
+    text-align: center;
+  }
+
+  #hedwig {
     margin-top: 5vh;
-    margin-left: 55vw;
+    margin-left: 50vw;
     height: 35vh;
     width: 40vh;
     position: absolute;
   }
 
-  #cTitle {
+  #HwTitle {
     margin-top: -1vh;
     margin-left: calc(0.5vh + 1vw);
     width: calc(30px + 20vw + 4vh);
@@ -273,29 +376,19 @@
     z-index: 2;
   }
 
-  #website {
-    margin-top: 50vh;
-    margin-left: 15vw;
+  #pdi {
+    margin-top: 25vh;
+    margin-left: 50vw;
     height: 35vh;
-    width: 35vh;
-    text-align: right;
+    width: 40vh;
     position: absolute;
   }
 
-  #hedwig {
-    margin-top: 30vh;
-    margin-left: 40vw;
+  #ccd {
+    margin-top: 45vh;
+    margin-left: 50vw;
     height: 35vh;
-    width: 35vh;
-    text-align: right;
-    position: absolute;
-  }
-
-  #reservations {
-    margin-top: 65vh;
-    margin-left: 57vw;
-    height: 35vh;
-    width: 35vh;
+    width: 40vh;
     position: absolute;
   }
 }
