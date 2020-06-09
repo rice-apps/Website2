@@ -7,11 +7,12 @@ import PartnerForm from './Pages/PartnerForm.js';
 import MemberForm from './Pages/MemberForm.js';
 import BeakSpeak from './Pages/projects/BeakSpeak.js';
 import Website from './Pages/projects/Website.js';
-import Reservations from './Pages/projects/Reservations.js';
+import Reservations from './Pages/projects/CCD.js';
 import Carpool from './Pages/projects/Carpool.js';
 import Hedwig from './Pages/projects/Hedwig.js';
 
 import * as serviceWorker from './serviceWorker';
+import CCD from './Pages/projects/CCD.js';
 
 ReactDOM.render(
     <Router>
@@ -19,7 +20,7 @@ ReactDOM.render(
             <Route path="/" component={App} exact />
             <Route path = "/beakspeak" component = {BeakSpeak} />
             <Route path = "/website" component = {Website} />
-            <Route path = "/reservations" component = {Reservations} />
+            <Route path = "/ccd" component = {CCD} />
             <Route path = "/carpool" component = {Carpool} />
             <Route path = "/hedwig" component = {Hedwig} />
         </Switch>
