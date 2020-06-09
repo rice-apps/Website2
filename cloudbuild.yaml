@@ -1,0 +1,8 @@
+steps:
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['run', 'build']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "app.yaml", "-v", "$_GAE_VERSION"]
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "services", "--project", "$PROJECT_ID", "set-traffic", "--splits", "$_GAE_TRAFFIC"]
+timeout: "1600s"
