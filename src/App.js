@@ -23,7 +23,7 @@ class App extends Component {
       clicked: false,
     };
   }
-
+  
   initializeReactGA() {
       ReactGA.initialize('UA-137795173-1');
       ReactGA.pageview('/');
