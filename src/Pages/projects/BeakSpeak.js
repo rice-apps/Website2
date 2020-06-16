@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import './ProjectsTemplate.css';
 import { BrowserRouter as Router, NavLink, Link } from "react-router-dom";
 
-
 export default class BeakSpeak extends Component {
     render() {
         return (
-
                 <div>
                     <NavLink to="/" >
                         <img class="homeIcon" src={require("../../home-icon.png")} />
