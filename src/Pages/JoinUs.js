@@ -15,7 +15,7 @@ export default class LandingPage extends Component {
     }
     componentDidMount() {
         if (this.el) {
-            typeformEmbed.makeWidget(this.el, "https://danny631.typeform.com/to/u3dn70", {
+            typeformEmbed.makeWidget(this.el, "https://ricecsclub.typeform.com/to/Ck1X96", {
                 hideFooter: true,
                 hideHeaders: true,
                 opacity: 0,
