@@ -4,17 +4,9 @@ import { BrowserRouter as Router, NavLink, Link } from 'react-router-dom';
 import { ScrollTop } from '../../ScrollTop';
 
 export default class Carpool extends Component {
-<<<<<<< HEAD
-    // componentDidMount() {
-    //     window.scrollTo(0, 0);
-    //     // <ScrollTop/>
-    // }
-
-=======
     componentDidMount() {
         window.scrollTo(0, 0);
     }
->>>>>>> 6089f3cd20e10ec351690d20a39a03fa0877cea4
     render() {
         return (
                 <div>  

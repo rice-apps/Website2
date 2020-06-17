@@ -9,11 +9,6 @@ import PartnerForm from './Pages/PartnerForm.js';
 import MemberForm from './Pages/MemberForm.js';
 
 import * as serviceWorker from './serviceWorker';
-<<<<<<< HEAD
-import CCD from './Pages/projects/CCD.js';
-import { ScrollTop } from './ScrollTop.js';
-=======
->>>>>>> eb289fb2d2c6bc1fe9e66a038a4f48102a585ae0
 
 
 function GoToProjectPage() {
