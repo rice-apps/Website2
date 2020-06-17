@@ -4,6 +4,9 @@ import {BrowserRouter as Router, NavLink} from "react-router-dom";
 
 
 export default class CCD extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
                 <div>
