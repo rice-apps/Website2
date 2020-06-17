@@ -59,10 +59,12 @@ const solution = {
 
 
 export default class ProjectPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
-        console.log(this.props.params)
-        let page = this.props.params;
-        console.log(projectName[page])
+        let page = this.props.page;
         return (
                 <div>
                     <NavLink to="/" >

@@ -13,7 +13,7 @@ import * as serviceWorker from './serviceWorker';
 
 function GoToProjectPage() {
     let { slug } = useParams();
-    return <ProjectPage params={slug} />;
+    return <ProjectPage page={slug} />;
 }
 
 ReactDOM.render(
