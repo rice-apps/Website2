@@ -5,7 +5,7 @@ import {
 	BrowserRouter as Router,
 	Link,
 	NavLink,
-	Redirect,
+	Redirect
 } from "react-router-dom";
 
 import box from "../images/box.svg";
