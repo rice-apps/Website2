@@ -1,28 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+import {BrowserRouter as Router, Route, Switch, useParams} from 'react-router-dom';
 import './index.css';
 import App  from './App';
+import ProjectPage from './Pages/projects/ProjectPage.js';
 import PartnerForm from './Pages/PartnerForm.js';
 import MemberForm from './Pages/MemberForm.js';
-import BeakSpeak from './Pages/projects/BeakSpeak.js';
-import Website from './Pages/projects/Website.js';
-import Reservations from './Pages/projects/CCD.js';
-import Carpool from './Pages/projects/Carpool.js';
-import Hedwig from './Pages/projects/Hedwig.js';
 
 import * as serviceWorker from './serviceWorker';
-import CCD from './Pages/projects/CCD.js';
+
+
+function GoToProjectPage() {
+    let { slug } = useParams();
+    return <ProjectPage params={slug} />;
+}
 
 ReactDOM.render(
     <Router>
         <Switch>
             <Route path="/" component={App} exact />
-            <Route path = "/beakspeak" component = {BeakSpeak} />
-            <Route path = "/website" component = {Website} />
-            <Route path = "/ccd" component = {CCD} />
-            <Route path = "/carpool" component = {Carpool} />
-            <Route path = "/hedwig" component = {Hedwig} />
+            <Route path = "/:slug" component = {ProjectPage}>
+                <GoToProjectPage />
+            </Route>    
         </Switch>
     </Router>
     , document.getElementById('root')
