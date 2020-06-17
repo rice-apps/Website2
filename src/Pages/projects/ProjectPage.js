@@ -62,6 +62,7 @@ export default class ProjectPage extends Component {
     render() {
         console.log(this.props.params)
         let page = this.props.params;
+        console.log(projectName[page])
         return (
                 <div>
                     <NavLink to="/" >
@@ -70,20 +71,20 @@ export default class ProjectPage extends Component {
                     <div className="pageWrapper">
                         <div id="content">
                             <div id="projectName">
-                                {projectName.page}
+                                {projectName[page]}
                             </div>
                             <div class="paragraphs" id="projectDescription">
-                                {projectDescription.page}
+                                {projectDescription[page]}
                             </div>
                             <div>
                                 <div id="teamAndProjectScope" class="paragraphs">
                                     <div class="teamAndProjectScopeLabel" >Team</div>
-                                    <div class="paragraphs">{projectName.page}</div>
+                                    <div class="paragraphs">{projectName[page]}</div>
                                 </div>
                                 <div class="paragraphs">
                                     <div class="teamAndProjectScopeLabel" id="projectScope">Project Scope</div>
                                     <div class="paragraphs">
-                                        {projectScope.page}
+                                        {projectScope[page]}
                                     </div>
 
                                 </div>
@@ -91,13 +92,13 @@ export default class ProjectPage extends Component {
                             <div>
                                 <div class="caption">THE PROBLEM</div>
                                 <div class="captionDescription">
-                                    {problem.page}
+                                    {problem[page]}
                                 </div>
                             </div>
                             <div>
                                 <div class="caption">OUR SOLUTION</div>
                                 <div class="captionDescription">
-                                    {solution.page}
+                                    {solution[ page]}
                                 </div>
                             </div>
 
