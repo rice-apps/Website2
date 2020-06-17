@@ -3,6 +3,9 @@ import './ProjectsTemplate.css';
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 
 export default class Hedwig extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
                 <div>
