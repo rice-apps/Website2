@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import './ProjectsTemplate.css';
 import { BrowserRouter as Router, NavLink, Link } from "react-router-dom";
+import ScrollToTopOnMount from './ScrollToTopOnMount';
 
 export default class BeakSpeak extends Component {
     render() {
+        console.log('rendering baybey');
         return (
                 <div>
+                    < ScrollToTopOnMount />
                     <NavLink to="/" >
                         <img class="homeIcon" src={require("../../home-icon.png")} />
                     </NavLink>
