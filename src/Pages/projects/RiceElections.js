@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './ProjectsTemplate.css';
 import {BrowserRouter as Router, NavLink} from "react-router-dom";
-import ScrollToTopOnMount from './ScrollToTopOnMount';
 
 
 export default class Carpool extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
                 <div>
-                    <ScrollToTopOnMount/>
                     <NavLink to="/"  >
                         <img class = "homeIcon" src={require("../../home-icon.png")}/>
                     </NavLink>
