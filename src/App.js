@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useReducer } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import LandingPage from './Pages/LandingPage.js';
 import Testimonials from './Pages/Testimonials.js'
@@ -13,8 +13,14 @@ import './hamburgers.css';
 import './styles.css'
 import ScrollIntoView from 'react-scroll-into-view';
 import ReactGA from 'react-ga';
-// import { ThemeProvider } from 'styled-components';
 
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from "./ThemeGlobal"
+// import { useTheme, MyThemeProvider } from "./ThemeContext"
+import reducer from "./ThemeReducer";
+import Context from "./ThemeContext"
+import { lightTheme, darkTheme } from "./Theme"
+import ThemeSwitch from './ThemeSwitch.js';
 
 
 class App extends Component {
@@ -53,47 +59,65 @@ class App extends Component {
     let button_classes = this.state.clicked
       ? "hamburger hamburger--collapse is-active" : "hamburger hamburger--collapse ";
     //end of sidebar-menu
+
+    // const themeState = useTheme();
+    // const myTP = MyThemeProvider();
+
+    const [state, dispatch] = useReducer(reducer, {
+      isDark: false
+    });
+
     return (
-      <ParallaxProvider>
-      <div>
-        <button onClick={() => this.handleClick()}
-          id="hamburger" class={button_classes} type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+      <Context.Provider value={{ state, dispatch }}>
+      <ThemeProvider theme={ state.isDark ? darkTheme : lightTheme }>
+        <>
+        <GlobalStyles/>
+        <ParallaxProvider>
+        <div>
+          <button onClick={() => this.handleClick()}
+            id="hamburger" class={button_classes} type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
 
-        <div id="menu" class={menuStatus}>
-          <ScrollIntoView selector="#home">
-            <div class="sidebarTextHome">HOME</div>
-          </ScrollIntoView>
-          <ScrollIntoView selector="#whatWeDo">
-            <div class="sidebarText">MISSION</div>
-          </ScrollIntoView>
-          <ScrollIntoView selector="#projects">
-            <div class="sidebarText">PROJECTS</div>
-          </ScrollIntoView>
-          <ScrollIntoView selector="#testimonials">
-            <div class="sidebarText">TESTIMONIALS</div>
-          </ScrollIntoView>
-          <ScrollIntoView selector="#contactUs">
-            <div class="sidebarTextContact">CONTACT US</div>
-          </ScrollIntoView>
+          <div id="menu" class={menuStatus}>
+            <ScrollIntoView selector="#home">
+              <div class="sidebarTextHome">HOME</div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#whatWeDo">
+              <div class="sidebarText">MISSION</div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#projects">
+              <div class="sidebarText">PROJECTS</div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#testimonials">
+              <div class="sidebarText">TESTIMONIALS</div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#contactUs">
+              <div class="sidebarTextContact">CONTACT US</div>
+            </ScrollIntoView>
+          </div>
+          <div onClick={() => this.closeSidebar()}>
+
+            <ThemeSwitch />
+
+            <div id="home"><LandingPage /></div>
+            <div id="whatWeDo"><WhatWeDo /></div>
+            <div id="aboutUs"><AboutUs /></div>
+
+
+            <div id="projects"><Projects /></div>
+            <div id="partners"><Partners /></div>
+            <div id="testimonials"><Testimonials /></div>
+            <div id="contactUs"><JoinUs /></div>
+            <div id="joinUs"><WorkForUs /></div>
+          </div>
         </div>
-        <div onClick={() => this.closeSidebar()}>
-          <div id="home"><LandingPage /></div>
-          <div id="whatWeDo"><WhatWeDo /></div>
-          <div id="aboutUs"><AboutUs /></div>
-
-
-          <div id="projects"><Projects /></div>
-          <div id="partners"><Partners /></div>
-          <div id="testimonials"><Testimonials /></div>
-          <div id="contactUs"><JoinUs /></div>
-          <div id="joinUs"><WorkForUs /></div>
-        </div>
-      </div>
-      </ParallaxProvider>
+        </ParallaxProvider>
+        </>
+      </ThemeProvider>
+      </Context.Provider>
     );
   }
 }

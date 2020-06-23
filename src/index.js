@@ -9,7 +9,6 @@ import ProjectPage from './Pages/projects/ProjectPage.js';
 // import MemberForm from './Pages/MemberForm.js';
 
 import * as serviceWorker from './serviceWorker';
-import { ThemeProvider } from 'styled-components';
 
 
 function GoToProjectPage() {
@@ -19,14 +18,12 @@ function GoToProjectPage() {
 
 ReactDOM.render(
     <Router>
-        {/* <ThemeProvider> */}
-            <Switch>
-                <Route path="/" component={App} exact />
-                <Route path = "/:slug" component = {ProjectPage}>
-                    <GoToProjectPage />
-                </Route>    
-            </Switch>
-        {/* </ThemeProvider> */}
+        <Switch>
+            <Route path="/" component={App} exact />
+            <Route path = "/:slug" component = {ProjectPage}>
+                <GoToProjectPage />
+            </Route>    
+        </Switch>
     </Router>
     , document.getElementById('root')
 );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './ProjectsTemplate.css';
-import { BrowserRouter as Router, NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const projectName = {
     "beakspeak" : "BeakSpeak.",
@@ -81,7 +81,7 @@ export default class ProjectPage extends Component {
                             <div>
                                 <div id="teamAndProjectScope" class="paragraphs">
                                     <div class="teamAndProjectScopeLabel" >Team</div>
-                                    <div class="paragraphs">{projectName[page]}</div>
+                                    <div class="paragraphs">{team[page]}</div>
                                 </div>
                                 <div class="paragraphs">
                                     <div class="teamAndProjectScopeLabel" id="projectScope">Project Scope</div>
