@@ -5,10 +5,11 @@ import {BrowserRouter as Router, Route, Switch, useParams} from 'react-router-do
 import './index.css';
 import App  from './App';
 import ProjectPage from './Pages/projects/ProjectPage.js';
-import PartnerForm from './Pages/PartnerForm.js';
-import MemberForm from './Pages/MemberForm.js';
+// import PartnerForm from './Pages/PartnerForm.js';
+// import MemberForm from './Pages/MemberForm.js';
 
 import * as serviceWorker from './serviceWorker';
+import { ThemeProvider } from 'styled-components';
 
 
 function GoToProjectPage() {
@@ -18,12 +19,14 @@ function GoToProjectPage() {
 
 ReactDOM.render(
     <Router>
-        <Switch>
-            <Route path="/" component={App} exact />
-            <Route path = "/:slug" component = {ProjectPage}>
-                <GoToProjectPage />
-            </Route>    
-        </Switch>
+        {/* <ThemeProvider> */}
+            <Switch>
+                <Route path="/" component={App} exact />
+                <Route path = "/:slug" component = {ProjectPage}>
+                    <GoToProjectPage />
+                </Route>    
+            </Switch>
+        {/* </ThemeProvider> */}
     </Router>
     , document.getElementById('root')
 );

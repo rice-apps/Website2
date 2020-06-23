@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Partners.css';
-import FOTW from '../fotw.jpg';
-import BakerRipley from '../bakerripley.png';
-import CsClub from '../csclub.png';
-import Coffeehouse from '../chaus.jpg';
+import FOTW from '../images/fotw.jpg';
+import BakerRipley from '../images/bakerripley.png';
+import CsClub from '../images/csclub.png';
+import Coffeehouse from '../images/chaus.jpg';
 import EastWest from '../images/eastwest.png'
 import Hoot from '../images/hoot.jpeg'
 

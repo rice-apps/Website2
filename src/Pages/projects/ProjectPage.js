@@ -68,7 +68,7 @@ export default class ProjectPage extends Component {
         return (
                 <div>
                     <NavLink to="/" >
-                        <img class="homeIcon" src={require("../../home-icon.png")} />
+                        <img class="homeIcon" src={require("../../images/home-icon.png")} alt="home icon"/>
                     </NavLink>
                     <div className="pageWrapper">
                         <div id="content">
