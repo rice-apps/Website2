@@ -1,12 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Projects.css";
-import {
-	BrowserRouter as Router,
-	Link,
-	NavLink,
-	Redirect
-} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import box from "../images/box.svg";
 
@@ -64,7 +59,7 @@ const ProjectBubble = ({ project }) => (
 	</div>
 )
 
-const Projects = ({}) => {
+const Projects = () => {
 	return (
 		<div className="projectsPageWrapper">
 			<div className="projectTitles">

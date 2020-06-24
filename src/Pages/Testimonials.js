@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import makeCarousel from 'react-reveal/makeCarousel';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import './Testimonials.css';
 
 
 const width = '80vw', height='calc(40px + 45vh + 5vw)';
 
-const Container = styled.div`\
+const Container = styled.div`
   width: ${width};
 `;
 const Children = styled.div`

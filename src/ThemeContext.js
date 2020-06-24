@@ -69,8 +69,7 @@
 
 
 
-import React, { createContext, useReducer } from 'react'
-import reducer from "./ThemeReducer";
+import { createContext } from 'react'
 
 export default createContext(null);
 

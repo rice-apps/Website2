@@ -1,15 +1,15 @@
 const white = '#FFFFFF'
-const black = '#161617'
+const black = '#121212'
 const gray = '#F8F8F9'
 
 export const lightTheme = {
-    background: gray,
-    body: black
+    background: black,
+    body: gray
 };
 
 export const darkTheme = {
-    background: black,
-    body: white
+    background: white,
+    body: black
 };
 
 // const theme = mode => (mode === "dark" ? themeDark : themeLight);

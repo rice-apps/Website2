@@ -1,4 +1,4 @@
-import React, { Component, useReducer } from 'react';
+import React, { useState, useReducer, useEffect } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import LandingPage from './Pages/LandingPage.js';
 import Testimonials from './Pages/Testimonials.js'
@@ -16,110 +16,113 @@ import ReactGA from 'react-ga';
 
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from "./ThemeGlobal"
-// import { useTheme, MyThemeProvider } from "./ThemeContext"
 import reducer from "./ThemeReducer";
 import Context from "./ThemeContext"
-import { lightTheme, darkTheme } from "./Theme"
+import { lightTheme, darkTheme } from "./Themes"
 import ThemeSwitch from './ThemeSwitch.js';
 
+function App() {
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      clicked: false,
-    };
-  }
+  const [clicked, setClicked] = useState(false);
   
-  initializeReactGA() {
+  function initializeReactGA() {
       ReactGA.initialize('UA-137795173-1');
       ReactGA.pageview('/');
   }
 
-  handleClick() {
+  function handleClick() {
     //call this function when the hamburger menu is clicked
     //if the menu is open, close it
     //if it's closed, open it
-    this.setState({ clicked: !this.state.clicked })
+    // this.setState({ clicked: !this.state.clicked })
+    setClicked(!clicked)
   }
-  closeSidebar() {
+  
+  function closeSidebar() {
     //Call this function whenever user clicks outside of the sidebar menu
-    if (this.state.clicked) {
+    if (clicked) {
       //But only sets clicked to False when clicked is True
-      this.setState({ clicked: false })
+      setClicked(false)
     }
   }
-  componentDidMount(){
-      this.initializeReactGA();
-  }
+
+  // call once (on mount)
+  useEffect(() =>  {
+    initializeReactGA();
+  }, []);
+
+  //start sidebar-menu
+  let menuStatus = clicked ? "open" : "closed";
+  let button_classes = clicked
+    ? "hamburger hamburger--collapse is-active" : "hamburger hamburger--collapse ";
   //end of sidebar-menu
-  render() {
-    //start sidebar-menu
-    let menuStatus = this.state.clicked ? "open" : "closed";
-    let button_classes = this.state.clicked
-      ? "hamburger hamburger--collapse is-active" : "hamburger hamburger--collapse ";
-    //end of sidebar-menu
 
-    // const themeState = useTheme();
-    // const myTP = MyThemeProvider();
+  const [state, dispatch] = useReducer(reducer, {
+    isDark: false
+  });
 
-    const [state, dispatch] = useReducer(reducer, {
-      isDark: false
-    });
+  console.log(state.isDark);
 
-    return (
-      <Context.Provider value={{ state, dispatch }}>
-      <ThemeProvider theme={ state.isDark ? darkTheme : lightTheme }>
-        <>
-        <GlobalStyles/>
-        <ParallaxProvider>
-        <div>
-          <button onClick={() => this.handleClick()}
-            id="hamburger" class={button_classes} type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
+  return (
+    <Context.Provider value={{ state, dispatch }}>
+    <ThemeProvider theme={ state.isDark ? darkTheme : lightTheme }>
+      <>
+      <GlobalStyles/>
+      <ParallaxProvider>
+      <div>
+        <button onClick={() => handleClick()}
+          id="hamburger" class={button_classes} type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
 
-          <div id="menu" class={menuStatus}>
-            <ScrollIntoView selector="#home">
-              <div class="sidebarTextHome">HOME</div>
-            </ScrollIntoView>
-            <ScrollIntoView selector="#whatWeDo">
-              <div class="sidebarText">MISSION</div>
-            </ScrollIntoView>
-            <ScrollIntoView selector="#projects">
-              <div class="sidebarText">PROJECTS</div>
-            </ScrollIntoView>
-            <ScrollIntoView selector="#testimonials">
-              <div class="sidebarText">TESTIMONIALS</div>
-            </ScrollIntoView>
-            <ScrollIntoView selector="#contactUs">
-              <div class="sidebarTextContact">CONTACT US</div>
-            </ScrollIntoView>
-          </div>
-          <div onClick={() => this.closeSidebar()}>
-
-            <ThemeSwitch />
-
-            <div id="home"><LandingPage /></div>
-            <div id="whatWeDo"><WhatWeDo /></div>
-            <div id="aboutUs"><AboutUs /></div>
-
-
-            <div id="projects"><Projects /></div>
-            <div id="partners"><Partners /></div>
-            <div id="testimonials"><Testimonials /></div>
-            <div id="contactUs"><JoinUs /></div>
-            <div id="joinUs"><WorkForUs /></div>
-          </div>
+        <div id="menu" class={menuStatus}>
+          <ScrollIntoView selector="#home">
+            <div class="sidebarTextHome">HOME</div>
+          </ScrollIntoView>
+          <ScrollIntoView selector="#whatWeDo">
+            <div class="sidebarText">MISSION</div>
+          </ScrollIntoView>
+          <ScrollIntoView selector="#projects">
+            <div class="sidebarText">PROJECTS</div>
+          </ScrollIntoView>
+          <ScrollIntoView selector="#testimonials">
+            <div class="sidebarText">TESTIMONIALS</div>
+          </ScrollIntoView>
+          <ScrollIntoView selector="#contactUs">
+            <div class="sidebarTextContact">CONTACT US</div>
+          </ScrollIntoView>
         </div>
-        </ParallaxProvider>
-        </>
-      </ThemeProvider>
-      </Context.Provider>
-    );
-  }
+        <div onClick={() => closeSidebar()}>
+
+          <div id="home"><LandingPage /></div>
+          <div id="whatWeDo"><WhatWeDo /></div>
+          
+          <ThemeSwitch />
+          {/* <div style={{
+            backgroundColor: "white", 
+            color: "blue",
+            height: "400px",
+            paddingTop: "50px"
+            }}>
+            <p>Logging</p>
+            <p>Theme is dark?: {state.isDark}</p>
+          </div> */}
+          
+          <div id="aboutUs"><AboutUs /></div>
+          <div id="projects"><Projects /></div>
+          <div id="partners"><Partners /></div>
+          <div id="testimonials"><Testimonials /></div>
+          <div id="contactUs"><JoinUs /></div>
+          <div id="joinUs"><WorkForUs /></div>
+        </div>
+      </div>
+      </ParallaxProvider>
+      </>
+    </ThemeProvider>
+    </Context.Provider>
+  );
 }
 
 export default App;

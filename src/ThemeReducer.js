@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+
 
 const reducer = (state = {}, action) => {
 	switch (action.type) {
@@ -10,9 +10,5 @@ const reducer = (state = {}, action) => {
 			return state;
 	}
 };
-
-export const [state, dispatch] = useReducer(reducer, {
-    isDark: false
-  });
 
 export default reducer;

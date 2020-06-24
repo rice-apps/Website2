@@ -25,9 +25,9 @@ export default class LandingPage extends Component {
   }
 
   render() {
-    if(window.scrollY>=45){
-      console.log("test");
-    }
+    // if(window.scrollY>=45){
+    //   console.log("test");
+    // }
     let arrow_classes = this.state.arrow
     ? "arrow-open" : "arrow-closed";
 
@@ -46,7 +46,7 @@ export default class LandingPage extends Component {
           </div>
 
           <div id="riceApps">
-            <img src = {Logo}/>
+            <img src = {Logo} alt = "riceapps logo"/>
           </div>
           <div class={arrow_classes} onClick={() => this.hideArrow()} >
             <ScrollIntoView selector="#whatWeDo">
