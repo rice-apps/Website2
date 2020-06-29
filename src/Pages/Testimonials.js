@@ -44,6 +44,33 @@ const CarouselUI = ({ position, total, handleClick, children }) => (
 );
 const Carousel = makeCarousel(CarouselUI);
 
+const testimonialList = [
+  {
+    name: "— Shryans Goyal",
+    title: "Team Lead, Class of '21",
+    paragraph: 
+        "Riceapps was instrumental to my development not only as a developer, but as a <em> leader </em> — I was able to communicate with clients clearly and thoughtfully, while working <em> efficiently </em> with my team. I emerged with a better understanding of the principles used in software and product management."
+  },
+  {
+    name: "— Danny Andreini",
+    title: "Vice Chair, Class of '20",
+    paragraph:  
+        "RiceApps is a great <em> learning experience</em>. I was part of a <em> fast-moving </em> team building a real application, which is something different from what I get out of my classes. I was able to apply my skills and expand them more effectively."   
+  }
+]
+
+
+const Testimonial = ({testimonial}) => (
+    <div className="carouselBox">
+      <div className="TestimonialParagraph" dangerouslySetInnerHTML={{__html: testimonial.paragraph}}>  
+      </div>
+      <div className="nameWrapper">
+        <span className="testimonialName">{testimonial.name}</span>
+        <span className="testimonialTitle">{testimonial.title}</span>
+      </div>
+    </div>
+)
+
 export default class LandingPage extends Component {
 
 
@@ -52,30 +79,12 @@ export default class LandingPage extends Component {
       <div className="TestmonialsWrapper">
       <div className="CarouselWrapper">
 
-      <Carousel defaultWait = {10000}>
-        <Fade right>
-          <div className="carouselBox">
-            <div className="TestimonialParagraph">
-              "Riceapps was instrumental to my development not only as a developer, but as a <em> leader </em> — I was able to communicate with clients clearly and thoughtfully, while working <em> efficiently </em> with my team. I emerged with a better understanding of the principles used in software and product management."
-            </div>
-            <div className="nameWrapper">
-              <span id="shryans">— Shryans Goyal</span>
-              <span id="teamLead">Team Lead, Class of '21</span>
-            </div>
-          </div>
-        </Fade>
-        <Fade right>
-          <div className="carouselBox">
-            <div className="TestimonialParagraph">
-            "RiceApps is a great <em> learning experience</em>. I was part of a <em> fast-moving </em> team building a real application, which is something different from what I get out of my classes. I was able to apply my skills and expand them more effectively."
-            </div>
-            <div className="nameWrapper">
-              <span id="shryans">— Danny Andreini</span>
-              <span id="teamLead">Vice Chair, Class of '20</span>
-            </div>
-          </div>
-        </Fade>
-
+      <Carousel> 
+        {testimonialList.map(item => (
+          <Fade right>
+			      <Testimonial testimonial={item}/>
+          </Fade>
+				))}
       </Carousel>
 
 
