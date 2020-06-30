@@ -78,10 +78,18 @@ button{
   position: fixed;
   z-index: 100;
 }
+
 #hamburger {
   z-index: 100;
   margin-left: .8vw;
   margin-top: 1.5vh;
+}
+
+#dark-switch{
+  position: fixed;
+  z-index: 100;
+  margin-top: 3vh;
+  right: 0.8vw;
 }
 
 /* End of menu CSS */

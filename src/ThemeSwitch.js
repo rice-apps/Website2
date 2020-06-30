@@ -5,8 +5,8 @@ import styled from "styled-components";
 const Container = styled.label`
 	position: relative;
 	display: inline-block;
-	width: 60px;
-	height: 34px;
+	width: 50px;
+	height: 30px;
 	margin-right: 15px;
 `;
 
@@ -25,8 +25,8 @@ const Slider = styled.span`
 	&::before {
 		position: absolute;
 		content: "";
-		height: 26px;
-		width: 26px;
+		height: 22px;
+		width: 22px;
 		margin: 4px;
 		background-color: white;
 		border-radius: 50%;
@@ -42,17 +42,17 @@ const Input = styled.input`
 	margin: 0;
 
 	&:checked + ${Slider} {
-		background-color: #2196f3;
+		background-color: #86DBD2;
 	}
 
 	&:checked + ${Slider}::before {
-		-webkit-transform: translateX(26px);
-		-ms-transform: translateX(26px);
-		transform: translateX(26px);
+		-webkit-transform: translateX(20px);
+		-ms-transform: translateX(20px);
+		transform: translateX(20px);
 	}
 
 	&:focus + ${Slider} {
-		box-shadow: 0 0 1px #2196f3;
+		box-shadow: 0 0 1px #86DBD2;
 	}
 `;
 

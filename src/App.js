@@ -70,12 +70,16 @@ function App() {
       <GlobalStyles/>
       <ParallaxProvider>
       <div>
-        <button onClick={() => handleClick()}
-          id="hamburger" class={button_classes} type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+        <div class="top-area">
+          <button onClick={() => handleClick()}
+            id="hamburger" class={button_classes} type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+          <div id="dark-switch"><ThemeSwitch /></div>
+        </div>
 
         <div id="menu" class={menuStatus}>
           <ScrollIntoView selector="#home">
@@ -98,18 +102,6 @@ function App() {
 
           <div id="home"><LandingPage /></div>
           <div id="whatWeDo"><WhatWeDo /></div>
-          
-          <ThemeSwitch />
-          {/* <div style={{
-            backgroundColor: "white", 
-            color: "blue",
-            height: "400px",
-            paddingTop: "50px"
-            }}>
-            <p>Logging</p>
-            <p>Theme is dark?: {state.isDark}</p>
-          </div> */}
-          
           <div id="aboutUs"><AboutUs /></div>
           <div id="projects"><Projects /></div>
           <div id="partners"><Partners /></div>
