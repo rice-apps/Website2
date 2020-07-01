@@ -1,13 +1,13 @@
 .TestmonialsWrapper {
   height:100vh;
-  background-color: white;
+  /* background: white; */
+  /* SHREYACOLOR */
   flex-direction: column;
   justify-content: center;
   display: flex;
 }
 
 .CarouselWrapper {
-
   height:80vh;
   margin-left: 10vw;
   flex-direction: column;
@@ -38,12 +38,14 @@
   line-height: 1.2;
   letter-spacing: 0.15vw;
   color: #787878;
+  /* SHREYACOLOR */
   margin-top: 4.5vh;
   text-align: left;
 }
 .TestimonialParagraph em {
   font-style: normal;
   color: #40BFB4;
+  /* SHREYACOLOR */
 }
 
 #shryans {
@@ -51,28 +53,16 @@
 }
 
 #teamLead{
-  /* position: relative;
-  color: #969696;
-  font-style: normal;
-  font-size: 1vw; */
   margin-left: 1.8vw;
   margin-top: 0.8vh;
 }
-
-/*#test-circle{
-  position: relative;
-  border-radius: 50%;
-  background-color: #969696;
-  width: 20vh;
-  height: 20vh;
-  margin-top: 5vh;
-}*/
 
 .nameWrapper{
   position: relative;
   display: flex;
   flex-direction: column;
   color: #01796F;
+  /* SHREYACOLOR */
   font-size: calc(5px + 1.2vw + 0.35vh);
   margin-top: 3vh;
   font-family: sans-serif;

@@ -1,47 +1,27 @@
 
 /* Start of menu CSS */
 
+/* .sidebarText:hover, .sidebarTextHome:hover, .sidebarTextContact:hover {
+  color: #6E6E6E;
+  SHREYACOLOR
+} */
+
 .sidebarText{
-  /* display: block; */
   padding-left: 6vw;
   padding-right: 1vw;
-  display: flex;
-  flex-direction: row;
-  color:#D2D2D2;
-  font-family: 'HKGrotesk-Bold';
-  cursor: pointer;
-}
-
-.sidebarText:hover {
-  color: #6E6E6E;
+  /* SHREYACOLOR */
 }
 
 .sidebarTextHome {
   padding-left: 15vw;
   padding-right: 2vw;
-  display: flex;
-  flex-direction: row;
-  color:#D2D2D2;
-  font-family: 'HKGrotesk-Bold';
-  cursor: pointer;
-}
-
-.sidebarTextHome:hover {
-  color: #6E6E6E;
+  /* SHREYACOLOR */
 }
 
 .sidebarTextContact {
   padding-left: 5vw;
   padding-right: 1vw;
-  display: flex;
-  flex-direction: row;
-  color:#D2D2D2;
-  font-family: 'HKGrotesk-Bold';
-  cursor: pointer;
-}
-
-.sidebarTextContact:hover {
-  color: #6E6E6E;
+  /* SHREYACOLOR */
 }
 
 /* HERE'S HOW THE MENU WORKS: */
@@ -49,17 +29,17 @@
 #menu.open {
   transform: none;
 }
+
 #menu.closed{
   visibility: hidden;
-
 }
+
 /* But when the menu is closed, the div is still /displayed/ */
 /* It's just that it's translated 10vh off of the screen (which is the height of the menu div) */
 #menu {
   width: 100vw;
-  /* height: 20vh; */
   height: 10vh;
-  background-color: white;
+  /* SHREYACOLOR */
   align-items: center;
   flex-direction: row;
   display: flex;
@@ -69,9 +49,8 @@
   transform: translateY(-10vh); /*This is what hides the menu when it's closed*/
   position: fixed;
   z-index: 99;
-  border-bottom: 1px solid #e6e6e6;
+  /* SHREYACOLOR */
 }
-
 
 button{
   outline:none;

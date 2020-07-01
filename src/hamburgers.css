@@ -27,6 +27,7 @@
     .hamburger.is-active .hamburger-inner::before,
     .hamburger.is-active .hamburger-inner::after {
       background-color:#40BFB4; }
+      /* SHREYACOLOR */
 
   .hamburger-box {
     width: 40px;
@@ -42,6 +43,7 @@
       width: 40px;
       height: 4px;
       background-color: #40BFB4;
+      /* SHREYACOLOR */
       border-radius: 4px;
       position: absolute;
       transition-property: transform;
