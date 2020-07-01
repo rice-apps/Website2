@@ -46,11 +46,11 @@
   color: #40BFB4;
 }
 
-#shryans {
+.testimonialName {
   font-weight: bold;
 }
 
-#teamLead{
+.testimonialTitle{
   /* position: relative;
   color: #969696;
   font-style: normal;
