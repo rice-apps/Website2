@@ -20,6 +20,7 @@ import reducer from "./ThemeReducer";
 import Context from "./ThemeContext"
 import { lightTheme, darkTheme } from "./Themes"
 import ThemeSwitch from './ThemeSwitch.js';
+import { withRouter } from "react-router";
 
 function App() {
 

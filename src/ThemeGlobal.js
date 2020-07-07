@@ -25,5 +25,12 @@ export const GlobalStyles = createGlobalStyle`
     cursor: pointer;
   }
 
+  .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after,
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      background-color: ${({ theme }) => theme.hamburger};
+  }
+
 
   `

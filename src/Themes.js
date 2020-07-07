@@ -34,29 +34,30 @@ export const lightTheme = {
     background: white,
     menuText: gray3,
     menuTextHover: gray4,
-    hamburgerAndEm: darkturq,
+    hamburger: darkturq,
     backgroundCircle: pink,
     smallProjectCircle: gray1,
     smallProjectCircleHover: darkturq, //might need opacity change
     project1: darkgreen,
     projectHeading: darkergreen,
     projectText: gray7,
-    primaryText: gray5 //about us, partners, testimonials, contact us
-    
+    primaryText: gray5, //about us, partners, testimonials, contact us
+    primaryTextEm: darkturq
 };
 
 export const darkTheme = {
     background: bggray,
     menuText: dgray1,
     menuTextHover: '#f1f1f1', //not given
-    hamburgerAndEm: darkpink,
+    hamburger: darkpink,
     backgroundCircle: lightturq,
     smallProjectCircle: lightpink, //opacity
     smallProjectCircleHover: darkpink, //opacity
     project1: darkerpink,
     projectHeading: darkerpink, //page not designed
     projectText: '#f1f1f1', //page not designed
-    primaryText: white //about us, partners, testimonials, contact us
+    primaryText: white, //about us, partners, testimonials, contact us
+    primaryTextEm: darkpink
 };
 
 // const theme = mode => (mode === "dark" ? themeDark : themeLight);

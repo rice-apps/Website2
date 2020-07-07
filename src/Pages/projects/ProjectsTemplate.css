@@ -1,12 +1,23 @@
+.top-area {
+    display: flex;
+    justify-content: space-between;
+}
+
 .homeIcon{
   width: 50px;
   height: 50px;
   padding-left: 1vw;
   padding-top: 1.5vh;
 }
+
+.dark-switch {
+    margin-top: 3vh;
+    margin-right: 0.8vw;
+}
+
 .pageWrapper {
     height:160vh;
-    background: white;
+    /* background: white; */
     /* SHREYACOLOR */
     padding: 2.5vw;
 
@@ -80,11 +91,18 @@ width: 50vw;
         height: 50px;
         padding-left: 1vw;
         padding-top: 1.5vh;
-
     }
+
+    .dark-switch {
+        display: inline-block;
+        z-index: 100;
+        margin-top: 3vh;
+    }
+
+
     .pageWrapper {
         height:160vh;
-        background: white;
+        /* background: white; */
         /* SHREYACOLOR */
         padding: 2.5vw;
 

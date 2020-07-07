@@ -1,6 +1,10 @@
-import React, { Component } from 'react';
+import React, { useEffect, useReducer } from 'react';
 import './ProjectsTemplate.css';
 import { NavLink } from "react-router-dom";
+
+import ThemeSwitch from '../../ThemeSwitch';
+import reducer from "../../ThemeReducer";
+import Context from "../../ThemeContext"
 
 const projectName = {
     "beakspeak" : "BeakSpeak.",
@@ -58,57 +62,76 @@ const solution = {
 
 
 
-export default class ProjectPage extends Component {
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
+function ProjectPage(props) {
 
-    render() {
-        let page = this.props.page;
-        return (
-                <div>
+    // call once (on mount)
+    useEffect(() =>  {
+        window.scrollTo(0, 0);
+    }, []);
+
+    const [state, dispatch] = useReducer(reducer, {
+        isDark: false
+    });
+    
+
+    let page = props.page;
+    return (
+        <Context.Provider value={{ state, dispatch }}>
+            <div>
+                <div class="top-area">
+
                     <NavLink to="/" >
                         <img class="homeIcon" src={require("../../images/home-icon.png")} alt="home icon"/>
+                        
                     </NavLink>
-                    <div className="pageWrapper">
-                        <div id="content">
-                            <div id="projectName">
-                                {projectName[page]}
-                            </div>
-                            <div class="paragraphs" id="projectDescription">
-                                {projectDescription[page]}
-                            </div>
-                            <div>
-                                <div id="teamAndProjectScope" class="paragraphs">
-                                    <div class="teamAndProjectScopeLabel" >Team</div>
-                                    <div class="paragraphs">{team[page]}</div>
-                                </div>
-                                <div class="paragraphs">
-                                    <div class="teamAndProjectScopeLabel" id="projectScope">Project Scope</div>
-                                    <div class="paragraphs">
-                                        {projectScope[page]}
-                                    </div>
 
-                                </div>
-                            </div>
-                            <div>
-                                <div class="caption">THE PROBLEM</div>
-                                <div class="captionDescription">
-                                    {problem[page]}
-                                </div>
-                            </div>
-                            <div>
-                                <div class="caption">OUR SOLUTION</div>
-                                <div class="captionDescription">
-                                    {solution[ page]}
-                                </div>
-                            </div>
+                    <div class="dark-switch"><ThemeSwitch /></div>
+                </div>
 
+
+
+
+                
+                <div className="pageWrapper">
+                    <div id="content">
+                        <div id="projectName">
+                            {projectName[page]}
                         </div>
+                        <div class="paragraphs" id="projectDescription">
+                            {projectDescription[page]}
+                        </div>
+                        <div>
+                            <div id="teamAndProjectScope" class="paragraphs">
+                                <div class="teamAndProjectScopeLabel" >Team</div>
+                                <div class="paragraphs">{team[page]}</div>
+                            </div>
+                            <div class="paragraphs">
+                                <div class="teamAndProjectScopeLabel" id="projectScope">Project Scope</div>
+                                <div class="paragraphs">
+                                    {projectScope[page]}
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="caption">THE PROBLEM</div>
+                            <div class="captionDescription">
+                                {problem[page]}
+                            </div>
+                        </div>
+                        <div>
+                            <div class="caption">OUR SOLUTION</div>
+                            <div class="captionDescription">
+                                {solution[ page]}
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-        )
-
-    }
+            </div>
+        </Context.Provider>
+    )
 
 }
+
+export default ProjectPage
