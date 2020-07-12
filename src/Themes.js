@@ -20,7 +20,9 @@ const gray7 = '#969696' //proj templates
 // DARKS ----------
 const bggray = '#2D313A' //main bg
 const dgray1 = '#AFB6C0' //menu text and border
+
 // white (text)
+
 const darkpink = '#DE7785' //about us em, project circles hover
 const darkerpink = '#D84A6F' //project text
 const lightpink = '#EECACB' //project circle non hover opacity 60
@@ -37,7 +39,7 @@ export const lightTheme = {
     hamburger: darkturq,
     backgroundCircle: pink,
     smallProjectCircle: gray1,
-    smallProjectCircleHover: darkturq, //might need opacity change
+    smallProjectCircleHover: 'rgba(64, 191, 180, 0.8)', // darkturq with diff opacity
     project1: darkgreen,
     projectHeading: darkergreen,
     projectText: gray7,
@@ -51,8 +53,8 @@ export const darkTheme = {
     menuTextHover: '#f1f1f1', //not given
     hamburger: darkpink,
     backgroundCircle: lightturq,
-    smallProjectCircle: lightpink, //opacity
-    smallProjectCircleHover: darkpink, //opacity
+    smallProjectCircle: 'rgba(238, 202, 203, 0.7)', //lightpink with opacity from design
+    smallProjectCircleHover: 'rgba(222, 119, 133, 0.6)', //darkpink with opacity from design
     project1: darkerpink,
     projectHeading: darkerpink, //page not designed
     projectText: '#f1f1f1', //page not designed

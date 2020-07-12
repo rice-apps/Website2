@@ -19,8 +19,8 @@ const Children = styled.div`
 const Dot = styled.span`
   font-size: calc(5px + 1.6vw + 0.5vh);
   cursor: pointer;
-  color: #40BFB4;
-  text-shadow: 1px 1px 1px #fff;
+  color: ${({ theme }) => theme.primaryTextEm};
+  /* text-shadow: 1px 1px 1px #fff; */
   user-select: none;
 `;
 const Dots = styled.span`
