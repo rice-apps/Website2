@@ -32,5 +32,49 @@ export const GlobalStyles = createGlobalStyle`
       background-color: ${({ theme }) => theme.hamburger};
   }
 
+  .AboutUsWrapper {
+    background: radial-gradient(circle at 5vw 100vh, ${({ theme }) => theme.backgroundCircle},
+      ${({ theme }) => theme.backgroundCircle} 35vw, transparent 35vw);
+  }
+
+  #AboutUsParagraph {
+    color: ${({ theme }) => theme.primaryText};
+  }
+
+  #AboutUsParagraph em {
+    color: ${({ theme }) => theme.primaryTextEm};
+  }
+
+  #content-JoinUs {
+    background: radial-gradient(circle at 77vw calc(100vh - 10vw), ${({ theme }) => theme.backgroundCircle},
+    ${({ theme }) => theme.backgroundCircle} 30vw, transparent 30vw);
+  }
+
+  #ContactUsTitle {
+    color: ${({ theme }) => theme.primaryTextEm}
+  }
+
+  #ContactUsText {
+    color: ${({ theme }) => theme.primaryText}
+  }
+
+  #riceapps {
+    color: ${({ theme }) => theme.primaryText}
+  }
+
+  #ds, #sg {
+    color: ${({ theme }) => theme.primaryTextEm}
+  }
+
+  #gray {
+    color: ${({ theme }) => theme.primaryText} !important
+  }
+
+  i {
+    border: solid ${({ theme }) => !theme.background};
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
 
   `

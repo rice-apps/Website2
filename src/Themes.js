@@ -10,7 +10,7 @@ const darkturq = '#40BFB4' //hamburger menu, about us em, join us
 const gray5 = '#787878' //about us text
 const pink = '#FFB9CD' //bg circle, projects
 
-// const gray6 = '#808080' //join us contactus
+// const gray6 = '#808080' //join us contactus landing page
 const darkgreen = '#008F82' //projects
 const darkergreen = '#01796F' //testimonals, proj template
 

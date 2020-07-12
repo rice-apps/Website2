@@ -64,15 +64,18 @@ const solution = {
 
 function ProjectPage(props) {
 
+    console.log("initial: " + JSON.stringify(props));
+
     // call once (on mount)
     useEffect(() =>  {
         window.scrollTo(0, 0);
     }, []);
 
     const [state, dispatch] = useReducer(reducer, {
-        isDark: false
+        isDark: props.isDark
     });
     
+    console.log(state.isDark);
 
     let page = props.page;
     return (
@@ -87,9 +90,6 @@ function ProjectPage(props) {
 
                     <div class="dark-switch"><ThemeSwitch /></div>
                 </div>
-
-
-
 
                 
                 <div className="pageWrapper">

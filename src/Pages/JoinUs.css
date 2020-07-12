@@ -3,11 +3,11 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: white;
+  /* background-color: white; */
   /* SHREYACOLOR */
-  background:
+  /* background:
   radial-gradient(circle at 77vw calc(100vh - 10vw), #FFB9CD,
-    #FFB9CD 30vw, transparent 30vw);
+    #FFB9CD 30vw, transparent 30vw); */
     /* SHREYACOLOR */
 }
 
@@ -18,7 +18,7 @@
   align-self: flex-end;
   width: 100vw;
   font-size: calc(40px + 5vh + 1.7vw);
-  color: #40BFB4;
+  /* color: #40BFB4; */
   /* SHREYACOLOR */
   font-weight: 1000;
   letter-spacing: 0.3vw;
@@ -35,7 +35,7 @@
   align-self: flex-start;
   font-weight: bold;
   letter-spacing: 0.12vw;
-  color: #787878;
+  /* color: #787878; */
   /* SHREYACOLOR */
   font-size: calc(5px + 1.6vh + 0.7vw);
   font-family: 'HKGrotesk-Bold';
@@ -55,11 +55,11 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    background-color: white;
+    /* background-color: white; */
     /* SHREYACOLOR */
-    background:
-            radial-gradient(circle at 77vw calc(100vh - 10vw), #FFB9CD,
-            #FFB9CD 40vw, transparent 40vw);
+    /* background:
+      radial-gradient(circle at 77vw calc(100vh - 10vw), #FFB9CD,
+      #FFB9CD 40vw, transparent 40vw); */
     /* SHREYACOLOR */
   }
 
@@ -70,7 +70,7 @@
     align-self: flex-end;
     width: 100vw;
     font-size: calc(10px + 7vw + 1.3vh);
-    color: #40BFB4;
+    /* color: #40BFB4; */
     /* SHREYACOLOR */
     font-weight: 1000;
     letter-spacing: 0.3vw;
@@ -86,7 +86,7 @@
     align-self: flex-start;
     font-weight: bold;
     letter-spacing: 0.12vw;
-    color: #787878;
+    /* color: #787878; */
     /* SHREYACOLOR */
     font-size: calc(5px + 1.5vh + 0.8vw);
     font-family: 'HKGrotesk-Bold';
@@ -107,7 +107,7 @@
     align-self: flex-end;
     width: 100vw;
     font-size: calc(10px + 7vw + 1.3vh);
-    color: #40BFB4;
+    /* color: #40BFB4; */
     /* SHREYACOLOR */
     font-weight: 1000;
     letter-spacing: 0.3vw;
@@ -123,7 +123,7 @@
     align-self: flex-start;
     font-weight: bold;
     letter-spacing: 0.12vw;
-    color: #787878;
+    /* color: #787878; */
     /* SHREYACOLOR */
     font-size: calc(3px + 1.5vh + 0.6vw);
     font-family: 'HKGrotesk-Bold';
