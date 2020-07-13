@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  /* SHREYACOLOR
+  /* darkthemecolor
   background:
   radial-gradient(circle at 20vw 90vh, #40BFB4, #40BFB4 35vw, transparent 35vw),
   radial-gradient(circle at 77vw -10vw, #FFB9CD,
@@ -17,7 +17,7 @@
   width: 100vw;
   font-size: calc(40px + 5vh + 1.7vw);
   /* color: #FFB9CD; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   font-weight: 1000;
   letter-spacing: 0.3vw;
   font-family: 'HKGrotesk-Bold';
@@ -34,7 +34,7 @@
   font-weight: bold;
   letter-spacing: 0.12vw;
   /* color: white; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   font-size: calc(5px + 1.6vh + 0.7vw);
   font-family: 'HKGrotesk-Bold';
 }
@@ -52,7 +52,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     /* background:
             radial-gradient(circle at 20vw 90vh, #40BFB4, #40BFB4 45vw, transparent 45vw),
             radial-gradient(circle at 77vw -10vw, #FFB9CD,
@@ -66,7 +66,7 @@
     width: 100vw;
     font-size: calc(10px + 7vw + 1.3vh);
     /* color: #FFB9CD; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     font-weight: 1000;
     letter-spacing: 0.3vw;
     font-family: 'HKGrotesk-Bold';
@@ -81,7 +81,7 @@
     font-weight: bold;
     letter-spacing: 0.12vw;
     /* color: white; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     font-size: calc(5px + 1.5vh + 0.8vw);
     font-family: 'HKGrotesk-Bold';
   }
@@ -101,7 +101,7 @@
     width: 100vw;
     font-size: calc(10px + 7vw + 1.3vh);
     /* color: #FFB9CD; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     font-weight: 1000;
     letter-spacing: 0.3vw;
     font-family: 'HKGrotesk-Bold';
@@ -115,7 +115,7 @@
     font-weight: bold;
     letter-spacing: 0.12vw;
     /* color: white; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     font-size: calc(3px + 1.5vh + 0.6vw);
     font-family: 'HKGrotesk-Bold';
   }

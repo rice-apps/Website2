@@ -20,7 +20,7 @@ import reducer from "./ThemeReducer";
 import Context from "./ThemeContext"
 import { lightTheme, darkTheme } from "./Themes"
 import ThemeSwitch from './ThemeSwitch.js';
-import { withRouter } from "react-router";
+// import { withRouter } from "react-router";
 
 function App() {
 
@@ -101,10 +101,11 @@ function App() {
         </div>
         <div onClick={() => closeSidebar()}>
 
-          <div id="home"><LandingPage /></div>
+          {/* pass theme into landing page for logo */}
+          <div id="home"><LandingPage isDark={state.isDark}/></div>
           <div id="whatWeDo"><WhatWeDo /></div>
           <div id="aboutUs"><AboutUs /></div>
-          <div id="projects"><Projects /></div>
+          <div id="projects"><Projects isDark={state.isDark}/></div>
           <div id="partners"><Partners /></div>
           <div id="testimonials"><Testimonials /></div>
           <div id="contactUs"><JoinUs /></div>

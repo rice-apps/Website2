@@ -75,7 +75,8 @@ function ProjectPage(props) {
     }, []);
 
     const [state, dispatch] = useReducer(reducer, {
-        isDark: props.isDark
+        // do we even need a new reducer? should this value be initialized differently?
+        isDark: false 
     });
     
     console.log(state.isDark);

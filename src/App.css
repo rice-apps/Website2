@@ -3,25 +3,25 @@
 
 /* .sidebarText:hover, .sidebarTextHome:hover, .sidebarTextContact:hover {
   color: #6E6E6E;
-  SHREYACOLOR
+  darkthemecolor
 } */
 
 .sidebarText{
   padding-left: 6vw;
   padding-right: 1vw;
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 .sidebarTextHome {
   padding-left: 15vw;
   padding-right: 2vw;
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 .sidebarTextContact {
   padding-left: 5vw;
   padding-right: 1vw;
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 /* HERE'S HOW THE MENU WORKS: */
@@ -39,7 +39,7 @@
 #menu {
   width: 100vw;
   height: 10vh;
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   align-items: center;
   flex-direction: row;
   display: flex;
@@ -49,7 +49,7 @@
   transform: translateY(-10vh); /*This is what hides the menu when it's closed*/
   position: fixed;
   z-index: 99;
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 button{

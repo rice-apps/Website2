@@ -28,7 +28,7 @@
       opacity: 0.9; }
   
   
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 
   .hamburger-box {
     width: 40px;
@@ -45,7 +45,7 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
       width: 40px;
       height: 4px;
-      /* SHREYACOLOR */
+      /* darkthemecolor */
       border-radius: 4px;
       position: absolute;
       transition-property: transform;

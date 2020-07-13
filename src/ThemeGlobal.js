@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
   /* APP CSS */
 
   #menu {
+    background: ${({ theme }) => theme.background};
     border-bottom: 1px solid ${({ theme }) => theme.menuText};
   }
 

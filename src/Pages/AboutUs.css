@@ -1,14 +1,14 @@
 .AboutUsWrapper {
   height:100vh;
   /* background: white; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   display: flex;
   align-items: center;
   justify-content: center;
   /* background:
   radial-gradient(circle at 5vw 100vh, #FFB9CD,
     #FFB9CD 35vw, transparent 35vw); */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   z-index: 1;
 }
 
@@ -21,12 +21,12 @@
   line-height: 6.3vh;
   letter-spacing: 0.08vw;
   /* color: #787878; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 #AboutUsParagraph em {
   font-style: normal;
   /* color: #40BFB4; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 Reveal {
@@ -44,7 +44,7 @@ Reveal {
     line-height: 6.3vh;
     letter-spacing: 0.08vw;
     /* color: #787878; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
   }
 }
 
@@ -58,6 +58,6 @@ Reveal {
     line-height: 6.3vh;
     letter-spacing: 0.08vw;
     /* color: #787878; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
   }
 }

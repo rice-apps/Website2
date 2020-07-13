@@ -18,7 +18,7 @@
 .pageWrapper {
     height:160vh;
     /* background: white; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     padding: 2.5vw;
 
     flex-direction: column;
@@ -30,7 +30,7 @@
     Color RADIUS, transparent RADIUS */
     /* radial-gradient(circle at 85vw 60vh, #FFB9CD,
       #FFB9CD 25vw, transparent 25vw); */
-      /* SHREYACOLOR */
+      /* darkthemecolor */
 
     z-index: 1;
   }
@@ -43,13 +43,13 @@ align-items: center;
 }
 #projectName{
   /* color: #40BFB4; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   font-size: calc(30px + 3.9vw + 1.8vh);
   font-family: 'HKGrotesk-Bold-Legacy'
 }
 /* .paragraphs{
     color: #969696;
-    SHREYACOLOR
+    darkthemecolor
     GET NEUE HAAS UNICA PRO
 } */
 
@@ -63,7 +63,7 @@ align-items: center;
 }
 .teamAndProjectScopeLabel{
 /* color: #01796F; */
-/* SHREYACOLOR */
+/* darkthemecolor */
 padding-bottom: 1vh;
 }
 #projectScope{
@@ -71,7 +71,7 @@ padding-bottom: 1vh;
 }
 .caption{
 /* color: #01796F; */
-/* SHREYACOLOR */
+/* darkthemecolor */
 font-size: calc(7px + 1.7vw + 0.8vh);
 margin-top: 7vh;
 font-family: "HKGrotesk-Bold-Legacy"
@@ -79,7 +79,7 @@ font-family: "HKGrotesk-Bold-Legacy"
 .captionDescription{
 margin-top: 4vh;
 /* color: #969696; */
-/* SHREYACOLOR */
+/* darkthemecolor */
 /* NUE HAAS UNICA PRO */
 
 width: 50vw;
@@ -103,7 +103,7 @@ width: 50vw;
     .pageWrapper {
         height:160vh;
         /* background: white; */
-        /* SHREYACOLOR */
+        /* darkthemecolor */
         padding: 2.5vw;
 
         flex-direction: column;
@@ -115,7 +115,7 @@ width: 50vw;
             Color RADIUS, transparent RADIUS */
                 /* radial-gradient(circle at 80vw 24vh, #FFB9CD,
                 #FFB9CD 30vw, transparent 25vw); */
-                /* SHREYACOLOR */
+                /* darkthemecolor */
 
         z-index: 1;
     }
@@ -128,13 +128,13 @@ width: 50vw;
     }
     #projectName{
         /* color: #40BFB4; */
-        /* SHREYACOLOR */
+        /* darkthemecolor */
         font-size: calc(20px + 4vw + 1.9vh);
         font-family: 'HKGrotesk-Bold-Legacy'
     }
     .paragraphs{
         /* color: #969696; */
-        /* SHREYACOLOR */
+        /* darkthemecolor */
         /* GET NEUE HAAS UNICA PRO */
     }
     #projectDescription{
@@ -148,7 +148,7 @@ width: 50vw;
     }
     .teamAndProjectScopeLabel{
         /* color: #01796F; */
-        /* SHREYACOLOR */
+        /* darkthemecolor */
         padding-bottom: 1vh;
     }
     #projectScope{
@@ -156,7 +156,7 @@ width: 50vw;
     }
     .caption{
         /* color: #01796F; */
-        /* SHREYACOLOR */
+        /* darkthemecolor */
         font-size: calc(7px + 1.9vw + 1vh);
         margin-top: 7vh;
         font-family: "HKGrotesk-Bold-Legacy"
@@ -164,7 +164,7 @@ width: 50vw;
     .captionDescription{
         margin-top: 4vh;
         /* color: #969696; */
-        /* SHREYACOLOR */
+        /* darkthemecolor */
         /* NUE HAAS UNICA PRO */
         font-size: calc(7px + 1.6vw + 0.8vh);
         width: 75vw;
@@ -183,13 +183,13 @@ width: 50vw;
     }
     #projectName{
         /* color: #40BFB4; */
-        /* SHREYACOLOR */
+        /* darkthemecolor */
         font-size: calc(27px + 4vw + 1.9vh);
         font-family: 'HKGrotesk-Bold-Legacy'
     }
     .paragraphs{
         /* color: #969696; */
-        /* SHREYACOLOR */
+        /* darkthemecolor */
         /* GET NEUE HAAS UNICA PRO */
     }
     #projectDescription{
@@ -203,7 +203,7 @@ width: 50vw;
     }
     .teamAndProjectScopeLabel{
         /* color: #01796F; */
-        /* SHREYACOLOR */
+        /* darkthemecolor */
         padding-bottom: 1vh;
     }
     #projectScope{
@@ -211,7 +211,7 @@ width: 50vw;
     }
     .caption{
         /* color: #01796F; */
-        /* SHREYACOLOR */
+        /* darkthemecolor */
         font-size: calc(7px + 2vw + 1.2vh);
         margin-top: 7vh;
         font-family: "HKGrotesk-Bold-Legacy"
@@ -219,7 +219,7 @@ width: 50vw;
     .captionDescription{
         margin-top: 4vh;
         /* color: #969696; */
-        /* SHREYACOLOR */
+        /* darkthemecolor */
         /* NUE HAAS UNICA PRO */
         font-size: calc(7px + 1.8vw + 0.8vh);
         width: 78vw;

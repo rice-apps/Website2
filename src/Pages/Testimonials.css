@@ -1,7 +1,7 @@
 .TestmonialsWrapper {
   height:100vh;
   /* background: white; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   flex-direction: column;
   justify-content: center;
   display: flex;
@@ -38,14 +38,14 @@
   line-height: 1.2;
   letter-spacing: 0.15vw;
   /* color: #787878; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   margin-top: 4.5vh;
   text-align: left;
 }
 .TestimonialParagraph em {
   font-style: normal;
   /* color: #40BFB4; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 #shryans {
@@ -62,7 +62,7 @@
   display: flex;
   flex-direction: column;
   /* color: #01796F; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   font-size: calc(5px + 1.2vw + 0.35vh);
   margin-top: 3vh;
   font-family: sans-serif;

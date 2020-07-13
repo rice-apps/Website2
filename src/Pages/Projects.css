@@ -3,12 +3,12 @@
   /* background:
   radial-gradient(circle at 5vw 0, #FFB9CD,
     #FFB9CD 35vw, transparent 35vw); */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 .projectsPageWrapper h1 {
   /* color: #008F82; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   font-size: calc(20px + 1vw + 0.3vh);
   font-weight: bold;
 }
@@ -16,7 +16,7 @@
 .projectText {
   color: white; 
   /* ^ doesnt change between themes */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   font-size: calc(14px + 0.7vw + 0.2vh);
   width: calc(30px + 13vh + 3vw);
   text-align: center;
@@ -26,7 +26,7 @@
 
 .circle {
   /* background: #F1F1F1; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   border-radius: 50%;
   height: calc(40px + 15vh + 6.5vw);
   width: calc(40px + 15vh + 6.5vw);
@@ -40,7 +40,7 @@
 
 .circle:hover {
   /* background: rgba(64, 191, 180, 0.8); */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 .circle:hover .projectText{
@@ -178,13 +178,13 @@
 /* .link:hover {
   text-decoration: underline;
   text-decoration-color: #008F82;
-  SHREYACOLOR
+  darkthemecolor
 } */
 
 @media only screen and (max-width:1200px) {
   .projectsPageWrapper h1 {
     /* color: #008F82; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     font-size: calc(13px + 2vw + 0.3vh);
     font-weight: bold;
   }
@@ -200,7 +200,7 @@
 
   .circle {
     /* background: #F1F1F1; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     border-radius: 50%;
     height: calc(35px + 10vw + 4vh);
     width: calc(35px + 10vw + 4vh);
@@ -312,14 +312,14 @@
 @media only screen and (max-width:749px) {
   .projectsPageWrapper h1 {
     /* color: #008F82; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     font-size: calc(10px + 1.7vw + 0.3vh);
     font-weight: bold;
   }
 
   .projectText {
     color: white;
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     font-size: calc(10px + 0.7vw + 0.15vh);
     width: calc(22px + 7vh + 3vw);
     text-align: center;
@@ -329,7 +329,7 @@
 
   .circle {
     /* background: #F1F1F1; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     border-radius: 50%;
     height: calc(35px + 10vw + 4vh);
     width: calc(35px + 10vw + 4vh);

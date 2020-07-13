@@ -23,7 +23,7 @@ export default class Timeline extends Component {
       stylesBackground: '#f8f8f8',
       stylesForeground: '#7b9d6f',
       stylesOutline: '#dfdfdf',
-      /* SHREYACOLOR */
+      /* darkthemecolor */
       /* CHANGECOLOR */
       isTouchEnabled: true,
       isKeyboardEnabled: true,

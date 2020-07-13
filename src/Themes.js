@@ -1,4 +1,6 @@
-
+// tried to mark all the colors with "darkthemecolor" across the css files
+// in some places i deleted the color in others I just commented it out
+// non css files: box.svg, logo images, testimonials.js, ThemeSwitch.js
 
 // LIGHTS ---------
 const white = '#ffffff' // bg
@@ -32,7 +34,7 @@ const lightturq = '#86DBD2' //giant bg circle
 // const logoturq = '#41BFB4' //logo + SLIDER + HAMBURGER MENU
 
 
-// make sure both themes have same fields
+// MAKE SURE both themes have same fields
 export const lightTheme = {
     background: white,
     menuText: gray3,
@@ -41,6 +43,7 @@ export const lightTheme = {
     backgroundCircle: pink,
     smallProjectCircle: gray1,
     smallProjectCircleHover: 'rgba(64, 191, 180, 0.8)', // darkturq with diff opacity
+    circleBox: '#FEBACD',
     project1: darkgreen,
     projectHeading: darkergreen,
     projectText: gray7,
@@ -56,6 +59,7 @@ export const darkTheme = {
     backgroundCircle: lightturq,
     smallProjectCircle: 'rgba(238, 202, 203, 0.7)', //lightpink with opacity from design
     smallProjectCircleHover: 'rgba(222, 119, 133, 0.6)', //darkpink with opacity from design
+    circleBox: white,
     project1: darkerpink,
     projectHeading: darkerpink, //page not designed
     projectText: '#f1f1f1', //page not designed

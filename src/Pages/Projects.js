@@ -4,6 +4,19 @@ import "./Projects.css";
 import { NavLink } from "react-router-dom";
 
 import box from "../images/box.svg";
+// import styled from 'styled-components';
+
+// attempts to fill box based on theme:
+// color is currently defined in the box.svg file
+// const boxIcon = styled(box)`
+// 	fill: ${({ theme }) => theme.circleBox};
+// `
+// const boxIcon = styled.svg`
+// 	fill: ${({ theme }) => theme.circleBox};
+// `
+// const boxIcon = styled(box)`
+// 	color: ${({ theme }) => theme.circleBox};
+// `
 
 const pastProjects = [
 	{
@@ -52,6 +65,7 @@ const ProjectBubble = ({ project }) => (
 		</div>
 		<div className="circle">
 			<img className="airbnb" src={box} alt="" />
+
 			<div className="projectText">
 				{project.projectText}
 			</div>

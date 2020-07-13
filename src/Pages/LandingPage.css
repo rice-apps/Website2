@@ -9,7 +9,7 @@
   font-family: 'HKGrotesk-Light';
   letter-spacing: 0.2vw;
   /* color: gray; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 img{
@@ -55,7 +55,7 @@ img{
   align-items: center;
   height: 100vh;
   /* background-color: white; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 .initialText {
@@ -75,7 +75,7 @@ img{
 #ds{
   display: flex;
   /* color: #40BFB4; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   width: 100vw;
   align-self: flex-end;
   justify-content: center;
@@ -87,7 +87,7 @@ img{
 
 #gray {
   /* color: gray !important; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   padding-right: 4vw;
 }
 
@@ -100,7 +100,7 @@ img{
   letter-spacing: 0.2vw;
   font-weight: bold;
   /* color: #40BFB4; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 #social {
@@ -109,7 +109,7 @@ img{
 
 i {
   /* border: solid black; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
   /* border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px; */

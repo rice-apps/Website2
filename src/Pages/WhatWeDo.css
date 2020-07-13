@@ -2,7 +2,7 @@
   height: 70vh;
   /* z-index: 1; */
   /* background: white; */
-  /* SHREYACOLOR */
+  /* darkthemecolor */
 }
 
 .whatWeDoPageWrapper h1{
@@ -44,7 +44,7 @@ url('../images/RiceApps2018 016.JPG');
     height: 55vh;
     /* z-index: 1; */
     /* background: white; */    
-    /* SHREYACOLOR */
+    /* darkthemecolor */
   }
 
   #treeBackground {
@@ -55,7 +55,7 @@ url('../images/RiceApps2018 016.JPG');
   .whatWeDoPageWrapper h1{
     width: 85vw;
     color: white;
-    /* SHREYACOLOR */
+    /* darkthemecolor */
     font-weight: bold;
     font-size: calc(5px + 2.3vw + 0.9vh);
   }
@@ -67,7 +67,7 @@ url('../images/RiceApps2018 016.JPG');
     height: 45vh;
     /* z-index: 1; */
     /* background: white; */
-    /* SHREYACOLOR */
+    /* darkthemecolor */
   }
 
   #treeBackground {
