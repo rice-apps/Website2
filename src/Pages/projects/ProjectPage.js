@@ -67,7 +67,7 @@ const solution = {
 
 function ProjectPage(props) {
 
-    console.log("initial: " + JSON.stringify(props));
+    // console.log("initial: " + JSON.stringify(props));
 
     // call once (on mount)
     useEffect(() =>  {

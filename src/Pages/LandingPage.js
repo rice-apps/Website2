@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './LandingPage.css';
 import ScrollIntoView from 'react-scroll-into-view';
-import LightLogo from '../images/logo_color_light.png'
-import DarkLogo from '../images/RiceApps dark logo.svg' // TODO fix the dark logo file
+import LightLogo from '../images/logo_color_light.png';
+import DarkLogo from '../images/logo_color_dark.png';
 
 function LandingPage(props) {
 
-  // get it to choose logo file based on theme
-  // passed in as props but ideally would be available through context
+  // get it to choose logo file based on theme (really state, not styled theme provider)
+  // passed in as props (again state not real theme)
+  // ideally would be available through context
   const logo = props.isDark ? DarkLogo : LightLogo
 
   const [arrow, setArrow] = useState(true);
