@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useReducer, useEffect } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import LandingPage from './Pages/LandingPage.js';
 import Testimonials from './Pages/Testimonials.js'
@@ -14,53 +14,73 @@ import './styles.css'
 import ScrollIntoView from 'react-scroll-into-view';
 import ReactGA from 'react-ga';
 
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from "./ThemeGlobal"
+import reducer from "./ThemeReducer";
+import Context from "./ThemeContext"
+import { lightTheme, darkTheme } from "./Themes"
+import ThemeSwitch from './ThemeSwitch.js';
+// import { withRouter } from "react-router";
 
+function App() {
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      clicked: false,
-    };
-  }
-
-  initializeReactGA() {
+  const [clicked, setClicked] = useState(false);
+  
+  function initializeReactGA() {
       ReactGA.initialize('UA-137795173-1');
       ReactGA.pageview('/');
   }
 
-  handleClick() {
+  function handleClick() {
     //call this function when the hamburger menu is clicked
     //if the menu is open, close it
     //if it's closed, open it
-    this.setState({ clicked: !this.state.clicked })
+    // this.setState({ clicked: !this.state.clicked })
+    setClicked(!clicked)
   }
-  closeSidebar() {
+  
+  function closeSidebar() {
     //Call this function whenever user clicks outside of the sidebar menu
-    if (this.state.clicked) {
+    if (clicked) {
       //But only sets clicked to False when clicked is True
-      this.setState({ clicked: false })
+      setClicked(false)
     }
   }
-  componentDidMount(){
-      this.initializeReactGA();
-  }
+
+  // call once (on mount)
+  useEffect(() =>  {
+    initializeReactGA();
+  }, []);
+
+  //start sidebar-menu
+  let menuStatus = clicked ? "open" : "closed";
+  let button_classes = clicked
+    ? "hamburger hamburger--collapse is-active" : "hamburger hamburger--collapse ";
   //end of sidebar-menu
-  render() {
-    //start sidebar-menu
-    let menuStatus = this.state.clicked ? "open" : "closed";
-    let button_classes = this.state.clicked
-      ? "hamburger hamburger--collapse is-active" : "hamburger hamburger--collapse ";
-    //end of sidebar-menu
-    return (
+
+  const [state, dispatch] = useReducer(reducer, {
+    isDark: false
+  });
+
+  console.log(state.isDark);
+
+  return (
+    <Context.Provider value={{ state, dispatch }}>
+    <ThemeProvider theme={ state.isDark ? darkTheme : lightTheme }>
+      <>
+      <GlobalStyles/>
       <ParallaxProvider>
       <div>
-        <button onClick={() => this.handleClick()}
-          id="hamburger" class={button_classes} type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+        <div class="top-area">
+          <button onClick={() => handleClick()}
+            id="hamburger" class={button_classes} type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+          <div id="dark-switch"><ThemeSwitch /></div>
+        </div>
 
         <div id="menu" class={menuStatus}>
           <ScrollIntoView selector="#home">
@@ -79,13 +99,13 @@ class App extends Component {
             <div class="sidebarTextContact">CONTACT US</div>
           </ScrollIntoView>
         </div>
-        <div onClick={() => this.closeSidebar()}>
-          <div id="home"><LandingPage /></div>
+        <div onClick={() => closeSidebar()}>
+
+          {/* pass theme into landing page for logo */}
+          <div id="home"><LandingPage isDark={state.isDark}/></div>
           <div id="whatWeDo"><WhatWeDo /></div>
           <div id="aboutUs"><AboutUs /></div>
-
-
-          <div id="projects"><Projects /></div>
+          <div id="projects"><Projects isDark={state.isDark}/></div>
           <div id="partners"><Partners /></div>
           <div id="testimonials"><Testimonials /></div>
           <div id="contactUs"><JoinUs /></div>
@@ -93,8 +113,10 @@ class App extends Component {
         </div>
       </div>
       </ParallaxProvider>
-    );
-  }
+      </>
+    </ThemeProvider>
+    </Context.Provider>
+  );
 }
 
 export default App;

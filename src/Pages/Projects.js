@@ -1,14 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Projects.css";
-import {
-	BrowserRouter as Router,
-	Link,
-	NavLink,
-	Redirect
-} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import box from "../images/box.svg";
+// import styled from 'styled-components';
+
+// attempts to fill box based on theme:
+// color is currently defined in the box.svg file
+// const boxIcon = styled(box)`
+// 	fill: ${({ theme }) => theme.circleBox};
+// `
+// const boxIcon = styled.svg`
+// 	fill: ${({ theme }) => theme.circleBox};
+// `
+// const boxIcon = styled(box)`
+// 	color: ${({ theme }) => theme.circleBox};
+// `
 
 const pastProjects = [
 	{
@@ -57,6 +65,7 @@ const ProjectBubble = ({ project }) => (
 		</div>
 		<div className="circle">
 			<img className="airbnb" src={box} alt="" />
+
 			<div className="projectText">
 				{project.projectText}
 			</div>
@@ -64,7 +73,7 @@ const ProjectBubble = ({ project }) => (
 	</div>
 )
 
-const Projects = ({}) => {
+const Projects = () => {
 	return (
 		<div className="projectsPageWrapper">
 			<div className="projectTitles">

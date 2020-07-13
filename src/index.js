@@ -5,8 +5,8 @@ import {BrowserRouter as Router, Route, Switch, useParams} from 'react-router-do
 import './index.css';
 import App  from './App';
 import ProjectPage from './Pages/projects/ProjectPage.js';
-import PartnerForm from './Pages/PartnerForm.js';
-import MemberForm from './Pages/MemberForm.js';
+// import PartnerForm from './Pages/PartnerForm.js';
+// import MemberForm from './Pages/MemberForm.js';
 
 import * as serviceWorker from './serviceWorker';
 

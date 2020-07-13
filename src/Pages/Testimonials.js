@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import makeCarousel from 'react-reveal/makeCarousel';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import './Testimonials.css';
 
 
 const width = '80vw', height='calc(40px + 45vh + 5vw)';
 
-const Container = styled.div`\
+const Container = styled.div`
   width: ${width};
 `;
 const Children = styled.div`
@@ -19,8 +19,8 @@ const Children = styled.div`
 const Dot = styled.span`
   font-size: calc(5px + 1.6vw + 0.5vh);
   cursor: pointer;
-  color: #40BFB4;
-  text-shadow: 1px 1px 1px #fff;
+  color: ${({ theme }) => theme.primaryTextEm};
+  /* text-shadow: 1px 1px 1px #fff; */
   user-select: none;
 `;
 const Dots = styled.span`

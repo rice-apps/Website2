@@ -1,6 +1,13 @@
-import React, { Component } from 'react';
+import React, { useEffect, useReducer } from 'react';
 import './ProjectsTemplate.css';
-import { BrowserRouter as Router, NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+import ThemeSwitch from '../../ThemeSwitch';
+import reducer from "../../ThemeReducer";
+import Context from "../../ThemeContext"
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme } from "../../Themes";
+import { GlobalStyles } from "../../ThemeGlobal";
 
 const projectName = {
     "beakspeak" : "BeakSpeak.",
@@ -58,18 +65,40 @@ const solution = {
 
 
 
-export default class ProjectPage extends Component {
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
+function ProjectPage(props) {
 
-    render() {
-        let page = this.props.page;
-        return (
+    // console.log("initial: " + JSON.stringify(props));
+
+    // call once (on mount)
+    useEffect(() =>  {
+        window.scrollTo(0, 0);
+    }, []);
+
+    const [state, dispatch] = useReducer(reducer, {
+        // do we even need a new reducer? should this value be initialized differently?
+        isDark: false 
+    });
+    
+    console.log(state.isDark);
+
+    let page = props.page;
+    return (
+        <Context.Provider value={{ state, dispatch }}>
+            <ThemeProvider theme={ state.isDark ? darkTheme : lightTheme }>
+                <>
+                <GlobalStyles/>
                 <div>
-                    <NavLink to="/" >
-                        <img class="homeIcon" src={require("../../home-icon.png")} />
-                    </NavLink>
+                    <div class="top-area">
+
+                        <NavLink to="/" >
+                            <img class="homeIcon" src={require("../../images/home-icon.png")} alt="home icon"/>
+                            
+                        </NavLink>
+
+                        <div class="dark-switch"><ThemeSwitch /></div>
+                    </div>
+
+                    
                     <div className="pageWrapper">
                         <div id="content">
                             <div id="projectName">
@@ -81,7 +110,7 @@ export default class ProjectPage extends Component {
                             <div>
                                 <div id="teamAndProjectScope" class="paragraphs">
                                     <div class="teamAndProjectScopeLabel" >Team</div>
-                                    <div class="paragraphs">{projectName[page]}</div>
+                                    <div class="paragraphs">{team[page]}</div>
                                 </div>
                                 <div class="paragraphs">
                                     <div class="teamAndProjectScopeLabel" id="projectScope">Project Scope</div>
@@ -107,8 +136,11 @@ export default class ProjectPage extends Component {
                         </div>
                     </div>
                 </div>
-        )
-
-    }
+                </>
+            </ThemeProvider>
+        </Context.Provider>
+    )
 
 }
+
+export default ProjectPage
