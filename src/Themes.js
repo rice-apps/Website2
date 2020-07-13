@@ -25,10 +25,11 @@ const dgray1 = '#AFB6C0' //menu text and border
 
 const darkpink = '#DE7785' //about us em, project circles hover
 const darkerpink = '#D84A6F' //project text
-const lightpink = '#EECACB' //project circle non hover opacity 60
 
 const lightturq = '#86DBD2' //giant bg circle
-const logoturq = '#41BFB4' //logo + SLIDER + HAMBURGER MENU
+
+// const lightpink = '#EECACB' //project circle non hover opacity 60
+// const logoturq = '#41BFB4' //logo + SLIDER + HAMBURGER MENU
 
 
 // make sure both themes have same fields

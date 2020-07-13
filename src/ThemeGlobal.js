@@ -155,4 +155,25 @@ export const GlobalStyles = createGlobalStyle`
 
   /* PROJECT TEMPLATE CSS */
 
+  .pageWrapper {
+    background: ${({ theme }) => theme.background};
+    background: radial-gradient(circle at 85vw 60vh, ${({ theme }) => theme.backgroundCircle},
+    ${({ theme }) => theme.backgroundCircle} 25vw, transparent 25vw);
+  }
+
+  #projectName {
+    color: ${({ theme }) => theme.primaryTextEm}
+  }
+
+  .paragraphs, .captionDescription {
+    color: ${({ theme }) => theme.projectText}
+  }
+
+  .teamAndProjectScopeLabel, .caption {
+    color: ${({ theme }) => theme.projectHeading};
+  } 
+
+
+
+
   `
