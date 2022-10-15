@@ -1,6 +1,4 @@
 #logos {
-
-  height: 60vh;
   width: 70vw;
   display: flex;
   align-self: center;
@@ -13,18 +11,18 @@
 
 #logosWrapper {
   display: flex;
-  width: 100vw;
   justify-content: center;
   margin-top: 5vh;
 }
 
 #image {
-  height: 11vw;
-  width: 11vw;
+  object-fit: contain;
+  height: 100%;
+  width: 15vw;
+  padding: 25px;
   opacity: 0.7;
-  padding-right: 9vh;
-  padding-left: 9vh
 }
+
 #text {
   display: flex;
   justify-content: flex-start;
