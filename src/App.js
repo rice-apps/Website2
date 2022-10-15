@@ -108,8 +108,8 @@ function App() {
           <div id="projects"><Projects isDark={state.isDark}/></div>
           <div id="partners"><Partners /></div>
           <div id="testimonials"><Testimonials /></div>
-          <div id="contactUs"><JoinUs /></div>
-          <div id="joinUs"><WorkForUs /></div>
+          {/* <div id="contactUs"><JoinUs /></div> */}
+          {/* <div id="joinUs"><WorkForUs /></div> */}
         </div>
       </div>
       </ParallaxProvider>
