@@ -106,8 +106,8 @@ function App() {
           <div id="whatWeDo"><WhatWeDo /></div>
           <div id="aboutUs"><AboutUs /></div>
           {/* <div id="projects"><Projects isDark={state.isDark}/></div> */}
-          <div id="partners"><Partners /></div>
           <div id="testimonials"><Testimonials /></div>
+          <div id="partners"><Partners /></div>
           {/* <div id="contactUs"><JoinUs /></div> */}
           {/* <div id="joinUs"><WorkForUs /></div> */}
         </div>
