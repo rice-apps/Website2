@@ -82,6 +82,7 @@ function App() {
           <div id="dark-switch"><ThemeSwitch /></div>
         </div>
 
+        {/* Currently Broken: Projects and Contact Us */}
         <div id="menu" class={menuStatus}>
           <ScrollIntoView selector="#home">
             <div class="sidebarTextHome">HOME</div>
@@ -89,15 +90,15 @@ function App() {
           <ScrollIntoView selector="#whatWeDo">
             <div class="sidebarText">MISSION</div>
           </ScrollIntoView>
-          <ScrollIntoView selector="#projects">
-            <div class="sidebarText">PROJECTS</div>
-          </ScrollIntoView>
           <ScrollIntoView selector="#testimonials">
             <div class="sidebarText">TESTIMONIALS</div>
           </ScrollIntoView>
-          <ScrollIntoView selector="#contactUs">
-            <div class="sidebarTextContact">CONTACT US</div>
+          <ScrollIntoView selector="#partners">
+            <div class="sidebarText">PARTNERS</div>
           </ScrollIntoView>
+          {/*<ScrollIntoView selector="#contactUs">*/}
+          <div class="sidebarTextContact"><a href="mailto:team.riceapps@gmail.com">CONTACT US </a></div>
+          {/*</ScrollIntoView>*/}
         </div>
         <div onClick={() => closeSidebar()}>
 

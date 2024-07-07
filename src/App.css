@@ -24,6 +24,21 @@
   /* darkthemecolor */
 }
 
+/* Add these new styles */
+.sidebarTextContact a {
+  text-decoration: none;  /* Removes the underline */
+  color: inherit;  /* Uses the color of the parent element */
+  font-size: inherit;  /* Uses the font size of the parent element */
+  font-family: inherit;  /* Uses the font family of the parent element */
+  font-weight: inherit;  /* Uses the font weight of the parent element */
+}
+
+/* Optional: Add hover effect if desired */
+.sidebarTextContact a:hover {
+  /* Add any hover effects you want, e.g.: */
+  text-decoration: underline;
+}
+
 /* HERE'S HOW THE MENU WORKS: */
 /* The div is always there, and there's no transformation when the menu is open. */
 #menu.open {
