@@ -20,7 +20,7 @@
     "react-swipeable-views": "^0.13.1",
     "react-typeform-embed": "^0.2.0",
     "styled-components": "^4.4.1",
-    "surge": "^0.20.1"
+    "surge": "^0.20.5"
   },
   "scripts": {
     "start": "react-scripts start",
