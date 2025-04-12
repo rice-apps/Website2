@@ -2,9 +2,6 @@ import React, { useState, useReducer, useEffect } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import LandingPage from './Pages/LandingPage.js';
 import Testimonials from './Pages/Testimonials.js'
-import WorkForUs from './Pages/WorkForUs.js';
-import JoinUs from './Pages/JoinUs.js';
-import Projects from './Pages/Projects.js';
 import AboutUs from './Pages/AboutUs.js';
 import WhatWeDo from './Pages/WhatWeDo.js';
 import Partners from './Pages/Partners.js';
