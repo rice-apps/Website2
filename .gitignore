@@ -64,3 +64,4 @@ typings/
 # Ignore macOS artifacts
 .DS_Store
 
+build/
